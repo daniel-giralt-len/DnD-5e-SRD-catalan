@@ -1,8 +1,9 @@
+import srdSections from './srd.json'
+import PrintFriendlyApp from './PrintFriendlyApp'
+
 function App() {
   return (
-    <div>
-      Testing
-    </div>
+    <PrintFriendlyApp sections={srdSections} />
   );
 }
 
