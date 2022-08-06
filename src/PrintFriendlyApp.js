@@ -14,12 +14,12 @@ const renderSection = section => {
             }else{
                 content = <p>{e}</p>
             }
-            return (<span key={section.name+i}>{content}</span>)
+            return (<span key={`${section.name}+${i}`}>{content}</span>)
         })}
     </section>)
 }
 
-const PrintFriendlyApp = ({sections}) => (<div>
+const PrintFriendlyApp = ({sections}) => (<main>
     {sections.map(renderSection)}
-</div>)
+</main>)
 export default PrintFriendlyApp
