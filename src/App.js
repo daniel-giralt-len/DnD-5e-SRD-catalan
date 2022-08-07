@@ -1,5 +1,5 @@
 import srdSections from './srd.json'
-import PrintFriendlyApp from './PrintFriendlyApp'
+import PrintFriendlyApp from './PrintLayout/PrintFriendlyApp'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
