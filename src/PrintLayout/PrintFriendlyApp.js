@@ -12,12 +12,12 @@ const sectionNameToComponent = {
     'Legal Info': PrintLegalInfo,
 }
 
-const renderSection = section => {
+const renderSection = (section, i) => {
     const SectionComponent = sectionNameToComponent[section.name]
     if(SectionComponent) {
-        return (<SectionComponent {...section} />)
+        return (<SectionComponent key={i} {...section} />)
     }
-    return (<BasePrintSection {...section} />)
+    return (<BasePrintSection key={i} {...section} />)
 }
 
 const PrintFriendlyApp = ({sections}) => (<PrintableDocument>
