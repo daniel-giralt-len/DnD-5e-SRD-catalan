@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import PrintLegalInfo from './PrintLegalInfo'
 import BasePrintSection from './BasePrintSection'
+import RacesSection from './RacesSection'
 
 const PrintableDocument = styled.main`
     @media print {
@@ -10,6 +11,7 @@ const PrintableDocument = styled.main`
 
 const sectionNameToComponent = {
     'Legal Info': PrintLegalInfo,
+    'Races': RacesSection,
 }
 
 const renderSection = (section, i) => {
