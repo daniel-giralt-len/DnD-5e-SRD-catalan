@@ -6,11 +6,11 @@ const SectionWrapper = styled.div`
     }
 `
 
-const renderEntry = e => {
+const renderEntry = (e, i, keyStack) => {
     let content
     if(typeof e === 'object'){
         if(['section','entries'].includes(e.type)){
-            content = renderEntry(e.entries)
+            content = renderEntry(e.entries, i, `${keyStack}-${e.name}`)
         }else{
             //console.warn(e.name, 'if of unsupported type', e.type)
             //TODO: types image, inline, inset, list, table
@@ -18,13 +18,13 @@ const renderEntry = e => {
     }else{
         content = <p>{e}</p>
     }
-    return (<span>{content}</span>)
+    return (<span key={`${keyStack}-${i}`}>{content}</span>)
 }
 
 const BasePrintSection = ({name, entries}) => (
     <SectionWrapper>
         <h2>{name}</h2>
-        {entries.map(renderEntry)}
+        {entries.map((e,i)=>renderEntry(e,i,name))}
     </SectionWrapper>
 )
 
