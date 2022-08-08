@@ -17,11 +17,6 @@ const ArticleWrapper = styled.article`
     padding-bottom: 0.4em;
 `
 
-const AbilityScoreIncrease = styled.span`
-    margin-left: 0.1em;
-    font-weight: bold;
-`
-
 const Bold = styled.span`font-weight: bold;`
 
 const abilityKeyToLabel = {
@@ -59,34 +54,45 @@ const skillKeyToLabel = {
     'persuasion': 'Persuasió',
 }
 
-const SkillsEntries = (skills) => (
+const ScoreWrapper = styled.span`
+    margin-left: 0.1em;
+    font-weight: bold;
+`
+
+const GenericScoreEntry = ({scores, title, choiceTextBuilder, buildText, keyMap}) => (
     <GenericEntryWrapper>
-        <ParagraphTitle>Competència a Habilitats</ParagraphTitle>
-        {Object.entries(skills).map(([k,v]) => {
+        <ParagraphTitle>{title}</ParagraphTitle>
+        {Object.entries(scores).map(([k,v]) => {
             if(k==='choose'){
                 return (<span key={k}>
-                    Escull-ne <Bold>{v.count || 1}</Bold> d'entre {v.from.map(k=>skillKeyToLabel[k]).join(', ')}
+                    {choiceTextBuilder(v.count || 1, v.from.map(k=>keyMap[k]).join(', '))}
                 </span>)
             }
-            return (<AbilityScoreIncrease key={k}>{skillKeyToLabel[k.toString()]}</AbilityScoreIncrease>)
+            return (<ScoreWrapper key={k}>{buildText(k,v,keyMap[k])}</ScoreWrapper>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
         .
     </GenericEntryWrapper>
 )
 
-const AbilityArray = (abilities) => (
-    <GenericEntryWrapper>
-        <ParagraphTitle>Increment de Puntuació de Característica</ParagraphTitle>
-        {Object.entries(abilities).map(([k,v]) => {
-            if(k==='choose'){
-                return (<span key={k}>
-                    i reparteix <Bold>{v.count || 1}</Bold> punts entre <Bold>{v.from.map(k=>abilityKeyToLabel[k]).join(', ')}</Bold>
-                </span>)
-            }
-            return (<AbilityScoreIncrease key={k}>{abilityKeyToLabel[k]} {toSignedStr(v)}</AbilityScoreIncrease>)
-        }).reduce((prev, curr) => [prev, ', ', curr])}
-        .
-    </GenericEntryWrapper>
+const SkillsEntries = skills => (
+    <GenericScoreEntry 
+        scores={skills}
+        title='Competència a Habilitats'
+        choiceTextBuilder={(score, list) => (<>Escull-ne <Bold>{score}</Bold> d'entre {list}</>)}
+        buildText={(_,__,pk) => pk}
+        keyMap={skillKeyToLabel}
+    />
+)
+
+
+const AbilityArray = abilities => (
+    <GenericScoreEntry 
+        scores={abilities}
+        title='Increment de Puntuació de Característica'
+        choiceTextBuilder={(score, list) => (<>i reparteix <Bold>{score}</Bold> punts entre {list}</>)}
+        buildText={(_,v,pk) => `${pk} ${toSignedStr(v)}`}
+        keyMap={abilityKeyToLabel}
+    />
 )
 
 const SpeedEntry = ({value}) => (
