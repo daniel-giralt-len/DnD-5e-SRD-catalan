@@ -58,6 +58,7 @@ const skillKeyToLabel = {
 const ScoreWrapper = styled.span`
     margin-left: 0.1em;
     font-weight: bold;
+    white-space: nowrap;
 `
 
 const GenericScoreEntry = ({scores, title, choiceTextBuilder, buildText, keyMap}) => (
