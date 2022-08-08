@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 
+const ArticleWrapper = styled.article`
+    border-bottom: 1px solid black;
+`
+
 const AbilityScoreIncrease = styled.span`
     margin-left: 3px;
     font-weight: bold;
@@ -10,8 +14,6 @@ const AbilityScoreIncrease = styled.span`
 const ParagraphTitleStyle = styled.span`
     font-style: italic;
 `
-
-const ParagraphTitle = ({children, inline=false}) => <ParagraphTitleStyle inline={inline}>{children}. </ParagraphTitleStyle>
 
 const RaceEntry = styled.p``
 
@@ -52,13 +54,14 @@ const skillKeyToLabel = {
     'persuasion': 'Persuasió',
 }
 
+const ParagraphTitle = ({children, inline=false}) => (<ParagraphTitleStyle inline={inline}>{children}. </ParagraphTitleStyle>)
+
 const SkillsEntries = (skills) => (
     <RaceEntry>
         <ParagraphTitle>Competència a Habilitats</ParagraphTitle>
         {Object.entries(skills).map(([k,v]) => {
-            console.log(k,v)
             if(k==='choose'){
-                return (<span key={k}>Escull-ne <Bold>{v.count}</Bold> entre {v.from.map(k=>skillKeyToLabel[k]).join(', ')}</span>)
+                return (<span key={k}>Escull-ne <Bold>{v.count || 1}</Bold> entre {v.from.map(k=>skillKeyToLabel[k]).join(', ')}</span>)
             }
             return (<AbilityScoreIncrease key={k}>{skillKeyToLabel[k.toString()]}</AbilityScoreIncrease>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
@@ -71,7 +74,7 @@ const AbilityArray = (abilities) => (
         <ParagraphTitle>Bonus a les puntuacions de característica</ParagraphTitle>
         {Object.entries(abilities).map(([k,v]) => {
             if(k==='choose'){
-                return (<span key={k}>i reparteix <Bold>{v.count}</Bold> punts entre <Bold>{v.from.map(k=>abilityKeyToLabel[k]).join(', ')}</Bold></span>)
+                return (<span key={k}>i reparteix <Bold>{v.count || 1}</Bold> punts entre <Bold>{v.from.map(k=>abilityKeyToLabel[k]).join(', ')}</Bold></span>)
             }
             return (<AbilityScoreIncrease key={k}>{abilityKeyToLabel[k]} {toSignedStr(v)}</AbilityScoreIncrease>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
@@ -116,12 +119,12 @@ const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
 )
 
 const LineBreak = styled.div`
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 `
 
 const Warning = styled.p`background-color: yellow; color: red;`
 
-const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist']
+const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist', 'heightAndWeight', 'weaponProficiencies', 'additionalSpells', 'feats']
 
 const renderEntry = e => {
     return (<p key={e.name}>
@@ -139,21 +142,32 @@ const Race = ({
     languageProficiencies,
     ['visió de foscor']: darkvision,
     skillProficiencies,
+    subraces: sr,
+    isSubrace,
     ...rest
 },i) => {
+    const r = Object.keys(rest).filter(k=>!restToIgnore.includes(k))
+    let subraces = sr
+    if(!isSubrace && name === 'Humà'){
+        const [a, ...b] = sr
+        ability = a.ability
+        subraces = b
+    }
+    console.log(name, ability)
     return(
-    <article key={i}>
-        <h3>{name}</h3>
+    <ArticleWrapper key={i}>
+        {isSubrace? <h4>Subraça: {name}</h4> : <h3>{name}</h3>}
         {ability && <AbilityArray {...ability[0]}/>}
         {speed && <SpeedEntry value={speed} />}
         {size && <SizeEntry value={size} />}
         {skillProficiencies && <SkillsEntries {...skillProficiencies[0]} />}
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
         {darkvision && <DarkVisionEntry value={darkvision} />}
-        <LineBreak/>
+        {!isSubrace && <LineBreak/>}
         {entries && entries.map(renderEntry)}
-        <Warning>{JSON.stringify(Object.keys(rest).filter(k=>!restToIgnore.includes(k)))}</Warning>
-    </article>
+        {r.length > 0 && <Warning>{JSON.stringify(r)}</Warning>}
+        {!isSubrace && subraces && subraces.map((s,i)=>(<Race key={i} isSubrace={true} {...s}/>))}
+    </ArticleWrapper>
 )}
 
 export default Race
