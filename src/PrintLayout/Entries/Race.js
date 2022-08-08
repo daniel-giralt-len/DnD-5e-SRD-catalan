@@ -15,7 +15,9 @@ const ParagraphTitleStyle = styled.span`
     font-style: italic;
 `
 
-const RaceEntry = styled.p``
+const RaceEntry = styled.section`
+    margin: 10px 0px;
+`
 
 const Bold = styled.span`font-weight: bold;`
 
@@ -126,11 +128,51 @@ const Warning = styled.p`background-color: yellow; color: red;`
 
 const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist', 'heightAndWeight', 'weaponProficiencies', 'additionalSpells', 'feats']
 
+const SubEntry = styled.span`
+    font-size: 0.9em;
+    * > p {
+        margin: 4px 0 0 0;
+    }
+`
+
+const TableWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(${({nColumns})=>nColumns}, 1fr)
+`
+
+const Table = ({caption, colLabels, rows}) => (
+    <div>
+        <Bold>{caption}</Bold>
+        <TableWrapper nColumns={colLabels.length}>
+
+            {
+                colLabels
+                    .map(r=>(<ParagraphTitleStyle>{r}</ParagraphTitleStyle>))
+            }
+            {
+                rows
+                    .reduce((acc,r)=>([...acc,...r]),[])
+                    .map(r=>(<span>{r}</span>))
+            }
+        </TableWrapper>
+    </div>
+)
+
 const renderEntry = e => {
-    return (<p key={e.name}>
+    if(e.entries.length === 1) {
+        return (<RaceEntry key={e.name}>
+            <ParagraphTitle>{e.name}</ParagraphTitle>
+            {e.entries[0].toString()}
+        </RaceEntry>)
+    }
+    return (<RaceEntry key={e.name}>
         <ParagraphTitle>{e.name}</ParagraphTitle>
-        {e.entries.join('<br />')}
-    </p>)
+        {e.entries.map((b,i)=>{
+            if(typeof b === 'string'){return (<p key={i}>{b.toString()}</p>)}
+            if(b.type === 'table'){ return (<Table {...b} />)}
+            return (<SubEntry>{renderEntry(b)}</SubEntry>)
+       })}
+    </RaceEntry>)
 }
 
 const Race = ({
@@ -153,7 +195,6 @@ const Race = ({
         ability = a.ability
         subraces = b
     }
-    console.log(name, ability)
     return(
     <ArticleWrapper key={i}>
         {isSubrace? <h4>Subraça: {name}</h4> : <h3>{name}</h3>}
