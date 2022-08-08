@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import GenericEntry, { ParagraphTitle, GenericEntryWrapper } from './GenericEntry'
 import UnusedKeysWarning from '../UnusedKeysWarning'
+import {
+    abilityKeyToLabel,
+    sizeKeyToLabel,
+    skillKeyToLabel
+} from '../../translationLists'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
@@ -20,41 +25,6 @@ const ArticleWrapper = styled.article`
 `
 
 const Bold = styled.span`font-weight: bold;`
-
-const abilityKeyToLabel = {
-    'str': 'FRÇ',
-    'dex': 'DES',
-    'con': 'CON',
-    'int': 'INT',
-    'wis': 'SAV',
-    'cha': 'CAR'
-}
-
-const sizeKeyToLabel = {
-    'S': 'Petit',
-    'M': 'Mitjà'
-}
-
-const skillKeyToLabel = {
-    'athletics': 'Atletisme',
-    'acrobatics': 'Acrobàcies',
-    'sleight of hand': 'Joc de Mans',
-    'stealth': 'Sigil',
-    'arcana': 'Arcana',
-    'history': 'Història',
-    'investigation': 'Investigació',
-    'nature': 'Naturalesa',
-    'religion': 'Religió',
-    'animal handling': 'Tracte Animal',
-    'insight': 'Perspicàcia',
-    'medicine': 'Medicina',
-    'perception': 'Percepció',
-    'survival': 'Supervivència',
-    'deception': 'Engany',
-    'intimidation': 'Intimidació',
-    'performance': 'Faràndula',
-    'persuasion': 'Persuasió',
-}
 
 const ScoreWrapper = styled.span`
     margin-left: 0.1em;
