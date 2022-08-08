@@ -11,7 +11,7 @@ const ParagraphTitleStyle = styled.span`
     font-style: italic;
 `
 
-const ParagraphTitle = ({children}) => <ParagraphTitleStyle>{children}. </ParagraphTitleStyle>
+const ParagraphTitle = ({children, inline=false}) => <ParagraphTitleStyle inline={inline}>{children}. </ParagraphTitleStyle>
 
 const RaceEntry = styled.p``
 
@@ -89,10 +89,10 @@ const Warning = styled.p`background-color: yellow; color: red;`
 const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist']
 
 const renderEntry = e => {
-    return (<div key={e.name}>
+    return (<p key={e.name}>
         <ParagraphTitle>{e.name}</ParagraphTitle>
-        {e.entries.map((e2,i)=>(<p key={i}>{e2.toString()}</p>))}
-    </div>)
+        {e.entries.join('<br />')}
+    </p>)
 }
 
 const Race = ({
