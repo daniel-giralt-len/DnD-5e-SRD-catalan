@@ -12,7 +12,7 @@ const DocumentIndex = ({indexableSections}) => (
         {
             Object
                 .entries(indexableSections)
-                .map(([name, href]) => (<p><a href={`#${href}`}>{name}</a></p>))
+                .map(([name, href]) => (<p key={name}><a href={`#${href}`}>{name}</a></p>))
         }
     </SectionWrapper>
 )
