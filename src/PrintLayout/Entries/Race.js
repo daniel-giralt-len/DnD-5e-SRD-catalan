@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import GenericEntry, { ParagraphTitle, GenericEntryWrapper } from './GenericEntry'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
+const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
 
 const ArticleWrapper = styled.article`
     ${({isSubrace})=> isSubrace ? '' : 'border-bottom: 1px solid black;'}
@@ -74,7 +75,8 @@ const GenericScoreEntry = ({scores, title, choiceTextBuilder, buildText, keyMap}
     </GenericEntryWrapper>
 )
 
-const SkillsEntries = skills => (
+
+const SkillsEntry = skills => (
     <GenericScoreEntry 
         scores={skills}
         title='Competència a Habilitats'
@@ -84,8 +86,7 @@ const SkillsEntries = skills => (
     />
 )
 
-
-const AbilityArray = abilities => (
+const AbilitiesEntry = abilities => (
     <GenericScoreEntry 
         scores={abilities}
         title='Increment de Puntuació de Característica'
@@ -95,41 +96,27 @@ const AbilityArray = abilities => (
     />
 )
 
-const SpeedEntry = ({value}) => (
-    <GenericEntryWrapper>
-        <ParagraphTitle>Velocitat</ParagraphTitle>
-        {value} peus.
-    </GenericEntryWrapper>
-)
+const SpeedEntry = ({value}) => (<GenericEntry name='Velocitat' entries={[`${value} peus.`]} />)
 
-const SizeEntry = ({value}) => (
-    <GenericEntryWrapper>
-        <ParagraphTitle>Tamany</ParagraphTitle>
-        {sizeKeyToLabel[value]}.
-    </GenericEntryWrapper>
-)
+const SizeEntry = ({value}) => (<GenericEntry name='Tamany' entries={[`${sizeKeyToLabel[value]}.`]} />)
 
-const DarkVisionEntry = ({value}) => (
-    <GenericEntryWrapper>
-        <ParagraphTitle>Visió de Foscor</ParagraphTitle>
-        {value} peus.
-    </GenericEntryWrapper>
-)
+const DarkVisionEntry = ({value}) => (<GenericEntry name='Visió de Foscor' entries={[`${value} peus.`]} />)
 
-
-const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
-const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
-    <GenericEntryWrapper>
-        <ParagraphTitle>Idiomes</ParagraphTitle>
-        {capitalizeFirstLetter(Object.keys(rest).join(', '))}
-        {anyStandard && 
-            (anyStandard === 1 
-            ? ' i un idioma qualsevol'
-            : ` i ${anyStandard} idiomes qualsevols`)
-        }
-        .
-    </GenericEntryWrapper>
-)
+const LanguagesEntry = ({value: {anyStandard, ...rest}}) => {
+    let extraString = ''
+    if(anyStandard === 1) extraString = ' i un idioma extra'
+    if(anyStandard > 1) extraString = ` i ${anyStandard} idiomes extres`
+    return (
+        <GenericEntry
+            name='Idiomes'
+            entries={[
+                capitalizeFirstLetter(Object.keys(rest).join(', '))
+                + extraString
+                + '.'
+            ]}
+        />
+    )
+}
 
 const LineBreak = styled.div`
     border-top: 1px solid black;
@@ -162,10 +149,10 @@ const Race = ({
     return(
     <ArticleWrapper isSubrace={isSubrace} key={i}>
         {isSubrace? <h4>Subraça: {name}</h4> : <h3>{name}</h3>}
-        {ability && <AbilityArray {...ability[0]}/>}
+        {ability && <AbilitiesEntry {...ability[0]}/>}
         {speed && <SpeedEntry value={speed} />}
         {size && <SizeEntry value={size} />}
-        {skillProficiencies && <SkillsEntries {...skillProficiencies[0]} />}
+        {skillProficiencies && <SkillsEntry {...skillProficiencies[0]} />}
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
         {darkvision && <DarkVisionEntry value={darkvision} />}
         {!isSubrace && <LineBreak/>}
