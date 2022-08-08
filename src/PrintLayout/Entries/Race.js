@@ -80,7 +80,7 @@ const SkillsEntries = (skills) => (
 
 const AbilityArray = (abilities) => (
     <RaceEntry>
-        <ParagraphTitle>Bonus a les puntuacions de característica</ParagraphTitle>
+        <ParagraphTitle>Increment de Puntuació de Característica</ParagraphTitle>
         {Object.entries(abilities).map(([k,v]) => {
             if(k==='choose'){
                 return (<span key={k}>i reparteix <Bold>{v.count || 1}</Bold> punts entre <Bold>{v.from.map(k=>abilityKeyToLabel[k]).join(', ')}</Bold></span>)
