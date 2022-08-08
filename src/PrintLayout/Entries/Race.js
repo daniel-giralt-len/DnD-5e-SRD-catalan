@@ -46,6 +46,18 @@ const SpeedEntry = ({value}) => (
     </RaceEntry>
 )
 
+const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
+const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
+    <RaceEntry>
+        <ParagraphTitle>Idiomes</ParagraphTitle>
+        {capitalizeFirstLetter(Object.keys(rest).join(', '))}
+        {anyStandard && 
+            (anyStandard === 1 
+            ? ' i un idioma qualsevol'
+            : ` i ${anyStandard} idiomes qualsevols`)
+        }
+    </RaceEntry>
+)
 
 const restToIgnore = ['page','source','srd','soundClip']
 
@@ -53,6 +65,7 @@ const Race = ({
     name,
     ability,
     speed,
+    languageProficiencies,
     ...rest
 },i) => {
     return(
@@ -60,6 +73,7 @@ const Race = ({
         <h3>{name}</h3>
         {ability && <AbilityArray {...ability[0]}/>}
         {speed && <SpeedEntry value={speed} />}
+        {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
         {JSON.stringify(Object.keys(rest).filter(k=>!restToIgnore.includes(k)))}
     </article>
 )}
