@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
-const IndexElement = styled.p`
+const IndexElement = styled.li`
     margin: 0.5em 0;
+`
+    
+const IndexList = styled.ol`
+    column-count: 3;
 `
 
 const SectionWrapper = styled.div`
-    break-after: page;
     @media print {
         a {
             color: black;
@@ -17,11 +20,13 @@ const SectionWrapper = styled.div`
 const DocumentIndex = ({indexableSections}) => (
     <SectionWrapper>
         <h1>Índex</h1>
-        {
-            Object
-                .entries(indexableSections)
-                .map(([name, href]) => (<IndexElement key={name}><a href={`#${href}`}>{name}</a></IndexElement>))
-        }
+        <IndexList>
+            {
+                Object
+                    .entries(indexableSections)
+                    .map(([name, href]) => (<IndexElement key={name}><a href={`#${href}`}>{name}</a></IndexElement>))
+            }
+        </IndexList>
     </SectionWrapper>
 )
 
