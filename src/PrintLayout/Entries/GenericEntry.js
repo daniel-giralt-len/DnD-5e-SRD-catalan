@@ -53,7 +53,10 @@ const Table = ({caption, colLabels, rows}) => (
 const ParagraphTitle = ({children, inline=false, divider}) => (<ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>)
 
 const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
-    const [firstEntry='', ...otherEntries] = entries
+    let [firstEntry='', ...otherEntries] = entries
+    if(typeof entries === 'string') {
+        firstEntry = entries
+    }
     return (<GenericEntryWrapper key={name}>
         <ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>
         {children}
