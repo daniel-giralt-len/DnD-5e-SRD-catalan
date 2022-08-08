@@ -21,11 +21,11 @@ const renderEntry = (e, i, keyStack) => {
     return (<span key={`${keyStack}-${i}`}>{content}</span>)
 }
 
-const BasePrintSection = ({name, entries}) => (
+const GenericSection = ({name, entries}) => (
     <SectionWrapper>
         <h2>{name}</h2>
         {entries.map((e,i)=>renderEntry(e,i,name))}
     </SectionWrapper>
 )
 
-export default BasePrintSection
+export default GenericSection
