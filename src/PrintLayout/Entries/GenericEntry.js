@@ -23,13 +23,17 @@ const SubEntry = styled.span`
 
 const TableWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(${({nColumns})=>nColumns}, 1fr)
+    grid-template-columns: repeat(${({nColumns})=>nColumns}, auto)
+`
+
+const TableEntryWrapper = styled(GenericEntryWrapper)`
+    break-inside: avoid-column;
 `
 
 const Bold = styled.span`font-weight: bold;`
 
 const Table = ({caption, colLabels, rows}) => (
-    <div>
+    <TableEntryWrapper>
         <Bold>{caption}</Bold>
         <TableWrapper nColumns={colLabels.length}>
             {
@@ -42,7 +46,7 @@ const Table = ({caption, colLabels, rows}) => (
                     .map(r=>(<span><Text>{r}</Text></span>))
             }
         </TableWrapper>
-    </div>
+    </TableEntryWrapper>
 )
 
 const ParagraphTitle = ({children, inline=false}) => (<ParagraphTitleStyle inline={inline}>{children}. </ParagraphTitleStyle>)
