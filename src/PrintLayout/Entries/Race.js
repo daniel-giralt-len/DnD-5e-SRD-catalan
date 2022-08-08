@@ -58,6 +58,14 @@ const SizeEntry = ({value}) => (
     </RaceEntry>
 )
 
+const DarkVisionEntry = ({value}) => (
+    <RaceEntry>
+        <ParagraphTitle>Visió de Foscor</ParagraphTitle>
+        {value} peus.
+    </RaceEntry>
+)
+
+
 const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
 const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
     <RaceEntry>
@@ -94,8 +102,10 @@ const Race = ({
     size,
     entries,
     languageProficiencies,
+    ['visió de foscor']: darkvision,
     ...rest
 },i) => {
+    console.log(darkvision)
     return(
     <article key={i}>
         <h3>{name}</h3>
@@ -103,6 +113,7 @@ const Race = ({
         {speed && <SpeedEntry value={speed} />}
         {size && <SizeEntry value={size} />}
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
+        {darkvision && <DarkVisionEntry value={darkvision} />}
         <LineBreak/>
         {entries && entries.map(renderEntry)}
         <Warning>{JSON.stringify(Object.keys(rest).filter(k=>!restToIgnore.includes(k)))}</Warning>
