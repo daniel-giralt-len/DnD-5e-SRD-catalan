@@ -144,6 +144,9 @@ const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasF
 
 const SubEntry = styled.span`
     font-size: 0.9em;
+    > * {
+        text-indent: 0.8em;
+    }
 `
 
 const TableWrapper = styled.div`
