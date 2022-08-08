@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 const SectionWrapper = styled.div`
-    @media print {
-        break-after: always;
-    }
+    break-after: page;
 `
 
 const renderEntry = (e, i, keyStack) => {

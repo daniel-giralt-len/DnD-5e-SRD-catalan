@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 const PageBreakWrapper = styled.div`
-    @media print {
-        break-after: always;
-    }
+    break-after: page;
 `
 
 const PrintLegalInfo = ({name, entries, hrefId}) => (

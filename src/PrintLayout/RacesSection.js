@@ -1,11 +1,7 @@
 import styled from 'styled-components'
 import Race from './Entries/Race'
 
-const SectionWrapper = styled.div`
-    @media print {
-        break-after: always;
-    }
-`
+const SectionWrapper = styled.div`break-after:page`
 
 const RacesSection = ({name, entries, hrefId}) => (
     <SectionWrapper>

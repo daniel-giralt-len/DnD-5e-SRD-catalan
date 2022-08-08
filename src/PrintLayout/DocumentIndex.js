@@ -5,9 +5,8 @@ const IndexElement = styled.p`
 `
 
 const SectionWrapper = styled.div`
+    break-after: page;
     @media print {
-        break-after: always;
-        color:white;
         a {
             color: black;
             text-decoration: none;
