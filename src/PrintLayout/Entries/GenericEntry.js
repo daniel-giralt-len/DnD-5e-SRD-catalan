@@ -65,9 +65,15 @@ const GenericEntry = ({name, entries=[]}) => {
                 )
             }
 
-            if(b.type === 'table'){ return (<Table {...b} />)}
+            if(b.type === 'table'){
+                return (<Table key={i} {...b} />)
+            }
 
-            return (<SubEntry><GenericEntry {...b}/></SubEntry>)
+            return (
+                <SubEntry key={i}>
+                    <GenericEntry {...b}/>
+                </SubEntry>
+            )
        })}
     </GenericEntryWrapper>)
 }
