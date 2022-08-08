@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import Text from '../EnrichedText'
+import GenericEntry from './Entries/GenericEntry'
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.article`
     break-after: page;
 `
 

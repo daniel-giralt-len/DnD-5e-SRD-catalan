@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Text from '../../EnrichedText'
+import GenericEntry, { ParagraphTitle, GenericEntryWrapper } from './GenericEntry'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 
@@ -20,14 +20,6 @@ const ArticleWrapper = styled.article`
 const AbilityScoreIncrease = styled.span`
     margin-left: 0.1em;
     font-weight: bold;
-`
-
-const ParagraphTitleStyle = styled.span`
-    font-style: italic;
-`
-
-const RaceEntry = styled.section`
-    margin: 0.6em 0;
 `
 
 const Bold = styled.span`font-weight: bold;`
@@ -67,10 +59,8 @@ const skillKeyToLabel = {
     'persuasion': 'Persuasió',
 }
 
-const ParagraphTitle = ({children, inline=false}) => (<ParagraphTitleStyle inline={inline}>{children}. </ParagraphTitleStyle>)
-
 const SkillsEntries = (skills) => (
-    <RaceEntry>
+    <GenericEntryWrapper>
         <ParagraphTitle>Competència a Habilitats</ParagraphTitle>
         {Object.entries(skills).map(([k,v]) => {
             if(k==='choose'){
@@ -81,11 +71,11 @@ const SkillsEntries = (skills) => (
             return (<AbilityScoreIncrease key={k}>{skillKeyToLabel[k.toString()]}</AbilityScoreIncrease>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
         .
-    </RaceEntry>
+    </GenericEntryWrapper>
 )
 
 const AbilityArray = (abilities) => (
-    <RaceEntry>
+    <GenericEntryWrapper>
         <ParagraphTitle>Increment de Puntuació de Característica</ParagraphTitle>
         {Object.entries(abilities).map(([k,v]) => {
             if(k==='choose'){
@@ -96,34 +86,34 @@ const AbilityArray = (abilities) => (
             return (<AbilityScoreIncrease key={k}>{abilityKeyToLabel[k]} {toSignedStr(v)}</AbilityScoreIncrease>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
         .
-    </RaceEntry>
+    </GenericEntryWrapper>
 )
 
 const SpeedEntry = ({value}) => (
-    <RaceEntry>
+    <GenericEntryWrapper>
         <ParagraphTitle>Velocitat</ParagraphTitle>
         {value} peus.
-    </RaceEntry>
+    </GenericEntryWrapper>
 )
 
 const SizeEntry = ({value}) => (
-    <RaceEntry>
+    <GenericEntryWrapper>
         <ParagraphTitle>Tamany</ParagraphTitle>
         {sizeKeyToLabel[value]}.
-    </RaceEntry>
+    </GenericEntryWrapper>
 )
 
 const DarkVisionEntry = ({value}) => (
-    <RaceEntry>
+    <GenericEntryWrapper>
         <ParagraphTitle>Visió de Foscor</ParagraphTitle>
         {value} peus.
-    </RaceEntry>
+    </GenericEntryWrapper>
 )
 
 
 const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
 const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
-    <RaceEntry>
+    <GenericEntryWrapper>
         <ParagraphTitle>Idiomes</ParagraphTitle>
         {capitalizeFirstLetter(Object.keys(rest).join(', '))}
         {anyStandard && 
@@ -132,7 +122,7 @@ const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
             : ` i ${anyStandard} idiomes qualsevols`)
         }
         .
-    </RaceEntry>
+    </GenericEntryWrapper>
 )
 
 const LineBreak = styled.div`
@@ -142,53 +132,6 @@ const LineBreak = styled.div`
 const Warning = styled.p`background-color: yellow; color: red;`
 
 const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist', 'heightAndWeight', 'weaponProficiencies', 'additionalSpells', 'feats']
-
-const SubEntry = styled.span`
-    font-size: 0.9em;
-    > * {
-        text-indent: 0.8em;
-    }
-`
-
-const TableWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(${({nColumns})=>nColumns}, 1fr)
-`
-
-const Table = ({caption, colLabels, rows}) => (
-    <div>
-        <Bold>{caption}</Bold>
-        <TableWrapper nColumns={colLabels.length}>
-            {
-                colLabels
-                    .map(r=>(<ParagraphTitleStyle><Text>{r}</Text></ParagraphTitleStyle>))
-            }
-            {
-                rows
-                    .reduce((acc,r)=>([...acc,...r]),[])
-                    .map(r=>(<span><Text>{r}</Text></span>))
-            }
-        </TableWrapper>
-    </div>
-)
-
-const IndentedParagraph = styled.p`
-    text-indent: 1em;
-    margin-top: 0.05em;
-`
-
-const renderEntry = e => {
-    const [firstEntry, ...entries] = e.entries
-    return (<RaceEntry key={e.name}>
-        <ParagraphTitle>{e.name}</ParagraphTitle>
-        <Text>{firstEntry.toString()}</Text>
-        {entries.map((b,i)=>{
-            if(typeof b === 'string'){return (<IndentedParagraph key={i}><Text>{b.toString()}</Text></IndentedParagraph>)}
-            if(b.type === 'table'){ return (<Table {...b} />)}
-            return (<SubEntry>{renderEntry(b)}</SubEntry>)
-       })}
-    </RaceEntry>)
-}
 
 const Race = ({
     name,
@@ -220,7 +163,7 @@ const Race = ({
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
         {darkvision && <DarkVisionEntry value={darkvision} />}
         {!isSubrace && <LineBreak/>}
-        {entries && entries.map(renderEntry)}
+        {entries && entries.map(e => (<GenericEntry {...e} />))}
         {r.length > 0 && <Warning>{JSON.stringify(r)}</Warning>}
         {!isSubrace && subraces && subraces.map((s,i)=>(<Race key={i} isSubrace={true} {...s}/>))}
     </ArticleWrapper>
