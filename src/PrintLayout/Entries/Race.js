@@ -157,7 +157,7 @@ const Race = ({
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
         {darkvision && <DarkVisionEntry value={darkvision} />}
         {!isSubrace && <LineBreak/>}
-        {entries && entries.map(e => (<GenericEntry {...e} />))}
+        {entries && entries.map(e => (<GenericEntry key={e.name} {...e} />))}
         {r.length > 0 && <Warning>{JSON.stringify(r)}</Warning>}
         {!isSubrace && subraces && subraces.map((s,i)=>(<Race key={i} isSubrace={true} {...s}/>))}
     </ArticleWrapper>

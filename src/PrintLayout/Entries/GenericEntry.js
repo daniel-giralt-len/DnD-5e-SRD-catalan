@@ -38,12 +38,12 @@ const Table = ({caption, colLabels, rows}) => (
         <TableWrapper nColumns={colLabels.length}>
             {
                 colLabels
-                    .map(r=>(<ParagraphTitleStyle><Text>{r}</Text></ParagraphTitleStyle>))
+                    .map((r,i)=>(<ParagraphTitleStyle key={`h-${i}`}><Text>{r}</Text></ParagraphTitleStyle>))
             }
             {
                 rows
                     .reduce((acc,r)=>([...acc,...r]),[])
-                    .map(r=>(<span><Text>{r}</Text></span>))
+                    .map((r,i)=>(<span key={`b-${i}`}><Text>{r}</Text></span>))
             }
         </TableWrapper>
     </TableEntryWrapper>
