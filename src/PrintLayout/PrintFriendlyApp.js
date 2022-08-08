@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PrintLegalInfo from './PrintLegalInfo'
-import BasePrintSection from './BasePrintSection'
+import GenericSection from './GenericSection'
 import RacesSection from './RacesSection'
 import DocumentIndex from './DocumentIndex'
 
@@ -31,7 +31,7 @@ const renderSection = (section, i) => {
             {...section}
         />)
     }
-    return (<BasePrintSection key={i} {...section} />)
+    return (<GenericSection key={i} {...section} />)
 }
 
 const PrintFriendlyApp = ({sections}) => (<PrintableDocument>
