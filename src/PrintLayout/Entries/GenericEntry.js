@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 import Text from '../../EnrichedText'
 
-const GenericEntryWrapper = styled.section`
+const GenericEntryWrapper = styled.div`
     margin: 0.6em 0;
 `
 
-const IndentedParagraph = styled.p`
+const IndentedParagraph = styled.div`
     text-indent: 1em;
     margin-top: 0.05em;
 `
 
 const ParagraphTitleStyle = styled.span`
     font-style: italic;
+    font-weight: 700;
 `
 
 const SubEntry = styled.span`
@@ -49,12 +50,13 @@ const Table = ({caption, colLabels, rows}) => (
     </TableEntryWrapper>
 )
 
-const ParagraphTitle = ({children, inline=false}) => (<ParagraphTitleStyle inline={inline}>{children}. </ParagraphTitleStyle>)
+const ParagraphTitle = ({children, inline=false, divider}) => (<ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>)
 
-const GenericEntry = ({name, entries=[]}) => {
+const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
     const [firstEntry='', ...otherEntries] = entries
     return (<GenericEntryWrapper key={name}>
-        <ParagraphTitle>{name}</ParagraphTitle>
+        <ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>
+        {children}
         <Text>{firstEntry.toString()}</Text>
         {otherEntries.map((b,i)=>{
             if(typeof b === 'string'){
