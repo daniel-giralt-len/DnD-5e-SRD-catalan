@@ -3,16 +3,16 @@ import Text from '../EnrichedText'
 import GenericEntry from './Entries/GenericEntry'
 
 const SectionWrapper = styled.article`
-    break-after: page;
+    ${({doesPageBreak}) => doesPageBreak ? 'break-after: page;' : ''}
 `
 
 const renderEntry = (e, i, keyStack) => {
     let content
     if(typeof e === 'object'){
         if(['section','entries'].includes(e.type)){
-            content = renderEntry(e.entries, i, `${keyStack}-${e.name}`)
+            content = (<GenericEntry key={e.name} {...e} />)
         }else{
-            //console.warn(e.name, 'if of unsupported type', e.type)
+            //console.warn(e.name, 'is of unsupported type', e.type)
             //TODO: types image, inline, inset, list, table
         }
     }else{
@@ -21,8 +21,8 @@ const renderEntry = (e, i, keyStack) => {
     return (<span key={`${keyStack}-${i}`}>{content}</span>)
 }
 
-const GenericSection = ({name, entries}) => (
-    <SectionWrapper>
+const GenericSection = ({name, entries, doesPageBreak=true, hrefId}) => (
+    <SectionWrapper id={hrefId} doesPageBreak={doesPageBreak}>
         <h2>{name}</h2>
         {entries.map((e,i)=>renderEntry(e,i,name))}
     </SectionWrapper>

@@ -12,13 +12,19 @@ const PrintableDocument = styled.main`
     }
 `
 
+const RacialTraitsSection = params => (
+    <GenericSection {...params} doesPageBreak={false} />
+)
+
 const sectionNameToComponent = {
     'Legal Info': PrintLegalInfo,
+    'Trets Racials': RacialTraitsSection,
     'Races': RacesSection,
 }
 
 const sectionNameToHrefId = {
     'Legal Info': 'legal info',
+    'Trets Racials': 'racial traits',
     'Races': 'races',
 }
 
@@ -31,7 +37,7 @@ const renderSection = (section, i) => {
             {...section}
         />)
     }
-    return (<GenericSection key={i} {...section} />)
+    return
 }
 
 const PrintFriendlyApp = ({sections}) => (<PrintableDocument>

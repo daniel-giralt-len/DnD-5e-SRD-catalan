@@ -51,16 +51,16 @@ const Table = ({caption, colLabels, rows}) => (
 
 const ParagraphTitle = ({children, inline=false}) => (<ParagraphTitleStyle inline={inline}>{children}. </ParagraphTitleStyle>)
 
-const GenericEntry = e => {
-    const [firstEntry, ...entries] = e.entries
-    return (<GenericEntryWrapper key={e.name}>
-        <ParagraphTitle>{e.name}</ParagraphTitle>
+const GenericEntry = ({name, entries=[]}) => {
+    const [firstEntry='', ...otherEntries] = entries
+    return (<GenericEntryWrapper key={name}>
+        <ParagraphTitle>{name}</ParagraphTitle>
         <Text>{firstEntry.toString()}</Text>
-        {entries.map((b,i)=>{
+        {otherEntries.map((b,i)=>{
             if(typeof b === 'string'){
                 return (
                     <IndentedParagraph key={i}>
-                        <Text>{b.toString()}</Text>
+                        <Text>{(b).toString()}</Text>
                     </IndentedParagraph>
                 )
             }
