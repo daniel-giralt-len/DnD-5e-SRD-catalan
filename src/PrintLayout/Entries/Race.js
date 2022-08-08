@@ -72,15 +72,27 @@ const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
     </RaceEntry>
 )
 
+const LineBreak = styled.div`
+    border-top: 2px solid black;
+`
+
 const Warning = styled.p`background-color: yellow; color: red;`
 
-const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff']
+const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist']
+
+const renderEntry = e => {
+    return (<div key={e.name}>
+        <ParagraphTitle>{e.name}</ParagraphTitle>
+        {e.entries.map((e2,i)=>(<p key={i}>{e2.toString()}</p>))}
+    </div>)
+}
 
 const Race = ({
     name,
     ability,
     speed,
     size,
+    entries,
     languageProficiencies,
     ...rest
 },i) => {
@@ -91,6 +103,8 @@ const Race = ({
         {speed && <SpeedEntry value={speed} />}
         {size && <SizeEntry value={size} />}
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
+        <LineBreak/>
+        {entries && entries.map(renderEntry)}
         <Warning>{JSON.stringify(Object.keys(rest).filter(k=>!restToIgnore.includes(k)))}</Warning>
     </article>
 )}
