@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Text from '../../EnrichedText'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 
@@ -158,21 +159,20 @@ const Table = ({caption, colLabels, rows}) => (
     <div>
         <Bold>{caption}</Bold>
         <TableWrapper nColumns={colLabels.length}>
-
             {
                 colLabels
-                    .map(r=>(<ParagraphTitleStyle>{r}</ParagraphTitleStyle>))
+                    .map(r=>(<ParagraphTitleStyle><Text>{r}</Text></ParagraphTitleStyle>))
             }
             {
                 rows
                     .reduce((acc,r)=>([...acc,...r]),[])
-                    .map(r=>(<span>{r}</span>))
+                    .map(r=>(<Text>{r}</Text>))
             }
         </TableWrapper>
     </div>
 )
 
-const IntendedParagraph = styled.p`
+const IndentedParagraph = styled.p`
     text-indent: 1em;
     margin-top: 0.05em;
 `
@@ -181,9 +181,9 @@ const renderEntry = e => {
     const [firstEntry, ...entries] = e.entries
     return (<RaceEntry key={e.name}>
         <ParagraphTitle>{e.name}</ParagraphTitle>
-        {firstEntry.toString()}
+        <Text>{firstEntry.toString()}</Text>
         {entries.map((b,i)=>{
-            if(typeof b === 'string'){return (<IntendedParagraph key={i}>{b.toString()}</IntendedParagraph>)}
+            if(typeof b === 'string'){return (<IndentedParagraph key={i}><Text>{b.toString()}</Text></IndentedParagraph>)}
             if(b.type === 'table'){ return (<Table {...b} />)}
             return (<SubEntry>{renderEntry(b)}</SubEntry>)
        })}
