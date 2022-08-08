@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Text from '../EnrichedText'
 
 const SectionWrapper = styled.div`
     break-after: page;
@@ -14,7 +15,7 @@ const renderEntry = (e, i, keyStack) => {
             //TODO: types image, inline, inset, list, table
         }
     }else{
-        content = <p>{e}</p>
+        content = <p><Text>{e}</Text></p>
     }
     return (<span key={`${keyStack}-${i}`}>{content}</span>)
 }
