@@ -4,6 +4,13 @@ import GenericEntry from './Entries/GenericEntry'
 
 const SectionWrapper = styled.article`
     ${({doesPageBreak}) => doesPageBreak ? 'break-after: page;' : ''}
+    column-count: 2;
+    @media (max-width: 600px) {
+        column-count: 1;
+    }
+    @media print {
+        column-count: 1;
+    }
 `
 
 const renderEntry = (e, i, keyStack) => {
