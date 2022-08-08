@@ -8,6 +8,9 @@ const ArticleWrapper = styled.article`
     @media (max-width: 600px) {
         column-count: 1;
     }
+    @media print {
+        ${({isSubrace})=> isSubrace ? '' : 'column-count: 2;'}
+    }
     break-inside: avoid;
     margin-bottom: 0.8em;
     padding-bottom: 0.4em;
@@ -70,7 +73,9 @@ const SkillsEntries = (skills) => (
         <ParagraphTitle>Competència a Habilitats</ParagraphTitle>
         {Object.entries(skills).map(([k,v]) => {
             if(k==='choose'){
-                return (<span key={k}>Escull-ne <Bold>{v.count || 1}</Bold> entre {v.from.map(k=>skillKeyToLabel[k]).join(', ')}</span>)
+                return (<span key={k}>
+                    Escull-ne <Bold>{v.count || 1}</Bold> d'entre {v.from.map(k=>skillKeyToLabel[k]).join(', ')}
+                </span>)
             }
             return (<AbilityScoreIncrease key={k}>{skillKeyToLabel[k.toString()]}</AbilityScoreIncrease>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
@@ -83,7 +88,9 @@ const AbilityArray = (abilities) => (
         <ParagraphTitle>Increment de Puntuació de Característica</ParagraphTitle>
         {Object.entries(abilities).map(([k,v]) => {
             if(k==='choose'){
-                return (<span key={k}>i reparteix <Bold>{v.count || 1}</Bold> punts entre <Bold>{v.from.map(k=>abilityKeyToLabel[k]).join(', ')}</Bold></span>)
+                return (<span key={k}>
+                    i reparteix <Bold>{v.count || 1}</Bold> punts entre <Bold>{v.from.map(k=>abilityKeyToLabel[k]).join(', ')}</Bold>
+                </span>)
             }
             return (<AbilityScoreIncrease key={k}>{abilityKeyToLabel[k]} {toSignedStr(v)}</AbilityScoreIncrease>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
@@ -137,9 +144,6 @@ const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasF
 
 const SubEntry = styled.span`
     font-size: 0.9em;
-    * > p {
-        margin: 0.2em 0 0 0;
-    }
 `
 
 const TableWrapper = styled.div`
