@@ -15,16 +15,25 @@ const sectionNameToComponent = {
     'Races': RacesSection,
 }
 
+const sectionNameToHrefId = {
+    'Legal Info': 'legal info',
+    'Races': 'races',
+}
+
 const renderSection = (section, i) => {
     const SectionComponent = sectionNameToComponent[section.name]
     if(SectionComponent) {
-        return (<SectionComponent key={i} {...section} />)
+        return (<SectionComponent
+            key={i}
+            hrefId = {sectionNameToHrefId[section.name]}
+            {...section}
+        />)
     }
     return (<BasePrintSection key={i} {...section} />)
 }
 
 const PrintFriendlyApp = ({sections}) => (<PrintableDocument>
-    <DocumentIndex />
+    <DocumentIndex indexableSections={sectionNameToHrefId} />
     {sections.map(renderSection)}
 </PrintableDocument>)
 export default PrintFriendlyApp
