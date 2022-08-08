@@ -5,6 +5,9 @@ const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 const ArticleWrapper = styled.article`
     ${({isSubrace})=> isSubrace ? '' : 'border-bottom: 1px solid black;'}
     ${({isSubrace})=> isSubrace ? '' : 'column-count: 2;'}
+    @media (max-width: 600px) {
+        column-count: 1;
+    }
     break-inside: avoid;
     margin-bottom: 0.8em;
     padding-bottom: 0.4em;
