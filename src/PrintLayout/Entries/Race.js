@@ -9,7 +9,7 @@ const ArticleWrapper = styled.article`
         column-count: 1;
     }
     @media print {
-        ${({isSubrace})=> isSubrace ? '' : 'column-count: 2;'}
+        column-count: 1;
     }
     break-inside: avoid;
     margin-bottom: 0.8em;
