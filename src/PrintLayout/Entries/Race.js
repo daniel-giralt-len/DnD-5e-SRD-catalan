@@ -31,6 +31,41 @@ const sizeKeyToLabel = {
     'M': 'Mitjà'
 }
 
+const skillKeyToLabel = {
+    'athletics': 'Atletisme',
+    'acrobatics': 'Acrobàcies',
+    'sleight of hand': 'Joc de Mans',
+    'stealth': 'Sigil',
+    'arcana': 'Arcana',
+    'history': 'Història',
+    'investigation': 'Investigació',
+    'nature': 'Naturalesa',
+    'religion': 'Religió',
+    'animal handling': 'Tracte Animal',
+    'insight': 'Perspicàcia',
+    'medicine': 'Medicina',
+    'perception': 'Percepció',
+    'survival': 'Supervivència',
+    'deception': 'Engany',
+    'intimidation': 'Intimidació',
+    'performance': 'Faràndula',
+    'persuasion': 'Persuasió',
+}
+
+const SkillsEntries = (skills) => (
+    <RaceEntry>
+        <ParagraphTitle>Competència a Habilitats</ParagraphTitle>
+        {Object.entries(skills).map(([k,v]) => {
+            console.log(k,v)
+            if(k==='choose'){
+                return (<span key={k}>Escull-ne <Bold>{v.count}</Bold> entre {v.from.map(k=>skillKeyToLabel[k]).join(', ')}</span>)
+            }
+            return (<AbilityScoreIncrease key={k}>{skillKeyToLabel[k.toString()]}</AbilityScoreIncrease>)
+        }).reduce((prev, curr) => [prev, ', ', curr])}
+        .
+    </RaceEntry>
+)
+
 const AbilityArray = (abilities) => (
     <RaceEntry>
         <ParagraphTitle>Bonus a les puntuacions de característica</ParagraphTitle>
@@ -103,15 +138,16 @@ const Race = ({
     entries,
     languageProficiencies,
     ['visió de foscor']: darkvision,
+    skillProficiencies,
     ...rest
 },i) => {
-    console.log(darkvision)
     return(
     <article key={i}>
         <h3>{name}</h3>
         {ability && <AbilityArray {...ability[0]}/>}
         {speed && <SpeedEntry value={speed} />}
         {size && <SizeEntry value={size} />}
+        {skillProficiencies && <SkillsEntries {...skillProficiencies[0]} />}
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
         {darkvision && <DarkVisionEntry value={darkvision} />}
         <LineBreak/>
