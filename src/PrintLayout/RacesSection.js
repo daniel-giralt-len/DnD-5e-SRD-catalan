@@ -8,9 +8,10 @@ const SectionWrapper = styled.div`
     }
 `
 
-const RacesSection = ({name, entries, hrefId}) => (
+const RacesSection = ({name, entries, hrefId, RacialTraits}) => (
     <SectionWrapper>
         <h2 id={hrefId}>{name}</h2>
+        {RacialTraits}
         {entries.map(Race)}
     </SectionWrapper>
 )

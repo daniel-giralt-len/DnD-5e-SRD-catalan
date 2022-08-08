@@ -12,36 +12,24 @@ const PrintableDocument = styled.main`
     }
 `
 
-const RacialTraitsSection = params => (
-    <GenericSection {...params} doesPageBreak={false} />
-)
-
-const sectionNameToComponent = {
-    'Legal Info': PrintLegalInfo,
-    'Trets Racials': RacialTraitsSection,
-    'Races': RacesSection,
-}
-
 const sectionNameToHrefId = {
     'Legal Info': 'legal info',
-    'Trets Racials': 'racial traits',
     'Races': 'races',
 }
 
-const renderSection = (section, i) => {
-    const SectionComponent = sectionNameToComponent[section.name]
-    if(SectionComponent) {
-        return (<SectionComponent
-            key={i}
-            hrefId = {sectionNameToHrefId[section.name]}
-            {...section}
-        />)
-    }
-    return
+const PrintFriendlyApp = ({sections}) => {
+    const s = sections.reduce((acc,ss) => ({...acc, [ss.name]:ss}),{})
+    return(<PrintableDocument>
+        <DocumentIndex indexableSections={sectionNameToHrefId} />
+        <PrintLegalInfo 
+            {...s['Legal Info']}
+            hrefId={sectionNameToHrefId['Legal Info']}
+        />
+        <RacesSection 
+            {...s['Races']}
+            hrefId={sectionNameToHrefId['Races']}
+            RacialTraits={<GenericSection doesPageBreak={false} {...s['Trets Racials']} />}
+        />
+    </PrintableDocument>)
 }
-
-const PrintFriendlyApp = ({sections}) => (<PrintableDocument>
-    <DocumentIndex indexableSections={sectionNameToHrefId} />
-    {sections.map(renderSection)}
-</PrintableDocument>)
 export default PrintFriendlyApp
