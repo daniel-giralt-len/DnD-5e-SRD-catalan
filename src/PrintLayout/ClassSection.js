@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import UnusedKeysWarning from './UnusedKeysWarning'
 
 const SectionWrapper = styled.div`
     break-after: page;
@@ -10,10 +11,12 @@ const SectionWrapper = styled.div`
     }
 `
 
+const keysToIgnore=['source','page','srd']
+
 const ClassSection = ({hrefId, name, ...rest}) => (
     <SectionWrapper>
         <h1 id={hrefId}>{name}</h1>
-        
+        <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
     </SectionWrapper>
 )
 
