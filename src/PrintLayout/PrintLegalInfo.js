@@ -8,7 +8,7 @@ const PageBreakWrapper = styled.div`
 
 const PrintLegalInfo = ({name, entries}) => (
     <PageBreakWrapper>
-        <h3>{name}</h3>
+        <h3 id='legal info'>{name}</h3>
         {entries.map((e,i)=>(<p key={i}>{e}</p>))}
     </PageBreakWrapper>
 )

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PrintLegalInfo from './PrintLegalInfo'
 import BasePrintSection from './BasePrintSection'
 import RacesSection from './RacesSection'
+import DocumentIndex from './DocumentIndex'
 
 const PrintableDocument = styled.main`
     @media print {
@@ -23,6 +24,7 @@ const renderSection = (section, i) => {
 }
 
 const PrintFriendlyApp = ({sections}) => (<PrintableDocument>
+    <DocumentIndex />
     {sections.map(renderSection)}
 </PrintableDocument>)
 export default PrintFriendlyApp
