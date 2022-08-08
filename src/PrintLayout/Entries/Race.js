@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import GenericEntry, { ParagraphTitle, GenericEntryWrapper } from './GenericEntry'
+import UnusedKeysWarning from '../UnusedKeysWarning'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
@@ -123,9 +124,7 @@ const LineBreak = styled.div`
     border-top: 1px solid black;
 `
 
-const Warning = styled.p`background-color: yellow; color: red;`
-
-const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist', 'heightAndWeight', 'weaponProficiencies', 'additionalSpells', 'feats']
+const keysToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff', 'traitTags', 'resist', 'heightAndWeight', 'weaponProficiencies', 'additionalSpells', 'feats']
 
 const Race = ({
     name,
@@ -140,7 +139,6 @@ const Race = ({
     isSubrace,
     ...rest
 },i) => {
-    const r = Object.keys(rest).filter(k=>!restToIgnore.includes(k))
     let subraces = sr
     if(!isSubrace && name === 'Humà'){
         const [a, ...b] = sr
@@ -158,7 +156,7 @@ const Race = ({
         {darkvision && <DarkVisionEntry value={darkvision} />}
         {!isSubrace && <LineBreak/>}
         {entries && entries.map(e => (<GenericEntry key={e.name} {...e} />))}
-        {r.length > 0 && <Warning>{JSON.stringify(r)}</Warning>}
+        <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
         {!isSubrace && subraces && subraces.map((s,i)=>(<Race key={i} isSubrace={true} {...s}/>))}
     </ArticleWrapper>
 )}
