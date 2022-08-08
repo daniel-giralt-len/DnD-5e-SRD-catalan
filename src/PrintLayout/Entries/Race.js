@@ -2,18 +2,37 @@ import styled from 'styled-components'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 
-const Ability = styled.p``
+const AbilityScoreIncrease = styled.span`
+    margin-left: 3px;
+    font-weight: bold;
+`
 
-const AbilityArray = ({str=0, dex=0, con=0, int=0, wis=0, cha=0, choose=false}) => (
+const Bold = styled.span`font-weight: bold;`
+
+const abilityKeyToLabel = {
+    'str': 'FRÇ',
+    'dex': 'DES',
+    'con': 'CON',
+    'int': 'INT',
+    'wis': 'SAV',
+    'cha': 'CAR'
+}
+
+const AbilityArray = (abilities) => (
     <div>
-        <Ability>FRÇ: {toSignedStr(str)}</Ability>
-        <Ability>DES: {toSignedStr(dex)}</Ability>
-        <Ability>CON: {toSignedStr(con)}</Ability>
-        <Ability>INT: {toSignedStr(int)}</Ability>
-        <Ability>SAV: {toSignedStr(wis)}</Ability>
-        <Ability>CAR: {toSignedStr(cha)}</Ability>
+        Bonus a les puntuacions de característica. 
+        {Object.entries(abilities).map(([k,v]) => {
+            if(k==='choose'){
+                return (<span key={k}>i reparteix <Bold>{v.count}</Bold> punts entre <Bold>{v.from.map(k=>abilityKeyToLabel[k]).join(', ')}</Bold></span>)
+            }
+            return (<AbilityScoreIncrease key={k}>{abilityKeyToLabel[k]} {toSignedStr(v)}</AbilityScoreIncrease>)
+        }).reduce((prev, curr) => [prev, ', ', curr])}
+        .
     </div>
 )
+
+
+const restToIgnore = ['page','source','srd','soundClip']
 
 const Race = ({
     name,
@@ -22,9 +41,9 @@ const Race = ({
 },i) => {
     return(
     <article key={i}>
-        <h4>{name}</h4>
+        <h3>{name}</h3>
         {ability && <AbilityArray {...ability[0]}/>}
-        {JSON.stringify(Object.keys(rest))}
+        {JSON.stringify(Object.keys(rest).filter(k=>!restToIgnore.includes(k)))}
     </article>
 )}
 
