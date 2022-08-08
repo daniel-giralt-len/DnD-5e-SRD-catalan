@@ -166,7 +166,7 @@ const Table = ({caption, colLabels, rows}) => (
             {
                 rows
                     .reduce((acc,r)=>([...acc,...r]),[])
-                    .map(r=>(<Text>{r}</Text>))
+                    .map(r=>(<span><Text>{r}</Text></span>))
             }
         </TableWrapper>
     </div>
