@@ -6,9 +6,9 @@ const PageBreakWrapper = styled.div`
     }
 `
 
-const PrintLegalInfo = ({name, entries}) => (
+const PrintLegalInfo = ({name, entries, hrefId}) => (
     <PageBreakWrapper>
-        <h3 id='legal info'>{name}</h3>
+        <h3 id={hrefId}>{name}</h3>
         {entries.map((e,i)=>(<p key={i}>{e}</p>))}
     </PageBreakWrapper>
 )

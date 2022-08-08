@@ -6,12 +6,7 @@ const SectionWrapper = styled.div`
     }
 `
 
-const indexableSections = {
-    'Informació Legal': 'legal info',
-    'Races': 'races',
-}
-
-const DocumentIndex = () => (
+const DocumentIndex = ({indexableSections}) => (
     <SectionWrapper>
         <h1>Índex</h1>
         {
