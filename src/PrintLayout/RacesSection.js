@@ -3,7 +3,7 @@ import Race from './Entries/Race'
 
 const SectionWrapper = styled.div`
     @media print {
-        page-break-after: always;
+        break-after: always;
     }
 `
 

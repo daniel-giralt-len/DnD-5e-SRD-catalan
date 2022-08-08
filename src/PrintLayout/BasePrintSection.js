@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const SectionWrapper = styled.div`
     @media print {
-        page-break-after: always;
+        break-after: always;
     }
 `
 

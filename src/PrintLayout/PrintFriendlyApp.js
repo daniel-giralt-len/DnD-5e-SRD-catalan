@@ -5,8 +5,10 @@ import RacesSection from './RacesSection'
 import DocumentIndex from './DocumentIndex'
 
 const PrintableDocument = styled.main`
+    max-width: 1200px;
     @media print {
         font-size:0.5em;
+        max-width: 100%
     }
 `
 

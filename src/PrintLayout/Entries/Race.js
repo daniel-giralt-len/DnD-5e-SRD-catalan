@@ -3,11 +3,15 @@ import styled from 'styled-components'
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
 
 const ArticleWrapper = styled.article`
-    border-bottom: 1px solid black;
+    ${({isSubrace})=> isSubrace ? '' : 'border-bottom: 1px solid black;'}
+    ${({isSubrace})=> isSubrace ? '' : 'column-count: 2;'}
+    break-inside: avoid;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.4em;
 `
 
 const AbilityScoreIncrease = styled.span`
-    margin-left: 3px;
+    margin-left: 0.1em;
     font-weight: bold;
 `
 
@@ -16,7 +20,7 @@ const ParagraphTitleStyle = styled.span`
 `
 
 const RaceEntry = styled.section`
-    margin: 10px 0px;
+    margin: 0.6em 0;
 `
 
 const Bold = styled.span`font-weight: bold;`
@@ -131,7 +135,7 @@ const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasF
 const SubEntry = styled.span`
     font-size: 0.9em;
     * > p {
-        margin: 4px 0 0 0;
+        margin: 0.2em 0 0 0;
     }
 `
 
@@ -158,17 +162,18 @@ const Table = ({caption, colLabels, rows}) => (
     </div>
 )
 
+const IntendedParagraph = styled.p`
+    text-indent: 1em;
+    margin-top: 0.05em;
+`
+
 const renderEntry = e => {
-    if(e.entries.length === 1) {
-        return (<RaceEntry key={e.name}>
-            <ParagraphTitle>{e.name}</ParagraphTitle>
-            {e.entries[0].toString()}
-        </RaceEntry>)
-    }
+    const [firstEntry, ...entries] = e.entries
     return (<RaceEntry key={e.name}>
         <ParagraphTitle>{e.name}</ParagraphTitle>
-        {e.entries.map((b,i)=>{
-            if(typeof b === 'string'){return (<p key={i}>{b.toString()}</p>)}
+        {firstEntry.toString()}
+        {entries.map((b,i)=>{
+            if(typeof b === 'string'){return (<IntendedParagraph key={i}>{b.toString()}</IntendedParagraph>)}
             if(b.type === 'table'){ return (<Table {...b} />)}
             return (<SubEntry>{renderEntry(b)}</SubEntry>)
        })}
@@ -196,7 +201,7 @@ const Race = ({
         subraces = b
     }
     return(
-    <ArticleWrapper key={i}>
+    <ArticleWrapper isSubrace={isSubrace} key={i}>
         {isSubrace? <h4>Subraça: {name}</h4> : <h3>{name}</h3>}
         {ability && <AbilityArray {...ability[0]}/>}
         {speed && <SpeedEntry value={speed} />}
