@@ -26,6 +26,11 @@ const abilityKeyToLabel = {
     'cha': 'CAR'
 }
 
+const sizeKeyToLabel = {
+    'S': 'Petit',
+    'M': 'Mitjà'
+}
+
 const AbilityArray = (abilities) => (
     <RaceEntry>
         <ParagraphTitle>Bonus a les puntuacions de característica</ParagraphTitle>
@@ -46,6 +51,13 @@ const SpeedEntry = ({value}) => (
     </RaceEntry>
 )
 
+const SizeEntry = ({value}) => (
+    <RaceEntry>
+        <ParagraphTitle>Tamany</ParagraphTitle>
+        {sizeKeyToLabel[value]}.
+    </RaceEntry>
+)
+
 const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
 const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
     <RaceEntry>
@@ -56,15 +68,19 @@ const LanguagesEntry = ({value: {anyStandard, ...rest}}) => (
             ? ' i un idioma qualsevol'
             : ` i ${anyStandard} idiomes qualsevols`)
         }
+        .
     </RaceEntry>
 )
 
-const restToIgnore = ['page','source','srd','soundClip']
+const Warning = styled.p`background-color: yellow; color: red;`
+
+const restToIgnore = ['page','source','srd','soundClip', 'hasFluffImages', 'hasFluff']
 
 const Race = ({
     name,
     ability,
     speed,
+    size,
     languageProficiencies,
     ...rest
 },i) => {
@@ -73,8 +89,9 @@ const Race = ({
         <h3>{name}</h3>
         {ability && <AbilityArray {...ability[0]}/>}
         {speed && <SpeedEntry value={speed} />}
+        {size && <SizeEntry value={size} />}
         {languageProficiencies && <LanguagesEntry value={languageProficiencies[0]} />}
-        {JSON.stringify(Object.keys(rest).filter(k=>!restToIgnore.includes(k)))}
+        <Warning>{JSON.stringify(Object.keys(rest).filter(k=>!restToIgnore.includes(k)))}</Warning>
     </article>
 )}
 
