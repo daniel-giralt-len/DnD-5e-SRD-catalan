@@ -18,12 +18,15 @@ const BodyWrapper = styled.div`
     }
 `
 
+const ColonEntry = ({name, entry}) => (<GenericEntry name={name} titleDivider=':' entries={entry} />)
+
+
 const HitPoints = ({faces}) => (
     <section>
         <h3>Vida</h3>
-        <GenericEntry name='Daus de Vida' titleDivider=':' entries={[`1d${faces} per nivell.`]} />
-        <GenericEntry name='Punts de Vida (nivell 1)' titleDivider=':' entries={[`${faces} + CON.`]} />
-        <GenericEntry name='Punts de Vida a nivells superiors' titleDivider=':' entries={[`+ 1d${faces} (o 5) + CON.`]} />
+        <ColonEntry name='Daus de Vida' entry={`1d${faces} per nivell.`} />
+        <ColonEntry name='Punts de Vida (nivell 1)' entry={`${faces} + CON.`} />
+        <ColonEntry name='Punts de Vida a nivells superiors' entry={`+ 1d${faces} (o 5) + CON.`} />
     </section>
 )
 
@@ -35,13 +38,8 @@ const Proficiencies = ({armor,
 }) => (
     <section>
         <h3>Competències</h3>
-        <GenericEntry
-            name='Salvades'
-            titleDivider=':' 
-            entries={[
-                savingThrows.map(skill=>abilityKeyToLabel[skill]).join(', ')
-            ]}
-        />
+        <ColonEntry name='Salvades' entry={savingThrows.map(skill=>abilityKeyToLabel[skill]).join(', ')} />
+        
     </section>
 
 )
@@ -52,6 +50,7 @@ const ClassSection = ({
     hrefId,
     name,
     hd,
+    startingProficiencies,
     proficiency,
     ...rest
 }) => (
@@ -61,6 +60,7 @@ const ClassSection = ({
             {hd && <HitPoints faces={hd.faces} />}
             <Proficiencies 
                 savingThrows={proficiency}
+                {...startingProficiencies}
             />
             <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
         </BodyWrapper>
