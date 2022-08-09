@@ -23,24 +23,25 @@ const BodyWrapper = styled.div`
 
 const ColonEntry = ({name, entry}) => (<GenericEntry name={name} titleDivider=':' entries={entry} />)
 
+const SubSectionWrapper=styled.section`break-inside:avoid;`
 
 const HitPoints = ({faces}) => (
-    <section>
+    <SubSectionWrapper>
         <h3>Vida</h3>
         <ColonEntry name='Daus de Vida' entry={`1d${faces} per nivell.`} />
         <ColonEntry name='Punts de Vida (nivell 1)' entry={`${faces} + CON.`} />
         <ColonEntry name='Punts de Vida a nivells superiors' entry={`+ 1d${faces} (o 5) + CON.`} />
-    </section>
+    </SubSectionWrapper>
 )
 
 const listProficiencies = (list, translations) => {}
 
 const Proficiencies = ({
     armor: armors = [],
-    weapons,
-    tools,
+    weapons = [],
+    tools = [],
     savingThrows = [],
-    skills
+    skills = []
 }) => {
     const armorEntry = armors.length === 0
     ? 'Cap.'
@@ -51,13 +52,19 @@ const Proficiencies = ({
             .map(armor=>armorTypeLabel[armor] || armor)
             .join(', ')}.`
         )
+    const toolsEntry = tools.length === 0
+    ? 'Cap.'
+    : `${capitalizeFirstLetter(tools
+        .map(tool => parseLinks(tool))
+        .join(', '))}.`
     const skillEntry = `${capitalizeFirstLetter(savingThrows.map(skill=>abilityScoreLabel[skill]).join(', '))}.`
-    return (<section>
+    return (<SubSectionWrapper>
         <h3>Competències</h3>
         <ColonEntry name='Armadures' entry={armorEntry} />
+        <ColonEntry name='Eines' entry={toolsEntry} />
         <ColonEntry name='Salvades' entry={skillEntry} />
         
-    </section>)
+    </SubSectionWrapper>)
 }
 
 const keysToIgnore=['source','page','srd']
