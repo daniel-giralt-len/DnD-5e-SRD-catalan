@@ -6,9 +6,7 @@ import {
     creatureSizeLabel,
     skillLabel
 } from '../../translationLists'
-import { capitalizeFirstLetter } from '../../textModifiers'
-
-const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
+import { capitalizeFirstLetter, toSignedStr } from '../../textModifiers'
 
 const ArticleWrapper = styled.article`
     ${({isSubrace})=> isSubrace ? '' : 'border-bottom: 1px solid black;'}

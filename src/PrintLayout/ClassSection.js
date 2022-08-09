@@ -7,8 +7,9 @@ import {
     weaponTypeLabel,
     skillLabel
 } from '../translationLists'
-import { capitalizeFirstLetter } from '../textModifiers'
+import { capitalizeFirstLetter, toSignedStr } from '../textModifiers'
 import { parseLinks } from '../EnrichedText'
+import Table from './Entries/Table'
 
 const SectionWrapper = styled.article`
     break-after: page;
@@ -94,6 +95,40 @@ const StartingEquipment = ({
     </EquipmentList>
 </SubSectionWrapper>)
 
+const ClassTable = ({classTableGroups=[]}) => {
+    const getProficiency = lvl => 2 + Math.floor(lvl/4)
+    const labels = [
+        'Nivell',
+        'Bonus de Competència',
+        'Trets',
+        ...classTableGroups
+            .reduce((acc,g) => ([...acc, ...g.colLabels]), [])
+    ]
+
+    const parseRow = r => {
+        if(typeof r === 'object') {
+            if(r.type === 'bonus') return toSignedStr(r.value)
+            if(r.type === 'dice') return r.toRoll.map(d=>`${d.number}d${d.faces}`).join('+')
+            if(r.type === 'bonusSpeed') return `${r.value}p.`
+
+        }
+        return r
+    }
+    
+    const rows = Array(20).fill()
+        .map((_,i) => {
+            return [
+                i, toSignedStr(getProficiency(i)), '',
+                ...classTableGroups.reduce((acc,g) => ([...acc, ...g.rows[i].map(parseRow)]), [])
+            ]
+        })
+    console.log((classTableGroups))
+    return(<Table
+        colLabels = {labels}
+        rows={rows}
+    />)
+}
+
 const keysToIgnore=['source','page','srd','Multi-classe']
 
 const ClassSection = ({
@@ -102,11 +137,13 @@ const ClassSection = ({
     hd,
     startingProficiencies,
     startingEquipment,
+    classTableGroups,
     proficiency,
     ...rest
 }) => (
     <SectionWrapper>
         <h1 id={hrefId}>{name}</h1>
+        <ClassTable classTableGroups={classTableGroups} />
         <BodyWrapper>
             {hd && <HitPoints faces={hd.faces} />}
             <StartingEquipment {...startingEquipment} />
