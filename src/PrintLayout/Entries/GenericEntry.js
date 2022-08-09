@@ -34,7 +34,7 @@ const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
         otherEntries = []
     }
     return (<GenericEntryWrapper key={name}>
-        <ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>
+        {name && (<ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>)}
         {children}
         <Text>{firstEntry}</Text>
         {otherEntries.map((b,i)=>{
