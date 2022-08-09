@@ -15,6 +15,11 @@ const armorTypeLabel = {
     'shield': 'escut',
 }
 
+const weaponTypeLabel = {
+    'simple': 'simples',
+    'martial': 'marcials',
+}
+
 const creatureSizeLabel = {
     'S': 'Petit',
     'M': 'Mitjà'
@@ -45,5 +50,6 @@ export {
     abilityScoreLabel,
     creatureSizeLabel,
     skillLabel,
-    armorTypeLabel
+    armorTypeLabel,
+    weaponTypeLabel
 }
