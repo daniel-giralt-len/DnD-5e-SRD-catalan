@@ -187,7 +187,6 @@ const renderSubclassFeatures = (subclass, subclassFeature) => {
             }))
 
 
-        console.log(features)
         return (
                 <FeatureList key={s.name}
                     features={features}
