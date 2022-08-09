@@ -3,6 +3,7 @@ import Text from '../../EnrichedText'
 import Table from './Table'
 import DCSave from './DCSave'
 import AttackMod from './AttackMod'
+import srd from '../../srd.json'
 
 const GenericEntryWrapper = styled.div`
     margin: 0.6em 0;
@@ -25,17 +26,20 @@ const SubEntry = styled.span`
     }
 `
 
-const OptionsWrapper = styled.ul`padding-left: 1.5em;`
-
 const ParagraphTitle = ({children, inline=false, divider}) => (
     <ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>
 )
 
-const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
+const GenericEntry = ({name, type, entries=[], titleDivider='.', children}) => {
     let [firstEntry='', ...otherEntries] = entries
     if(typeof entries === 'string') {
-        firstEntry = entries
-        otherEntries = []
+        [firstEntry, ...otherEntries] = [entries, []]
+    }
+    if(type === 'refOptionalfeature'){
+        [firstEntry='', ...otherEntries] = srd.references
+            .optionalFeatures.entries
+            .find(of=>of.name === name)
+            .entries
     }
     return (<GenericEntryWrapper key={name}>
         {name && (<ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>)}
@@ -63,12 +67,15 @@ const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
             }
 
             if(b.type === 'options'){
-                return(<OptionsWrapper>
+                return(<div key={i}>
                     {
                         b.entries
-                        .filter(e=>!e.optionalfeature.includes('|'))
-                        .map(e=>(<li key={e.optionalfeature}><Text>{e.optionalfeature}</Text></li>))}
-                </OptionsWrapper>)
+                            .filter(e=>!e.optionalfeature.includes('|'))
+                            .map(e=>(
+                                <IndentedParagraph key={e.optionalfeature}>
+                                    <GenericEntry name={e.optionalfeature} {...e} />
+                                </IndentedParagraph>))}
+                </div>)
             }
 
             return (
