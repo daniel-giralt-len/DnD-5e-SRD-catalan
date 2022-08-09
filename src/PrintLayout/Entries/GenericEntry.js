@@ -30,10 +30,58 @@ const ParagraphTitle = ({children, inline=false, divider}) => (
     <ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>
 )
 
+const renderEntry = (b,i)=>{
+    if(typeof b === 'string'){
+        if(i===-1){
+            return (<Text>{b}</Text>)   
+        }
+        return (
+            <IndentedParagraph key={i}>
+                <Text>{b}</Text>
+            </IndentedParagraph>
+        )
+    }
+
+    if(b.type === 'table'){
+        return (<Table key={i} {...b} />)
+    }
+
+    if(b.type === 'abilityDc'){
+        return (<DCSave key={i} {...b} />)
+    }
+
+    if(b.type === 'abilityAttackMod'){
+        return (<AttackMod key={i} {...b} />)
+    }
+
+    if(b.type === 'options'){
+        return(<div key={i}>
+            {
+                b.entries
+                    .filter(e=>!e.optionalfeature.includes('|'))
+                    .map(e=>(
+                        <IndentedParagraph key={e.optionalfeature}>
+                            <GenericEntry name={e.optionalfeature} {...e} />
+                        </IndentedParagraph>
+                    ))
+            }
+        </div>)
+    }
+
+    console.info('no generic entry for',b.type,'with name',b.name)
+
+    return (
+        <SubEntry key={i}>
+            <GenericEntry {...b}/>
+        </SubEntry>
+    )
+}
+
 const GenericEntry = ({name, type, entries=[], titleDivider='.', children}) => {
     let [firstEntry='', ...otherEntries] = entries
     if(typeof entries === 'string') {
-        [firstEntry, ...otherEntries] = [entries, []]
+        firstEntry = entries
+        otherEntries = []
     }
     if(type === 'refOptionalfeature'){
         [firstEntry='', ...otherEntries] = srd.references
@@ -44,46 +92,8 @@ const GenericEntry = ({name, type, entries=[], titleDivider='.', children}) => {
     return (<GenericEntryWrapper key={name}>
         {name && (<ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>)}
         {children}
-        <Text>{firstEntry}</Text>
-        {otherEntries.map((b,i)=>{
-            if(typeof b === 'string'){
-                return (
-                    <IndentedParagraph key={i}>
-                        <Text>{b}</Text>
-                    </IndentedParagraph>
-                )
-            }
-
-            if(b.type === 'table'){
-                return (<Table key={i} {...b} />)
-            }
-
-            if(b.type === 'abilityDc'){
-                return (<DCSave key={i} {...b} />)
-            }
-
-            if(b.type === 'abilityAttackMod'){
-                return (<AttackMod key={i} {...b} />)
-            }
-
-            if(b.type === 'options'){
-                return(<div key={i}>
-                    {
-                        b.entries
-                            .filter(e=>!e.optionalfeature.includes('|'))
-                            .map(e=>(
-                                <IndentedParagraph key={e.optionalfeature}>
-                                    <GenericEntry name={e.optionalfeature} {...e} />
-                                </IndentedParagraph>))}
-                </div>)
-            }
-
-            return (
-                <SubEntry key={i}>
-                    <GenericEntry {...b}/>
-                </SubEntry>
-            )
-       })}
+        {renderEntry(firstEntry,-1)}
+        {otherEntries.map(renderEntry)}
     </GenericEntryWrapper>)
 }
 
