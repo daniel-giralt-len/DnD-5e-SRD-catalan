@@ -83,6 +83,17 @@ const Proficiencies = ({
     </SubSectionWrapper>)
 }
 
+const EquipmentList = styled.ul`padding-left: 1.5em;`
+
+const StartingEquipment = ({
+    default: entries,
+}) => (<SubSectionWrapper>
+    <h3>Equipament Inicial</h3>
+    <EquipmentList>
+        {entries.map(e=>(<li>{parseLinks(e)}</li>))}
+    </EquipmentList>
+</SubSectionWrapper>)
+
 const keysToIgnore=['source','page','srd']
 
 const ClassSection = ({
@@ -90,6 +101,7 @@ const ClassSection = ({
     name,
     hd,
     startingProficiencies,
+    startingEquipment,
     proficiency,
     ...rest
 }) => (
@@ -97,6 +109,7 @@ const ClassSection = ({
         <h1 id={hrefId}>{name}</h1>
         <BodyWrapper>
             {hd && <HitPoints faces={hd.faces} />}
+            <StartingEquipment {...startingEquipment} />
             <Proficiencies 
                 savingThrows={proficiency}
                 {...startingProficiencies}
