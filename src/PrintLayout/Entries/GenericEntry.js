@@ -19,11 +19,16 @@ const ParagraphTitleStyle = styled.span`
     font-weight: 700;
 `
 
-const SubEntry = styled.span`
+const SubEntry = styled.div`
     font-size: 0.9em;
     > * {
         text-indent: 0.8em;
     }
+`
+
+const InsetEntry = styled(SubEntry)`
+    border: 1px dotted black;
+    padding: 0.5em;
 `
 
 const ParagraphTitle = ({children, inline=false, divider}) => (
@@ -68,10 +73,21 @@ const renderEntry = (b,i)=>{
         </div>)
     }
 
-    console.info('no generic entry for',b.type,'with name',b.name)
+    if(b.type==='inset'){
+        return (
+            <InsetEntry
+                key={i}
+            >
+                <GenericEntry {...b}/>
+            </InsetEntry>
+        )
+    }
+
 
     return (
-        <SubEntry key={i}>
+        <SubEntry
+            key={i}
+        >
             <GenericEntry {...b}/>
         </SubEntry>
     )
