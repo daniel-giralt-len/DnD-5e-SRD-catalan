@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Text from '../../EnrichedText'
+import Table from './Table'
 
 const GenericEntryWrapper = styled.div`
     margin: 0.6em 0;
@@ -22,35 +23,11 @@ const SubEntry = styled.span`
     }
 `
 
-const TableWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(${({nColumns})=>nColumns}, auto)
-`
-
-const TableEntryWrapper = styled(GenericEntryWrapper)`
-    break-inside: avoid-column;
-`
-
-const Bold = styled.span`font-weight: bold;`
-
-const Table = ({caption, colLabels, rows}) => (
-    <TableEntryWrapper>
-        <Bold>{caption}</Bold>
-        <TableWrapper nColumns={colLabels.length}>
-            {
-                colLabels
-                    .map((r,i)=>(<ParagraphTitleStyle key={`h-${i}`}><Text>{r}</Text></ParagraphTitleStyle>))
-            }
-            {
-                rows
-                    .reduce((acc,r)=>([...acc,...r]),[])
-                    .map((r,i)=>(<span key={`b-${i}`}><Text>{r}</Text></span>))
-            }
-        </TableWrapper>
-    </TableEntryWrapper>
+const ParagraphTitle = ({children, inline=false, divider}) => (
+    <ParagraphTitleStyle inline={inline}>
+        {children}{divider} 
+    </ParagraphTitleStyle>
 )
-
-const ParagraphTitle = ({children, inline=false, divider}) => (<ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>)
 
 const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
     let [firstEntry='', ...otherEntries] = entries
