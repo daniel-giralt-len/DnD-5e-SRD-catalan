@@ -56,16 +56,17 @@ const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
     let [firstEntry='', ...otherEntries] = entries
     if(typeof entries === 'string') {
         firstEntry = entries
+        otherEntries = []
     }
     return (<GenericEntryWrapper key={name}>
         <ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>
         {children}
-        <Text>{firstEntry.toString()}</Text>
+        <Text>{firstEntry}</Text>
         {otherEntries.map((b,i)=>{
             if(typeof b === 'string'){
                 return (
                     <IndentedParagraph key={i}>
-                        <Text>{(b).toString()}</Text>
+                        <Text>{b}</Text>
                     </IndentedParagraph>
                 )
             }
