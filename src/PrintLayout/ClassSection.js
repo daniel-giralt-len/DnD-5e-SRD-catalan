@@ -95,7 +95,7 @@ const StartingEquipment = ({
     </EquipmentList>
 </SubSectionWrapper>)
 
-const ClassTable = ({classTableGroups=[]}) => {
+const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
     const getProficiency = lvl => 2 + Math.floor(lvl/4)
     const labels = [
         'Nivell',
@@ -114,15 +114,26 @@ const ClassTable = ({classTableGroups=[]}) => {
         }
         return r
     }
+
+    const getSrdFeatures = (lvl, features) => features
+        .map(f => typeof f === 'string' ? f : f.classFeature)
+        .map(f=>f.split('|'))
+        .filter(([name,className,_,level,book]) => !book && parseInt(level) === lvl)
+        .map(([name])=>name)
     
+    console.log(getSrdFeatures(1, classFeatures))
     const rows = Array(20).fill()
         .map((_,i) => {
             return [
-                i, toSignedStr(getProficiency(i)), '',
-                ...classTableGroups.reduce((acc,g) => ([...acc, ...g.rows[i].map(parseRow)]), [])
+                i,
+                toSignedStr(getProficiency(i)),
+                getSrdFeatures(i+1, classFeatures).join(', '),
+                ...classTableGroups
+                    .reduce((acc,g) => (
+                        [...acc, ...g.rows[i].map(parseRow)
+                    ]), [])
             ]
         })
-    console.log((classTableGroups))
     return(<Table
         colLabels = {labels}
         rows={rows}
@@ -138,12 +149,16 @@ const ClassSection = ({
     startingProficiencies,
     startingEquipment,
     classTableGroups,
+    classFeatures,
     proficiency,
     ...rest
 }) => (
     <SectionWrapper>
         <h1 id={hrefId}>{name}</h1>
-        <ClassTable classTableGroups={classTableGroups} />
+        <ClassTable
+            classTableGroups={classTableGroups}
+            classFeatures={classFeatures}
+        />
         <BodyWrapper>
             {hd && <HitPoints faces={hd.faces} />}
             <StartingEquipment {...startingEquipment} />
