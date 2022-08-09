@@ -167,7 +167,7 @@ const FeatureList = ({features}) => (
     </section>
 )
 
-const keysToIgnore=['source','page','srd','Multi-classe']
+const keysToIgnore=['source','page','srd','Multi-classe', 'spellcastingAbility', 'casterProgression', 'cantripProgression', 'spellsKnownProgressionFixedByLevel', 'spellsKnownProgression', 'spellsKnownProgressionFixedAllowLowerLevel', 'optionalfeatureProgression', 'spellsKnownProgressionFixed', 'preparedSpells', 'subclassTitle']
 
 const ClassSection = ({
     hrefId,
