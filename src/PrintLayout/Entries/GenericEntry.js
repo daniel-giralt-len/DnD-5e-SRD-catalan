@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import Text from '../../EnrichedText'
 import Table from './Table'
+import DCSave from './DCSave'
+import AttackMod from './AttackMod'
 
 const GenericEntryWrapper = styled.div`
     margin: 0.6em 0;
@@ -48,6 +50,14 @@ const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
 
             if(b.type === 'table'){
                 return (<Table key={i} {...b} />)
+            }
+
+            if(b.type === 'abilityDc'){
+                return (<DCSave key={i} {...b} />)
+            }
+
+            if(b.type === 'abilityAttackMod'){
+                return (<AttackMod key={i} {...b} />)
             }
 
             return (
