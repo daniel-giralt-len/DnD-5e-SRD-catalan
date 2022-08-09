@@ -3,7 +3,8 @@ import GenericEntry from './Entries/GenericEntry'
 import UnusedKeysWarning from './UnusedKeysWarning'
 import {
     abilityScoreLabel,
-    armorTypeLabel
+    armorTypeLabel,
+    weaponTypeLabel
 } from '../translationLists'
 import { capitalizeFirstLetter } from '../textModifiers'
 import { parseLinks } from '../EnrichedText'
@@ -34,8 +35,6 @@ const HitPoints = ({faces}) => (
     </SubSectionWrapper>
 )
 
-const listProficiencies = (list, translations) => {}
-
 const Proficiencies = ({
     armor: armors = [],
     weapons = [],
@@ -52,15 +51,29 @@ const Proficiencies = ({
             .map(armor=>armorTypeLabel[armor] || armor)
             .join(', ')}.`
         )
+
+    const weaponsEntry = weapons.length === 0
+        ? 'Cap.'
+        : capitalizeFirstLetter(
+            `Armes ${weapons
+                .map(weapon => typeof weapon === 'string' ? weapon : weapon.full)
+                .map(weapon => parseLinks(weapon))
+                .map(weapon=>weaponTypeLabel[weapon] || weapon)
+                .join(', ')}.`
+            )
+
     const toolsEntry = tools.length === 0
     ? 'Cap.'
     : `${capitalizeFirstLetter(tools
         .map(tool => parseLinks(tool))
         .join(', '))}.`
+
     const skillEntry = `${capitalizeFirstLetter(savingThrows.map(skill=>abilityScoreLabel[skill]).join(', '))}.`
+
     return (<SubSectionWrapper>
         <h3>Competències</h3>
         <ColonEntry name='Armadures' entry={armorEntry} />
+        <ColonEntry name='Armes' entry={weaponsEntry} />
         <ColonEntry name='Eines' entry={toolsEntry} />
         <ColonEntry name='Salvades' entry={skillEntry} />
         
