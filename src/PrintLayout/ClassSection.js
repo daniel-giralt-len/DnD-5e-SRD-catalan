@@ -59,7 +59,7 @@ const Proficiencies = ({
     const weaponsEntry = weapons.length === 0
         ? 'Cap.'
         : capitalizeFirstLetter(
-            `Armes ${weapons
+            `${weapons
                 .map(weapon => typeof weapon === 'string' ? weapon : weapon.full)
                 .map(weapon => parseLinks(weapon))
                 .map(weapon=>weaponTypeLabel[weapon] || weapon)
@@ -99,7 +99,7 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
     const getProficiency = lvl => 2 + Math.floor(lvl/4)
     const labels = [
         'Nivell',
-        'Bonus de Competència',
+        'Bonus de Comp.',
         'Trets',
         ...classTableGroups
             .reduce((acc,g) => ([...acc, ...g.colLabels]), [])

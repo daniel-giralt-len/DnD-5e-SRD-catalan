@@ -10,8 +10,14 @@ const TableAligner = styled.div`
 const TableWrapper = styled.div`
     display: grid;
     width:fit-content;
+    @media (max-width: 600px) {
+        width: min-content;
+    }
+    @media print {
+        width:fit-content;
+    }
     grid-template-columns: repeat(${({nColumns})=>nColumns}, auto);
-    column-gap: 0.2em;
+    column-gap: 0.4em;
 `
 
 const TableEntryWrapper = styled.div`
@@ -24,6 +30,9 @@ const TableHeader = styled.span`
     font-weight: 700;
     text-align: ${({colStyle}) => (colStyle && colStyle.includes('text-center')) ? 'center' : 'left'};
     
+    display: flex;
+    align-items: flex-end; 
+    word-spacing: 100vw;
 `
 
 const Cell = styled.span`
@@ -31,7 +40,9 @@ const Cell = styled.span`
     text-align: ${({colStyle}) => (colStyle && colStyle.includes('text-center')) ? 'center' : 'left'};
 `
 
-const Bold = styled.span`font-weight: bold;`
+const TableCaption = styled.span`
+    font-weight: bold;
+`
 
 const Table = ({
     caption,
@@ -41,10 +52,9 @@ const Table = ({
     tableAlign
     }) => (
         <TableEntryWrapper>
-            <Bold>{caption}</Bold>
-            <TableAligner>
+            {caption && <TableCaption>{caption}</TableCaption>}
+            <TableAligner align={tableAlign}>
                 <TableWrapper
-                    align={tableAlign}
                     nColumns={colLabels.length}
                 >
                     {
