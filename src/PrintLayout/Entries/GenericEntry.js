@@ -24,9 +24,7 @@ const SubEntry = styled.span`
 `
 
 const ParagraphTitle = ({children, inline=false, divider}) => (
-    <ParagraphTitleStyle inline={inline}>
-        {children}{divider} 
-    </ParagraphTitleStyle>
+    <ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>
 )
 
 const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
