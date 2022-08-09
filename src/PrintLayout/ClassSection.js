@@ -2,8 +2,11 @@ import styled from 'styled-components'
 import GenericEntry from './Entries/GenericEntry'
 import UnusedKeysWarning from './UnusedKeysWarning'
 import {
-    abilityKeyToLabel
+    abilityScoreLabel,
+    armorTypeLabel
 } from '../translationLists'
+import { capitalizeFirstLetter } from '../textModifiers'
+import { parseLinks } from '../EnrichedText'
 
 const SectionWrapper = styled.article`
     break-after: page;
@@ -30,19 +33,32 @@ const HitPoints = ({faces}) => (
     </section>
 )
 
-const Proficiencies = ({armor,
+const listProficiencies = (list, translations) => {}
+
+const Proficiencies = ({
+    armor: armors = [],
     weapons,
     tools,
     savingThrows = [],
     skills
-}) => (
-    <section>
+}) => {
+    const armorEntry = armors.length === 0
+    ? 'Cap.'
+    : capitalizeFirstLetter(
+        `Armadura ${armors
+            .map(armor => typeof armor === 'string' ? armor : armor.full)
+            .map(armor => parseLinks(armor))
+            .map(armor=>armorTypeLabel[armor] || armor)
+            .join(', ')}.`
+        )
+    const skillEntry = `${capitalizeFirstLetter(savingThrows.map(skill=>abilityScoreLabel[skill]).join(', '))}.`
+    return (<section>
         <h3>Competències</h3>
-        <ColonEntry name='Salvades' entry={savingThrows.map(skill=>abilityKeyToLabel[skill]).join(', ')} />
+        <ColonEntry name='Armadures' entry={armorEntry} />
+        <ColonEntry name='Salvades' entry={skillEntry} />
         
-    </section>
-
-)
+    </section>)
+}
 
 const keysToIgnore=['source','page','srd']
 
