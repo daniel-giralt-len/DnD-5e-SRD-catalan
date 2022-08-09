@@ -91,7 +91,7 @@ const StartingEquipment = ({
 }) => (<SubSectionWrapper>
     <h3>Equipament Inicial</h3>
     <EquipmentList>
-        {entries.map(e=>(<li>{parseLinks(e)}</li>))}
+        {entries.map((e,i)=>(<li key={i}>{parseLinks(e)}</li>))}
     </EquipmentList>
 </SubSectionWrapper>)
 
@@ -145,15 +145,16 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
 }
 
 const FeatureEntry = ({name, ...feature}) => (
-    <>
+    <div>
         <h3>{name}</h3>
         <GenericEntry {...feature} />
-    </>
+    </div>
 )
 
 const FeatureList = ({features}) => (
     <section>
-        {features.map(f => (<FeatureEntry
+        {features.map((f,i) => (<FeatureEntry
+            key={`${f.name}-${i}`}
             {...f}
         />))}
     </section>
@@ -175,10 +176,6 @@ const ClassSection = ({
 }) => (
     <SectionWrapper>
         <h1 id={hrefId}>{name}</h1>
-        <ClassTable
-            classTableGroups={classTableGroups}
-            classFeatures={classFeatures}
-        />
         <BodyWrapper>
             {hd && <HitPoints faces={hd.faces} />}
             <StartingEquipment {...startingEquipment} />
@@ -186,6 +183,12 @@ const ClassSection = ({
                 savingThrows={proficiency}
                 {...startingProficiencies}
             />
+        </BodyWrapper>
+        <ClassTable
+            classTableGroups={classTableGroups}
+            classFeatures={classFeatures}
+        />
+        <BodyWrapper>
             <FeatureList features={classFeature} />
             <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
         </BodyWrapper>
