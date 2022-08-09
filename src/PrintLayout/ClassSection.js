@@ -144,11 +144,18 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
     />)
 }
 
+const FeatureEntryWrapper = styled.div`
+    break-inside:avoid;
+    @media-print {
+        break-inside:avoid;
+    }
+`
+
 const FeatureEntry = ({name, ...feature}) => (
-    <div>
+    <FeatureEntryWrapper>
         <h3>{name}</h3>
         <GenericEntry {...feature} />
-    </div>
+    </FeatureEntryWrapper>
 )
 
 const FeatureList = ({features}) => (
