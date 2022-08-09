@@ -144,6 +144,21 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
     />)
 }
 
+const FeatureEntry = ({name, ...feature}) => (
+    <>
+        <h3>{name}</h3>
+        <GenericEntry {...feature} />
+    </>
+)
+
+const FeatureList = ({features}) => (
+    <section>
+        {features.map(f => (<FeatureEntry
+            {...f}
+        />))}
+    </section>
+)
+
 const keysToIgnore=['source','page','srd','Multi-classe']
 
 const ClassSection = ({
@@ -154,6 +169,7 @@ const ClassSection = ({
     startingEquipment,
     classTableGroups,
     classFeatures,
+    classFeature,
     proficiency,
     ...rest
 }) => (
@@ -170,6 +186,7 @@ const ClassSection = ({
                 savingThrows={proficiency}
                 {...startingProficiencies}
             />
+            <FeatureList features={classFeature} />
             <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
         </BodyWrapper>
     </SectionWrapper>

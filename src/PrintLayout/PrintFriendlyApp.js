@@ -50,6 +50,7 @@ const PrintFriendlyApp = ({sections}) => {
                     key={classData.class.name}
                     hrefId={sectionNameToHrefId[classData.class.name]}
                     {...classData.class}
+                    classFeature={classData.classFeature}
                 />))
         }
     </PrintableDocument>)
