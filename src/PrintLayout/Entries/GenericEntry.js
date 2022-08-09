@@ -25,6 +25,8 @@ const SubEntry = styled.span`
     }
 `
 
+const OptionsWrapper = styled.ul`padding-left: 1.5em;`
+
 const ParagraphTitle = ({children, inline=false, divider}) => (
     <ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>
 )
@@ -58,6 +60,15 @@ const GenericEntry = ({name, entries=[], titleDivider='.', children}) => {
 
             if(b.type === 'abilityAttackMod'){
                 return (<AttackMod key={i} {...b} />)
+            }
+
+            if(b.type === 'options'){
+                return(<OptionsWrapper>
+                    {
+                        b.entries
+                        .filter(e=>!e.optionalfeature.includes('|'))
+                        .map(e=>(<li key={e.optionalfeature}><Text>{e.optionalfeature}</Text></li>))}
+                </OptionsWrapper>)
             }
 
             return (
