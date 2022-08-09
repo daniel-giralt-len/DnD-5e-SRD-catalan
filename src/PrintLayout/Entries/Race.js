@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import GenericEntry, { ParagraphTitle, GenericEntryWrapper } from './GenericEntry'
 import UnusedKeysWarning from '../UnusedKeysWarning'
 import {
-    abilityKeyToLabel,
-    sizeKeyToLabel,
-    skillKeyToLabel
+    abilityScoreLabel,
+    creatureSizeLabel,
+    skillLabel
 } from '../../translationLists'
+import { capitalizeFirstLetter } from '../../textModifiers'
 
 const toSignedStr = n => n < 0 ? `-${n}` : `+${n}`
-const capitalizeFirstLetter = s => s.charAt(0).toUpperCase() + s.slice(1)
 
 const ArticleWrapper = styled.article`
     ${({isSubrace})=> isSubrace ? '' : 'border-bottom: 1px solid black;'}
@@ -54,7 +54,7 @@ const SkillsEntry = skills => (
         title='Competència a Habilitats'
         choiceTextBuilder={(score, list) => (<>Escull-ne <Bold>{score}</Bold> d'entre {list}</>)}
         buildText={(_,__,pk) => pk}
-        keyMap={skillKeyToLabel}
+        keyMap={skillLabel}
     />
 )
 
@@ -64,13 +64,13 @@ const AbilitiesEntry = abilities => (
         title='Increment de Puntuació de Característica'
         choiceTextBuilder={(score, list) => (<>i reparteix <Bold>{score}</Bold> punts entre {list}</>)}
         buildText={(_,v,pk) => `${pk} ${toSignedStr(v)}`}
-        keyMap={abilityKeyToLabel}
+        keyMap={abilityScoreLabel}
     />
 )
 
 const SpeedEntry = ({value}) => (<GenericEntry name='Velocitat' entries={[`${value} peus.`]} />)
 
-const SizeEntry = ({value}) => (<GenericEntry name='Tamany' entries={[`${sizeKeyToLabel[value]}.`]} />)
+const SizeEntry = ({value}) => (<GenericEntry name='Tamany' entries={[`${creatureSizeLabel[value]}.`]} />)
 
 const DarkVisionEntry = ({value}) => (<GenericEntry name='Visió de Foscor' entries={[`${value} peus.`]} />)
 

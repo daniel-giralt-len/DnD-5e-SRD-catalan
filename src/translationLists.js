@@ -1,5 +1,5 @@
 
-const abilityKeyToLabel = {
+const abilityScoreLabel = {
     'str': 'FRÇ',
     'dex': 'DES',
     'con': 'CON',
@@ -8,12 +8,19 @@ const abilityKeyToLabel = {
     'cha': 'CAR'
 }
 
-const sizeKeyToLabel = {
+const armorTypeLabel = {
+    'light': 'lleugera',
+    'medium': 'mitjana',
+    'heavy': 'pesada',
+    'shield': 'escut',
+}
+
+const creatureSizeLabel = {
     'S': 'Petit',
     'M': 'Mitjà'
 }
 
-const skillKeyToLabel = {
+const skillLabel = {
     'athletics': 'Atletisme',
     'acrobatics': 'Acrobàcies',
     'sleight of hand': 'Joc de Mans',
@@ -35,7 +42,8 @@ const skillKeyToLabel = {
 }
 
 export {
-    abilityKeyToLabel,
-    sizeKeyToLabel,
-    skillKeyToLabel
+    abilityScoreLabel,
+    creatureSizeLabel,
+    skillLabel,
+    armorTypeLabel
 }
