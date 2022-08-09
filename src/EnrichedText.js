@@ -13,7 +13,7 @@ const buildHyperLink = (match, linkType, linkData) => {
     return match
 }
 
-const parseLinks = s => s.replace(/{@(.*?) (.*?)}/gi, buildHyperLink)
+const parseLinks = s => s.toString().replace(/{@(.*?) (.*?)}/gi, buildHyperLink)
 
 const EnrichedText = ({children}) => (<>{parseLinks(children)}</>)
 
