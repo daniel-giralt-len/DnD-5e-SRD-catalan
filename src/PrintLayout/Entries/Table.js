@@ -2,9 +2,16 @@
 import styled from 'styled-components'
 import Text from '../../EnrichedText'
 
+const TableAligner = styled.div`
+    display:flex;
+    justify-content:  ${({align}) => align || 'left'};
+`
+
 const TableWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(${({nColumns})=>nColumns}, auto)
+    width:fit-content;
+    grid-template-columns: repeat(${({nColumns})=>nColumns}, auto);
+    column-gap: 0.2em;
 `
 
 const TableEntryWrapper = styled.div`
@@ -15,25 +22,56 @@ const TableEntryWrapper = styled.div`
 const TableHeader = styled.span`
     font-style: italic;
     font-weight: 700;
+    text-align: ${({colStyle}) => (colStyle && colStyle.includes('text-center')) ? 'center' : 'left'};
+    
+`
+
+const Cell = styled.span`
+    border-top: 0.001em solid black;
+    text-align: ${({colStyle}) => (colStyle && colStyle.includes('text-center')) ? 'center' : 'left'};
 `
 
 const Bold = styled.span`font-weight: bold;`
 
-const Table = ({caption, colLabels, rows}) => (
-    <TableEntryWrapper>
-        <Bold>{caption}</Bold>
-        <TableWrapper nColumns={colLabels.length}>
-            {
-                colLabels
-                    .map((r,i)=>(<TableHeader key={`h-${i}`}><Text>{r}</Text></TableHeader>))
-            }
-            {
-                rows
-                    .reduce((acc,r)=>([...acc,...r]),[])
-                    .map((r,i)=>(<span key={`b-${i}`}><Text>{r}</Text></span>))
-            }
-        </TableWrapper>
-    </TableEntryWrapper>
+const Table = ({
+    caption,
+    colLabels,
+    colStyles = [],
+    rows,
+    tableAlign
+    }) => (
+        <TableEntryWrapper>
+            <Bold>{caption}</Bold>
+            <TableAligner>
+                <TableWrapper
+                    align={tableAlign}
+                    nColumns={colLabels.length}
+                >
+                    {
+                        colLabels
+                            .map((r,i)=>(
+                                <TableHeader
+                                    key={`h-${i}`}
+                                    colStyle={colStyles[i]}
+                                >
+                                    <Text>{r}</Text>
+                                </TableHeader>))
+                    }
+                    {
+                        rows
+                            .reduce((acc,r)=>([...acc,...r]),[])
+                            .map((r,i)=>(
+                                <Cell
+                                    colStyle={colStyles[i%colLabels.length]}
+                                    border={Math.floor(i/colLabels.length)%2===0}
+                                    key={`b-${i}`}>
+                                    <Text>{r}</Text>
+                                </Cell>
+                            ))
+                    }
+                </TableWrapper>
+            </TableAligner>
+        </TableEntryWrapper>
 )
 
 export default Table

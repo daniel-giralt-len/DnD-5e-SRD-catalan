@@ -24,7 +24,7 @@ const BodyWrapper = styled.div`
     }
 `
 
-const ColonEntry = ({name, entry}) => (<GenericEntry name={name} titleDivider=':' entries={entry} />)
+const ColonEntry = ({name, entry}) => (<GenericEntry name={name} titleDivider=': ' entries={entry} />)
 
 const SubSectionWrapper=styled.section`break-inside:avoid;`
 
@@ -105,6 +105,9 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
             .reduce((acc,g) => ([...acc, ...g.colLabels]), [])
     ]
 
+    const styles = Array(labels.length).fill('text-centered')
+    styles[2] = '' //all centered except feat list
+
     const parseRow = r => {
         if(typeof r === 'object') {
             if(r.type === 'bonus') return toSignedStr(r.value)
@@ -121,7 +124,6 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
         .filter(([name,className,_,level,book]) => !book && parseInt(level) === lvl)
         .map(([name])=>name)
     
-    console.log(getSrdFeatures(1, classFeatures))
     const rows = Array(20).fill()
         .map((_,i) => {
             return [
@@ -135,8 +137,10 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
             ]
         })
     return(<Table
-        colLabels = {labels}
+        colLabels={labels}
+        colStyles={styles}
         rows={rows}
+        tableAlign='center'
     />)
 }
 
