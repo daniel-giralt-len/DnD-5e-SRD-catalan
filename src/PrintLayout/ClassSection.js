@@ -118,7 +118,7 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
         return r
     }
 
-    const getSrdFeatures = (lvl, features) => features
+    const getSrdFeatureNames = (lvl, features) => features
         .map(f => typeof f === 'string' ? f : f.classFeature)
         .map(f=>f.split('|'))
         .filter(([name,className,_,level,book]) => !book && parseInt(level) === lvl)
@@ -129,7 +129,7 @@ const ClassTable = ({classTableGroups=[], classFeatures=[]}) => {
             return [
                 i,
                 toSignedStr(getProficiency(i)),
-                getSrdFeatures(i+1, classFeatures).join(', '),
+                getSrdFeatureNames(i+1, classFeatures).join(', '),
                 ...classTableGroups
                     .reduce((acc,g) => (
                         [...acc, ...g.rows[i].map(parseRow)
@@ -167,7 +167,36 @@ const FeatureList = ({features}) => (
     </section>
 )
 
-const keysToIgnore=['source','page','srd','Multi-classe', 'spellcastingAbility', 'casterProgression', 'cantripProgression', 'spellsKnownProgressionFixedByLevel', 'spellsKnownProgression', 'spellsKnownProgressionFixedAllowLowerLevel', 'optionalfeatureProgression', 'spellsKnownProgressionFixed', 'preparedSpells', 'subclassTitle']
+const renderSubclassFeatures = (subclass, subclassFeature) => {
+    return subclass.map(s => {
+        const featureNames = s.subclassFeatures.map(f=>f.split('|')[0])
+        const features = subclassFeature
+            .filter(f=>featureNames.includes(f.name))
+            .map(f => ({
+                ...f,
+                entries: f.entries
+                    .map(e=>{
+                        if(typeof e === 'string'){
+                            return e
+                        }
+                        if(e.type === 'refSubclassFeature'){
+                            return subclassFeature.find(sf => sf.name === e.subclassFeature.split('|')[0])
+                        }
+                        return e
+                    })
+            }))
+
+
+        console.log(features)
+        return (
+                <FeatureList key={s.name}
+                    features={features}
+                />
+        )
+    })
+}
+
+const keysToIgnore=['source','page','srd','Multi-classe', 'spellcastingAbility', 'casterProgression', 'cantripProgression', 'spellsKnownProgressionFixedByLevel', 'spellsKnownProgression', 'spellsKnownProgressionFixedAllowLowerLevel', 'optionalfeatureProgression', 'spellsKnownProgressionFixed', 'preparedSpells', 'additionalSpells']
 
 const ClassSection = ({
     hrefId,
@@ -179,6 +208,9 @@ const ClassSection = ({
     classFeatures,
     classFeature,
     proficiency,
+    subclassTitle,
+    subclass,
+    subclassFeature,
     ...rest
 }) => (
     <SectionWrapper>
@@ -198,6 +230,8 @@ const ClassSection = ({
         <BodyWrapper>
             <FeatureList features={classFeature} />
             <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
+            <h2>{subclassTitle}</h2>
+            {renderSubclassFeatures(subclass, subclassFeature)}
         </BodyWrapper>
     </SectionWrapper>
 )

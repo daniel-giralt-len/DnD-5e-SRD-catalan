@@ -63,9 +63,8 @@ const renderEntry = (b,i)=>{
         return(<div key={i}>
             {
                 b.entries
-                    .filter(e=>!e.optionalfeature.includes('|'))
-                    .map(e=>(
-                        <IndentedParagraph key={e.optionalfeature}>
+                    .map((e,i)=>(
+                        <IndentedParagraph key={i}>
                             <GenericEntry name={e.optionalfeature} {...e} />
                         </IndentedParagraph>
                     ))
@@ -93,18 +92,24 @@ const renderEntry = (b,i)=>{
     )
 }
 
-const GenericEntry = ({name, type, entries=[], titleDivider='.', children}) => {
+const GenericEntry = ({name, type, entries=[], titleDivider='.', children, ...rest}) => {
     let [firstEntry='', ...otherEntries] = entries
     if(typeof entries === 'string') {
         firstEntry = entries
         otherEntries = []
     }
     if(type === 'refOptionalfeature'){
+        if(rest.optionalfeature.includes('|')) { return; }//if optional feature is from a variant source
         [firstEntry='', ...otherEntries] = srd.references
             .optionalFeatures.entries
-            .find(of=>of.name === name)
+            .find(of=>of.name === rest.optionalfeature)
             .entries
     }
+
+    if(type === 'refSubclassFeature'){
+        return
+    }
+    
     return (<GenericEntryWrapper key={name}>
         {name && (<ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>)}
         {children}
