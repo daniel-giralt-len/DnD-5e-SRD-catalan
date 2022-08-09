@@ -4,7 +4,8 @@ import UnusedKeysWarning from './UnusedKeysWarning'
 import {
     abilityScoreLabel,
     armorTypeLabel,
-    weaponTypeLabel
+    weaponTypeLabel,
+    skillLabel
 } from '../translationLists'
 import { capitalizeFirstLetter } from '../textModifiers'
 import { parseLinks } from '../EnrichedText'
@@ -42,6 +43,8 @@ const Proficiencies = ({
     savingThrows = [],
     skills = []
 }) => {
+    const skillsEntry = `Escull-ne ${skills[0].choose.count} d'entre ${skills[0].choose.from.map(k=>skillLabel[k]).join(', ')}.`
+
     const armorEntry = armors.length === 0
     ? 'Cap.'
     : capitalizeFirstLetter(
@@ -68,15 +71,15 @@ const Proficiencies = ({
         .map(tool => parseLinks(tool))
         .join(', '))}.`
 
-    const skillEntry = `${capitalizeFirstLetter(savingThrows.map(skill=>abilityScoreLabel[skill]).join(', '))}.`
+    const savesEntry = `${capitalizeFirstLetter(savingThrows.map(skill=>abilityScoreLabel[skill]).join(', '))}.`
 
     return (<SubSectionWrapper>
         <h3>Competències</h3>
         <ColonEntry name='Armadures' entry={armorEntry} />
         <ColonEntry name='Armes' entry={weaponsEntry} />
+        <ColonEntry name='Salvades' entry={savesEntry} />
+        <ColonEntry name='Habilitats' entry={skillsEntry} />
         <ColonEntry name='Eines' entry={toolsEntry} />
-        <ColonEntry name='Salvades' entry={skillEntry} />
-        
     </SubSectionWrapper>)
 }
 
