@@ -19,7 +19,7 @@ const BodyWrapper = styled.div`
         column-count: 1;
     }
     @media print {
-        column-count: 1;
+        column-count: 2;
     }
 `
 
@@ -94,7 +94,7 @@ const StartingEquipment = ({
     </EquipmentList>
 </SubSectionWrapper>)
 
-const keysToIgnore=['source','page','srd']
+const keysToIgnore=['source','page','srd','Multi-classe']
 
 const ClassSection = ({
     hrefId,
