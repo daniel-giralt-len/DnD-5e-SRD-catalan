@@ -70,6 +70,14 @@ const getSkillText = (skill, passive) => {
     return `${skills}${passivePerception}`
 }
 
+const getCRText = cr => {
+    if(typeof cr === 'string') {return cr}
+    let out = `${cr.cr}`
+    if(cr.lair) { out += `, ${cr.lair} a la llar`}
+    if(cr.coven) { out += `, ${cr.coven} amb el sàbat`}
+    return out
+}
+
 const getDamageImmunityTexts = l => getDamageTexts(l, 'immune')
 const getDamageResistanceTexts = l => getDamageTexts(l, 'resist')
 const getDamageVulnerableTexts = l => getDamageTexts(l, 'vulnerable')
@@ -149,7 +157,7 @@ const Bestiary = ({
             {vulnerable && <ColonEntry name="Vulnerabilitat a Dany" entry={getDamageVulnerableTexts(vulnerable)} />}
             {conditionImmune && <ColonEntry name="Immunitat a Condicions" entry={conditionImmune.join(', ')} />}
             {idiomes && <ColonEntry name="Idiomes" entry={idiomes.join(', ')} />}
-            {cr && <ColonEntry name="Valor de Repte (VR)" entry={cr.toString()} />}
+            {cr && <ColonEntry name="Valor de Repte (VR)" entry={getCRText(cr)} />}
         </div>
         <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
     </Wrapper>
