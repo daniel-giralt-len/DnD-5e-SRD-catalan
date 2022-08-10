@@ -111,16 +111,26 @@ const renderEntry = (b,i,titleHeader,indent=true)=>{
         )
     }
 
+    const Entry = b.type === 'item' 
+        ? (
+            <GenericEntry
+                {...b}
+                entries={b.entries || [b.entry]}
+            />
+        )
+        : (
+            <GenericEntry
+                {...b}
+                titleHeader={titleHeader+1}
+            />
+        )
 
     return (
         <SubEntry
             key={i}
             isSubSection={titleHeader <= allowedHeaderLevels}
         >
-            <GenericEntry
-                {...b}
-                titleHeader={titleHeader+1}
-            />
+            {Entry}
         </SubEntry>
     )
 }
