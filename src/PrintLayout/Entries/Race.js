@@ -36,10 +36,10 @@ const GenericScoreEntry = ({scores, title, choiceTextBuilder, buildText, keyMap}
         {Object.entries(scores).map(([k,v]) => {
             if(k==='choose'){
                 return (<span key={k}>
-                    {choiceTextBuilder(v.count || 1, v.from.map(k=>keyMap[k]).join(', '))}
+                    {choiceTextBuilder(v.count || 1, v.from.map(k=>keyMap[k]||[k]).join(', '))}
                 </span>)
             }
-            return (<ScoreWrapper key={k}>{buildText(k,v,keyMap[k])}</ScoreWrapper>)
+            return (<ScoreWrapper key={k}>{buildText(k,v,keyMap[k]||[k])}</ScoreWrapper>)
         }).reduce((prev, curr) => [prev, ', ', curr])}
         .
     </GenericEntryWrapper>
