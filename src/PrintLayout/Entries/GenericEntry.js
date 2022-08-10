@@ -89,13 +89,13 @@ const renderEntry = (b,i,titleHeader,indent=true)=>{
 
     if(b.type === 'list'){
         return (
-            <div>
+            <div key={i}>
                 {b.name && (<EntryTitle
                     level={titleHeader+1}
                 >
                     {b.name}
                 </EntryTitle>)}
-                <ul key={i}>
+                <ul>
                     {b.items.map((e,i) => (
                         <li key={i}>
                             {renderEntry(e,i,null,false)}

@@ -36,7 +36,7 @@ const SpellListsSection = ({lists, hrefId}) => (
     <SectionWrapper id={hrefId}>
         <h1>Llistes de Conjurs</h1>
         <BodyWrapper>
-            {lists.map(e=>(<GenericEntry {...e} titleHeader={2} />))}
+            {lists.map(e=>(<GenericEntry key={e.name} {...e} titleHeader={2} />))}
         </BodyWrapper>
     </SectionWrapper>
 )
