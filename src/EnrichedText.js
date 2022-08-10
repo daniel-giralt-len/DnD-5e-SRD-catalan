@@ -6,7 +6,7 @@ const buildHyperLink = (match, linkType, linkData) => {
         return linkArguments[0]
     }
     if(!linkBuilder[linkType]){
-        console.warn('no builder for', linkType, '; arguments are', linkArguments)
+        //console.warn('no builder for', linkType, '; arguments are', linkArguments)
         return linkArguments[2] || linkArguments[0]
     }
     
