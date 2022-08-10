@@ -22,7 +22,7 @@ const getAlignmentText = as => {
     return as
         .map(a => {
             if(typeof a === 'string') { return alignmentLabel[a] }
-            return `${alignmentLabel[a.alineament]} (${a.chance}%)`
+            return `${getAlignmentText(a.alineament)} (${a.chance}%)`
         })
         .join(' ')
     
