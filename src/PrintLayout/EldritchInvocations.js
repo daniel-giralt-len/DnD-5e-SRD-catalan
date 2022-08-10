@@ -7,7 +7,7 @@ const EldritchInvocations = () => (
         {srd
             .references.optionalFeatures.entries
             .filter(f=>f.featureType.includes('EI'))
-            .map(f => (<GenericEntry {...f} titleHeader={3} />))}
+            .map(f => (<GenericEntry key={f.name} {...f} titleHeader={3} />))}
     </>
 )
 

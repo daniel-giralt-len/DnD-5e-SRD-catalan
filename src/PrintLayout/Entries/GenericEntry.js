@@ -89,6 +89,13 @@ const renderEntry = (b,i,titleHeader)=>{
         </div>)
     }
 
+    if(b.type === 'list'){
+        return (<div key={i}>
+            {b.items.map(renderEntry)}
+        </div>)
+    }
+
+
     if(b.type==='inset'){
         return (
             <InsetEntry
