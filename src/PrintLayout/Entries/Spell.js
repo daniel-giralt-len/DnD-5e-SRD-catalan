@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { schoolLabel } from '../../translationLists'
 import ColonEntry from './ColonEntry'
+import GenericEntry from './GenericEntry'
 
 const Wrapper = styled.div`
     break-inside: avoid-column;
@@ -84,7 +85,9 @@ const Spell = ({
     time,
     components,
     duration,
-    range
+    range,
+    entries,
+    entriesHigherLevel
 }) => (
     <Wrapper>
         <h2>{typeof srd === 'string' ? srd : name}</h2>
@@ -95,6 +98,8 @@ const Spell = ({
             <ColonEntry name='Components' entry={getComponentsText(components)} />
             <ColonEntry name='Duració' entry={getDurationText(duration[0])}/>
         </div>
+        <GenericEntry entries={entries} />
+        {entriesHigherLevel && (<GenericEntry {...entriesHigherLevel[0]} />)}
     </Wrapper>
     )
 
