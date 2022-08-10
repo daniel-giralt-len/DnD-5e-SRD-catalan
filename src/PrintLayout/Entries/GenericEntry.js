@@ -120,6 +120,8 @@ const renderEntry = (b,i,titleHeader,indent=true)=>{
         )
     }
 
+    if(b.type==='link'){ return }
+
     const Entry = b.type === 'item' 
         ? (
             <GenericEntry

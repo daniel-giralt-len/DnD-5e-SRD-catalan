@@ -42,17 +42,21 @@ const sectionNameToHrefId = {
     'Idiomes': 'idiomes',
     'Inspiració': 'inspiració',
     'Rerefons': 'rerefons',
-    'Rerefons d\'Exemple': 'rerefons sample',
     'Equipament': 'equipament',
     'Dots': 'dots',
-    'Dots d\'Exemple': 'dots sample',
     'Emprar les Puntuacions de Característica': 'ability scors usage',
     'Time': 'time',
     'Moviment': 'moviment',
     'Combat': 'combat',
     'Llançament de Conjurs': 'llançament de conjurs',
     'Llistes de Conjurs': 'llistes de conjurs',
-    'Descripcions dels Conjurs': 'descripcions dels conjurs'
+    'Descripcions dels Conjurs': 'descripcions dels conjurs',
+    'Trampes': 'Trampes',
+    'Malalties': 'Malalties',
+    'Bogeria': 'Bogeria',
+    'Objectes': 'Objectes',
+    'Metzines': 'Metzines',
+    'Divinitats del Multivers': 'Divinitats del Multivers',
 }
 
 const mechanicsSections = [[
@@ -79,6 +83,18 @@ const mechanicsSections = [[
 ],[
     'Llançament de Conjurs',
 ]
+]
+const runningACampaignSections = [
+    [
+        'Trampes', 'Trampes d\'Exemple',
+        'Malalties', 'Malalties d\'Exemple',
+        'Bogeria', 'Objectes',
+        'Metzines', 'Metzines d\'Exemple',
+    ],
+    [
+        'Divinitats del Multivers',
+        'Els Plans d\'Existència',
+    ]
 ]
 const PrintFriendlyApp = ({sections}) => {
     const s = sections.reduce((acc,ss) => ({...acc, [ss.name]:ss}),{})
@@ -123,6 +139,17 @@ const PrintFriendlyApp = ({sections}) => {
             hrefId={sectionNameToHrefId['Descripcions dels Conjurs']}
             spells={s['Descripcions dels Conjurs'].entries}
         />
+        {
+            runningACampaignSections.map((sectionNames,i) => {
+                const subSections = sections.filter(cs => sectionNames.includes(cs.name))
+                return (<MechanicsSection
+                    key={i}
+                    title='Per a mestrar una campanya'
+                    indices={sectionNameToHrefId}
+                    sections={subSections}
+                />)
+            })
+        }
     </PrintableDocument>)
 }
 export default PrintFriendlyApp
