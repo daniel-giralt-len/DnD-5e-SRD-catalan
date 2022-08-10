@@ -1,7 +1,15 @@
 import styled from 'styled-components'
 import GenericEntry from './Entries/GenericEntry'
 
-const SectionWrapper = styled.article`
+const SectionWrapper = styled.div`
+    margin-top: 1em;
+    border-top: 1px solid black;
+    @media print {
+        border: 0;
+    }
+`
+
+const BodyWrapper = styled.article`
     break-after: page;
     column-count: 2;
     @media (max-width: 600px) {
@@ -16,9 +24,9 @@ const MechanicsSection = ({
     sections,
     indices
 }) => (
-    <div>
+    <SectionWrapper>
         <h1 id={indices[sections[0].name]}>{sections[0].name}</h1>
-        <SectionWrapper>
+        <BodyWrapper>
             {sections.map((s, i)=>(
                 <section key={i} id={indices[s.name]}>
                     <GenericEntry
@@ -28,8 +36,8 @@ const MechanicsSection = ({
                     />
                 </section>
             ))}
-        </SectionWrapper>
-    </div>
+        </BodyWrapper>
+    </SectionWrapper>
 )
 
 export default MechanicsSection
