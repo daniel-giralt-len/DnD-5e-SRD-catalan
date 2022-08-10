@@ -60,9 +60,9 @@ const mechanicsSections = [[
 ],[
     'Rerefons',
     'Rerefons d\'Exemple',
-],/* [
+],[
     'Equipament',
-], */[
+],[
     'Dots',
     'Dots d\'Exemple',
 ],[
@@ -104,7 +104,6 @@ const PrintFriendlyApp = ({sections}) => {
         {
             mechanicsSections.map((sectionNames,i) => {
                 const subSections = sections.filter(cs => sectionNames.includes(cs.name))
-                if(i>6){return}
                 return (<MechanicsSection
                     key={i}
                     indices={sectionNameToHrefId}
