@@ -20,7 +20,7 @@ const ParagraphTitleStyle = styled.span`
 `
 
 const SubEntry = styled.div`
-    font-size: 0.9em;
+    ${({isSubSection}) => isSubSection ? '': 'font-size: 0.9em;'}
     > * {
         text-indent: 0.8em;
     }
@@ -31,11 +31,21 @@ const InsetEntry = styled(SubEntry)`
     padding: 0.5em;
 `
 
+const allowedHeaderLevels = 5
+
+const SectionTitle = ({level, children}) => {
+    if(level === 1){ return <h1>{children}</h1> }
+    if(level === 2){ return <h2>{children}</h2> }
+    if(level === 3){ return <h3>{children}</h3> }
+    if(level === 4){ return <h4>{children}</h4> }
+    if(level === 5){ return <h5>{children}</h5> }
+}
+
 const ParagraphTitle = ({children, inline=false, divider}) => (
     <ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>
 )
 
-const renderEntry = (b,i)=>{
+const renderEntry = (b,i,titleHeader)=>{
     if(typeof b === 'string'){
         if(i===-1){
             return (<Text>{b}</Text>)   
@@ -65,7 +75,10 @@ const renderEntry = (b,i)=>{
                 b.entries
                     .map((e,i)=>(
                         <IndentedParagraph key={i}>
-                            <GenericEntry name={e.optionalfeature} {...e} />
+                            <GenericEntry
+                                name={e.optionalfeature}
+                                {...e}
+                            />
                         </IndentedParagraph>
                     ))
             }
@@ -77,7 +90,10 @@ const renderEntry = (b,i)=>{
             <InsetEntry
                 key={i}
             >
-                <GenericEntry {...b}/>
+                <GenericEntry
+                    {...b}
+                    titleHeader={titleHeader+1}
+                />
             </InsetEntry>
         )
     }
@@ -86,13 +102,25 @@ const renderEntry = (b,i)=>{
     return (
         <SubEntry
             key={i}
+            isSubSection={titleHeader <= 5}
         >
-            <GenericEntry {...b}/>
+            <GenericEntry
+                {...b}
+                titleHeader={titleHeader+1}
+            />
         </SubEntry>
     )
 }
 
-const GenericEntry = ({name, type, entries=[], titleDivider='.', children, ...rest}) => {
+const GenericEntry = ({
+    name,
+    type,
+    entries=[],
+    titleDivider='.',
+    children,
+    titleHeader,
+    ...rest
+}) => {
     let [firstEntry='', ...otherEntries] = entries
     if(typeof entries === 'string') {
         firstEntry = entries
@@ -109,12 +137,21 @@ const GenericEntry = ({name, type, entries=[], titleDivider='.', children, ...re
     if(type === 'refSubclassFeature'){
         return
     }
+
+    let Title = ''
+    if(name) {
+        if(titleHeader <= 5){
+            Title = (<SectionTitle level={titleHeader} >{name}</SectionTitle>)
+        }else{
+            Title = (<ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>)
+        }
+    }
     
     return (<GenericEntryWrapper key={name}>
-        {name && (<ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>)}
+        {Title}
         {children}
-        {renderEntry(firstEntry,-1)}
-        {otherEntries.map(renderEntry)}
+        {renderEntry(firstEntry,-1, titleHeader)}
+        {otherEntries.map((e,i) => renderEntry(e,i,titleHeader))}
     </GenericEntryWrapper>)
 }
 
