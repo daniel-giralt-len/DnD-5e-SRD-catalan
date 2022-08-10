@@ -58,6 +58,7 @@ const sectionNameToHrefId = {
     'Objectes': 'Objectes',
     'Metzines': 'Metzines',
     'Divinitats del Multivers': 'Divinitats del Multivers',
+    'Monstres': 'Monstres'
 }
 
 const mechanicsSections = [[
@@ -99,6 +100,7 @@ const runningACampaignSections = [
         'Els Plans d\'Existència',
     ]
 ]
+
 const PrintFriendlyApp = ({sections}) => {
     const s = sections.reduce((acc,ss) => ({...acc, [ss.name]:ss}),{})
     return(<PrintableDocument>
@@ -153,6 +155,13 @@ const PrintFriendlyApp = ({sections}) => {
                 />)
             })
         }
+        <MechanicsSection
+            title='Monstres'
+            indices={sectionNameToHrefId}
+            sections={[s['Estadístiques'], s['Modificar Criatures']]}
+            hrefId={sectionNameToHrefId['Monstres']}
+        />
+
     </PrintableDocument>)
 }
 export default PrintFriendlyApp

@@ -23,13 +23,14 @@ const BodyWrapper = styled.article`
 const MechanicsSection = ({
     sections = [],
     indices,
-    title
+    title,
+    hrefId,
 }) => {
     if(sections.length === 0) return
     return (
         <SectionWrapper>
             {title
-                ? (<h1>{title}</h1>)
+                ? (<h1 id={hrefId}>{title}</h1>)
                 : (<h1 id={indices[sections[0].name]}>{sections[0].name}</h1>)
             }
             <BodyWrapper>
