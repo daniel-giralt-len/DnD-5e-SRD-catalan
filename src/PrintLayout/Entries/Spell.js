@@ -56,6 +56,7 @@ const getRangeText = ({
     type,
     distance
 }) => {
+    if(type === 'especial') { return 'Especial'}
     if(type === 'point') {
         if(distance.type === 'tocar') { return 'Tocar' }
         if(distance.type === 'peus') { return `${distance.amount} peus` }
@@ -64,26 +65,14 @@ const getRangeText = ({
         if(distance.type === 'unlimited') { return `Il·limitat` }
         if(distance.type === 'milles') { return `${distance.amount} ${distance.amount === 1 ? 'milla' : 'milles'}`}
     }
-    if(type === 'especial') { return 'Especial'}
+    const distanceWords = `${distance.amount} ${getLengthsPlural(distance.type, distance.amount)}`
     const centered = '(Llançador/a/i)'
-    if(type === 'hemisphere') {
-        return `Hemisferi de ${distance.amount} ${getLengthsPlural( distance.type, distance.amount)} de radi ${centered}`
-    }
-    if(type === 'esfera') {
-        return `Esfera de ${distance.amount} ${getLengthsPlural( distance.type, distance.amount)} de radi ${centered}`
-    }
-    if(type === 'radius') {
-        return `${distance.amount} ${getLengthsPlural( distance.type, distance.amount)} de radi ${centered}`
-    }
-    if(type === 'line') {
-        return `Línia de ${distance.amount} ${getLengthsPlural( distance.type, distance.amount)} ${centered}`
-    }
-    if(type === 'cube') {
-        return `Cub de ${distance.amount} ${getLengthsPlural( distance.type, distance.amount)} de costat ${centered}`
-    }
-    if(type === 'con') {
-        return `Con de ${distance.amount} ${getLengthsPlural( distance.type, distance.amount)} ${centered}`
-    }
+    if(type === 'hemisphere') { return `Hemisferi de ${distanceWords} de radi ${centered}`}
+    if(type === 'esfera') { return `Esfera de ${distanceWords} de radi ${centered}`}
+    if(type === 'radius') { return `${distanceWords} de radi ${centered}`}
+    if(type === 'line') { return `Línia de ${distanceWords} ${centered}`}
+    if(type === 'cube') { return `Cub de ${distanceWords} de costat ${centered}`}
+    if(type === 'con') { return `Con de ${distanceWords} ${centered}`}
     console.info('unknown spell range type',type)
 }
 
