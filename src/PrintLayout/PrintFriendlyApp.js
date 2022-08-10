@@ -49,6 +49,7 @@ const sectionNameToHrefId = {
     'Moviment': 'moviment',
     'Combat': 'combat',
     'Llançament de Conjurs': 'llançament de conjurs',
+    'Condicions': 'Condicions',
     'Llistes de Conjurs': 'llistes de conjurs',
     'Descripcions dels Conjurs': 'descripcions dels conjurs',
     'Trampes': 'Trampes',
@@ -82,6 +83,8 @@ const mechanicsSections = [[
     'Combat',
 ],[
     'Llançament de Conjurs',
+],[
+    'Condicions'
 ]
 ]
 const runningACampaignSections = [
