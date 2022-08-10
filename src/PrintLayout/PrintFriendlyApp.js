@@ -147,7 +147,7 @@ const PrintFriendlyApp = ({sections}) => {
                 const subSections = sections.filter(cs => sectionNames.includes(cs.name))
                 return (<MechanicsSection
                     key={i}
-                    title='Per a mestrar una campanya'
+                    title={i===0?'Per a mestrar una campanya':null}
                     indices={sectionNameToHrefId}
                     sections={subSections}
                 />)
