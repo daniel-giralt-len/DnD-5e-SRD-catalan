@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { capitalizeFirstLetter, toSignedStr } from '../../textModifiers'
 import { creatureSizeLabel, alignmentLabel, femaleCreatureSizeLabel, getAlignmentLabel, abilityScoreLabel, skillLabel } from '../../translationLists'
 import ColonEntry from './ColonEntry'
+import SpellcastingEntry from './SpellcastingEntry'
 import Table from './Table'
 import UnusedKeysWarning from '../UnusedKeysWarning'
 import GenericEntry from './GenericEntry'
@@ -112,6 +113,7 @@ const Bestiary = ({
     legendary,
     reaction,
     spellcasting,
+    group, //TODO: fer grups?
     ...rest
 }) => (
     <Wrapper>
@@ -170,8 +172,10 @@ const Bestiary = ({
                 <h3>Trets</h3>
                 <GenericEntry entries={[
                     ...trait,
-                    //...spellcasting || []
                 ]} />
+                {spellcasting && <SpellcastingEntry
+                    entries={spellcasting}
+                />}
             </>)}
         {action && (
             <>
