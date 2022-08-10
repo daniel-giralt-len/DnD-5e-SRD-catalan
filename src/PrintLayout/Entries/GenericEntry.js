@@ -33,12 +33,13 @@ const InsetEntry = styled(SubEntry)`
 
 const allowedHeaderLevels = 5
 
-const SectionTitle = ({level, children}) => {
+const EntryTitle = ({level, children, titleDivider}) => {
     if(level === 1){ return <h1>{children}</h1> }
     if(level === 2){ return <h2>{children}</h2> }
     if(level === 3){ return <h3>{children}</h3> }
     if(level === 4){ return <h4>{children}</h4> }
     if(level === 5){ return <h5>{children}</h5> }
+    return (<ParagraphTitle divider={titleDivider}>{children}</ParagraphTitle>)
 }
 
 const ParagraphTitle = ({children, inline=false, divider}) => (
@@ -102,7 +103,7 @@ const renderEntry = (b,i,titleHeader)=>{
     return (
         <SubEntry
             key={i}
-            isSubSection={titleHeader <= 5}
+            isSubSection={titleHeader <= allowedHeaderLevels}
         >
             <GenericEntry
                 {...b}
@@ -138,14 +139,14 @@ const GenericEntry = ({
         return
     }
 
-    let Title = ''
-    if(name) {
-        if(titleHeader <= 5){
-            Title = (<SectionTitle level={titleHeader} >{name}</SectionTitle>)
-        }else{
-            Title = (<ParagraphTitle divider={titleDivider}>{name}</ParagraphTitle>)
-        }
-    }
+    const Title = (
+        <EntryTitle
+            level={titleHeader}
+            divider={titleDivider}
+        >
+            {name}
+        </EntryTitle>
+    )
     
     return (<GenericEntryWrapper key={name}>
         {Title}
