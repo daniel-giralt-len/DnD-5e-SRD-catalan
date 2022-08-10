@@ -46,10 +46,22 @@ const skillLabel = {
     'persuasion': 'Persuasió',
 }
 
+const schoolLabel = {
+    'A': 'Abjuració',
+    'C': 'Conjuració',
+    'D': 'Endevinació',
+    'E': 'Encantament',
+    'V': 'Evocació',
+    'I': 'Il·lusió',
+    'N': 'Nigromància',
+    'T': 'Transmutació',
+}
+
 export {
     abilityScoreLabel,
     creatureSizeLabel,
     skillLabel,
     armorTypeLabel,
-    weaponTypeLabel
+    weaponTypeLabel,
+    schoolLabel
 }
