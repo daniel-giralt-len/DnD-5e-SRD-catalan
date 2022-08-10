@@ -5,6 +5,7 @@ import RacesSection from './RacesSection'
 import DocumentIndex from './DocumentIndex'
 import ClassSection from './ClassSection'
 import MechanicsSection from './MechanicsSection'
+import SpellListsSection from './SpellListsSection'
 
 const PrintableDocument = styled.main`
     max-width: 1200px;
@@ -49,6 +50,7 @@ const sectionNameToHrefId = {
     'Moviment': 'moviment',
     'Combat': 'combat',
     'Llançament de Conjurs': 'llançament de conjurs',
+    'Llistes de Conjurs': 'llistes de conjurs',
 }
 
 const mechanicsSections = [[
@@ -111,6 +113,10 @@ const PrintFriendlyApp = ({sections}) => {
                 />)
             })
         }
+        <SpellListsSection 
+            hrefId={sectionNameToHrefId['Llistes de Conjurs']}
+            lists={s['Llistes de Conjurs'].entries}
+        />
     </PrintableDocument>)
 }
 export default PrintFriendlyApp
