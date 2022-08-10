@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { capitalizeFirstLetter } from '../../textModifiers'
-import { creatureSizeLabel, alignmentLabel, femaleCreatureSizeLabel } from '../../translationLists'
+import { creatureSizeLabel, alignmentLabel, femaleCreatureSizeLabel, getAlignmentLabel } from '../../translationLists'
 
 const Wrapper = styled.div`
     break-inside: avoid-column;
@@ -13,11 +13,17 @@ const getTypeText = type => typeof type === 'string' ? type : type.type
 const getCreatureSizeText = (type, size) => ['bèstia','monstrositat', 'fata', 'planta'].includes(getTypeText(type)) ? femaleCreatureSizeLabel[size] : creatureSizeLabel[size]
 
 const getAlignmentText = as => {
+    if(typeof as[0] !== 'object'){
+        const out = getAlignmentLabel(as)
+        if(out) return out
+    }
     return as
-    .map(a => {
-        if(typeof a === 'string') { return alignmentLabel[a] }
-        return `${getAlignmentText(a.alineament)} (${a.chance}%)`
-    }).join(' ')
+        .map(a => {
+            if(typeof a === 'string') { return alignmentLabel[a] }
+            return `${alignmentLabel[a.alineament]} (${a.chance}%)`
+        })
+        .join(' ')
+    
 }
 
 const Bestiary = ({
