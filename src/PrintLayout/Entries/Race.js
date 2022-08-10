@@ -115,7 +115,7 @@ const Race = ({
     }
     return(
     <ArticleWrapper isSubrace={isSubrace} key={i}>
-        {isSubrace? <h4>Subraça: {name}</h4> : <h3>{name}</h3>}
+        {isSubrace? <h3>Subraça: {name}</h3> : <h2>{name}</h2>}
         {ability && <AbilitiesEntry {...ability[0]}/>}
         {speed && <SpeedEntry value={speed} />}
         {size && <SizeEntry value={size} />}

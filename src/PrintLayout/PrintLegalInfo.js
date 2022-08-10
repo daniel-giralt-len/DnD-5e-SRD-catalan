@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const PageBreakWrapper = styled.div`
+const PageBreakWrapper = styled.article`
     break-after: page;
 `
 

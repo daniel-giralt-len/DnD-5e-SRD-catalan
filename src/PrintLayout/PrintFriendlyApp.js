@@ -12,6 +12,11 @@ const PrintableDocument = styled.main`
         font-size:0.5em;
         max-width: 100%;
     }
+    > article {
+        h1{
+            font-size: 2em;
+        }
+    }
 `
 
 const sectionNameToHrefId = {
