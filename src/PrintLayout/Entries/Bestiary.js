@@ -4,6 +4,7 @@ import { creatureSizeLabel, alignmentLabel, femaleCreatureSizeLabel, getAlignmen
 import ColonEntry from './ColonEntry'
 import Table from './Table'
 import UnusedKeysWarning from '../UnusedKeysWarning'
+import GenericEntry from './GenericEntry'
 
 const Wrapper = styled.div`
     break-inside: avoid-column;
@@ -106,6 +107,11 @@ const Bestiary = ({
     resist,
     conditionImmune,
     vulnerable,
+    trait,
+    action, 
+    legendary,
+    reaction,
+    spellcasting,
     ...rest
 }) => (
     <Wrapper>
@@ -159,6 +165,29 @@ const Bestiary = ({
             {idiomes && <ColonEntry name="Idiomes" entry={idiomes.join(', ')} />}
             {cr && <ColonEntry name="Valor de Repte (VR)" entry={getCRText(cr)} />}
         </div>
+        {trait && (
+            <>
+                <h3>Trets</h3>
+                <GenericEntry entries={[
+                    ...trait,
+                    //...spellcasting || []
+                ]} />
+            </>)}
+        {action && (
+            <>
+                <h3>Accions</h3>
+                <GenericEntry entries={action} />
+            </>)}
+        {legendary && (
+            <>
+                <h3>Accions llegendàries</h3>
+                <GenericEntry entries={legendary} />
+            </>)}
+        {reaction && (
+            <>
+                <h3>Reaccions</h3>
+                <GenericEntry entries={reaction} />
+            </>)}
         <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
     </Wrapper>
     )
