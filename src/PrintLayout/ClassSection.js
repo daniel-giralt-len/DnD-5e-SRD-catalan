@@ -11,6 +11,7 @@ import { capitalizeFirstLetter, toSignedStr } from '../textModifiers'
 import { parseLinks } from '../EnrichedText'
 import Table from './Entries/Table'
 import EldritchInvocations from './EldritchInvocations'
+import ColonEntry from './Entries/ColonEntry'
 
 const SectionWrapper = styled.article`
     break-after: page;
@@ -24,8 +25,6 @@ const BodyWrapper = styled.div`
         column-count: 2;
     }
 `
-
-const ColonEntry = ({name, entry}) => (<GenericEntry name={name} titleDivider=': ' entries={entry} />)
 
 const SubSectionWrapper=styled.section`break-inside:avoid;`
 

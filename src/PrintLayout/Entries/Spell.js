@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { capitalizeFirstLetter } from '../../textModifiers'
 import { schoolLabel } from '../../translationLists'
 import GenericEntry from './GenericEntry'
+import ColonEntry from './ColonEntry'
 
 const Wrapper = styled.div`
     display: flex;
@@ -61,10 +61,10 @@ const Spell = ({
         <h2>{name}</h2>
         <div>
             <span>{getLevelText(level)}</span>, <span>{schoolLabel[school]}</span>
-            <GenericEntry titleDivider=':' name='Duració de Llançament' entries={getCastingTimeText(time[0])} />
-            <GenericEntry titleDivider=':' name='Abast' />
-            <GenericEntry titleDivider=':' name='Components' entries={getComponentsText(components)} />
-            <GenericEntry titleDivider=':' name='Duració' entries={getDurationText(duration[0])}/>
+            <ColonEntry name='Duració de Llançament' entry={getCastingTimeText(time[0])} />
+            <ColonEntry name='Abast' />
+            <ColonEntry name='Components' entry={getComponentsText(components)} />
+            <ColonEntry name='Duració' entry={getDurationText(duration[0])}/>
         </div>
     </div>
     )
