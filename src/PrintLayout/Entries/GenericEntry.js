@@ -36,6 +36,7 @@ const InsetEntry = styled(SubEntry)`
 const allowedHeaderLevels = 5
 
 const EntryTitle = ({level, children, titleDivider}) => {
+    if(!children) return
     if(level === 1){ return <h1>{children}</h1> }
     if(level === 2){ return <h2>{children}</h2> }
     if(level === 3){ return <h3>{children}</h3> }
