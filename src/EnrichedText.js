@@ -10,7 +10,6 @@ const buildHyperLink = (match, linkType, linkData) => {
         return linkArguments[2] || linkArguments[0]
     }
     
-    return match
 }
 
 const parseLinks = s => s.toString().replace(/{@(.*?) (.*?)}/gi, buildHyperLink)

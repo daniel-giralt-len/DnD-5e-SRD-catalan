@@ -170,12 +170,8 @@ const Bestiary = ({
         {trait && (
             <>
                 <h3>Trets</h3>
-                <GenericEntry entries={[
-                    ...trait,
-                ]} />
-                {spellcasting && <SpellcastingEntry
-                    entries={spellcasting}
-                />}
+                <GenericEntry entries={trait} />
+                {spellcasting && <SpellcastingEntry entries={spellcasting} />}
             </>)}
         {action && (
             <>

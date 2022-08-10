@@ -38,7 +38,7 @@ const SpellcastingEntry = ({entries}) => {
             ...getWillEntries(will),
             ...getDailyEntries(daily)
         ]
-        return (<GenericEntry name={name} entries={es} />)
+        return (<GenericEntry key={name} name={name} entries={es} />)
     })
 }
 export default SpellcastingEntry
