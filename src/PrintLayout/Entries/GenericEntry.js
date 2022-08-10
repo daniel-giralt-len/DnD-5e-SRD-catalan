@@ -49,16 +49,15 @@ const ParagraphTitle = ({children, inline=false, divider}) => (
     <ParagraphTitleStyle inline={inline}>{children}{divider} </ParagraphTitleStyle>
 )
 
-const renderEntry = (b,i,titleHeader)=>{
+const renderEntry = (b,i,titleHeader,indent=true)=>{
     if(typeof b === 'string'){
-        if(i===-1){
-            return (<Text>{b}</Text>)   
-        }
-        return (
-            <IndentedParagraph key={i}>
-                <Text>{b}</Text>
-            </IndentedParagraph>
-        )
+        return indent
+            ? (
+                <IndentedParagraph key={i}>
+                    <Text>{b}</Text>
+                </IndentedParagraph>
+            )
+            : (<Text>{b}</Text>)   
     }
 
     if(b.type === 'table'){
@@ -90,9 +89,13 @@ const renderEntry = (b,i,titleHeader)=>{
     }
 
     if(b.type === 'list'){
-        return (<div key={i}>
-            {b.items.map(renderEntry)}
-        </div>)
+        return (<ul key={i}>
+            {b.items.map((e,i) => (
+                <li>
+                    {renderEntry(e,i,null,false)}
+                </li>
+            ))}
+        </ul>)
     }
 
 
@@ -161,7 +164,7 @@ const GenericEntry = ({
     return (<GenericEntryWrapper key={name}>
         {Title}
         {children}
-        {renderEntry(firstEntry,-1, titleHeader)}
+        {renderEntry(firstEntry,-1, titleHeader, false)}
         {otherEntries.map((e,i) => renderEntry(e,i,titleHeader))}
     </GenericEntryWrapper>)
 }
