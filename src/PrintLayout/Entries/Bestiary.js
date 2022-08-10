@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { capitalizeFirstLetter, toSignedStr } from '../../textModifiers'
-import { creatureSizeLabel, alignmentLabel, femaleCreatureSizeLabel, getAlignmentLabel, abilityScoreLabel } from '../../translationLists'
+import { creatureSizeLabel, alignmentLabel, femaleCreatureSizeLabel, getAlignmentLabel, abilityScoreLabel, skillLabel } from '../../translationLists'
 import ColonEntry from './ColonEntry'
 import Table from './Table'
+import UnusedKeysWarning from '../UnusedKeysWarning'
 
 const Wrapper = styled.div`
     break-inside: avoid-column;
@@ -59,6 +60,27 @@ const getSpeedsText = s => {
 
 const getMod = score => Math.floor(score/2)
 
+const keysToIgnore = [
+    'source','page','srd','otherSources','legendaryGroup','environment','hasToken','soundClip','traitTags','senseTags','actionTags','languageTags','damageTags','miscTags','conditionInflict','conditionInflictLegendary','hasFluff','hasFluffImages', 'variant', 'spellcastingTags', 'conditionInflictSpell', 'altArt', 'dragonCastingColor', 'familiar'
+]
+
+const getSkillText = (skill, passive) => {
+    const skills = Object.entries(skill).map(([k,v])=> `${skillLabel[k] || k} ${v}`).join(', ')
+    const passivePerception = passive ? `, percepció passiva ${passive}` : ''
+    return `${skills}${passivePerception}`
+}
+
+const getDamageImmunityTexts = l => getDamageTexts(l, 'immune')
+const getDamageResistanceTexts = l => getDamageTexts(l, 'resist')
+const getDamageVulnerableTexts = l => getDamageTexts(l, 'vulnerable')
+
+const getDamageTexts = (is,k) => {
+    return is.map(i => {
+        if(typeof i === 'string') { return i }
+        return `i ${i[k].join(', ')} ${i.note}`
+    }).join(', ')
+}
+
 const Bestiary = ({
     name,
     type, size, alineament,
@@ -67,6 +89,16 @@ const Bestiary = ({
     speed,
     str,dex,con,int,wis,cha,
     save = {},
+    skill,
+    passive,
+    senses,
+    idiomes,
+    cr,
+    immune,
+    resist,
+    conditionImmune,
+    vulnerable,
+    ...rest
 }) => (
     <Wrapper>
         <h2>{name}</h2>
@@ -109,6 +141,17 @@ const Bestiary = ({
                 ]
             ]}
         />
+        <div>
+            {skill && <ColonEntry name="Habilitats" entry={getSkillText(skill, passive)} />}
+            {senses && <ColonEntry name="Sentits" entry={senses.join(', ')}/>}
+            {resist && <ColonEntry name="Resistència a Dany" entry={getDamageResistanceTexts(resist)} />}
+            {immune && <ColonEntry name="Immunitat a Dany" entry={getDamageImmunityTexts(immune)} />}
+            {vulnerable && <ColonEntry name="Vulnerabilitat a Dany" entry={getDamageVulnerableTexts(vulnerable)} />}
+            {conditionImmune && <ColonEntry name="Immunitat a Condicions" entry={conditionImmune.join(', ')} />}
+            {idiomes && <ColonEntry name="Idiomes" entry={idiomes.join(', ')} />}
+            {cr && <ColonEntry name="Valor de Repte (VR)" entry={cr.toString()} />}
+        </div>
+        <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
     </Wrapper>
     )
 
