@@ -33,7 +33,7 @@ const InsetEntry = styled(SubEntry)`
     padding: 0.5em;
 `
 
-const allowedHeaderLevels = 5
+const allowedHeaderLevels = 4
 
 const EntryTitle = ({level, children, titleDivider}) => {
     if(!children) return
@@ -41,7 +41,6 @@ const EntryTitle = ({level, children, titleDivider}) => {
     if(level === 2){ return <h2>{children}</h2> }
     if(level === 3){ return <h3>{children}</h3> }
     if(level === 4){ return <h4>{children}</h4> }
-    if(level === 5){ return <h5>{children}</h5> }
     return (<ParagraphTitle divider={titleDivider}>{children}</ParagraphTitle>)
 }
 
