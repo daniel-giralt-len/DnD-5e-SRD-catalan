@@ -27,7 +27,7 @@ const SpellsSection = ({
     <SectionWrapper>
         <h1 id={hrefId}>Descripcions dels Conjurs</h1>
         <BodyWrapper>
-            {spells.map(s=>(<Spell {...s} />))}
+            {spells.map(s=>(<Spell key={s.name} {...s} />))}
         </BodyWrapper>
     </SectionWrapper>
 )
