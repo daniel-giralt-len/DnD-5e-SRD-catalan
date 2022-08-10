@@ -25,10 +25,17 @@ const TableEntryWrapper = styled.div`
     margin: 0.6em 0;
 `
 
+const getCellAlignment = (colStyle = '') => {
+    if(colStyle.includes('text-center')) { return 'center' }
+    if(colStyle.includes('text-left'))   { return 'left'   }
+    if(colStyle.includes('text-right'))  { return 'right'  }
+    return 'left'
+}
+
 const TableHeader = styled.span`
     font-style: italic;
     font-weight: 700;
-    text-align: ${({colStyle}) => (colStyle && colStyle.includes('text-center')) ? 'center' : 'left'};
+    text-align: ${({colStyle}) => getCellAlignment(colStyle)};
     
     display: flex;
     align-items: flex-end; 
@@ -37,7 +44,7 @@ const TableHeader = styled.span`
 
 const Cell = styled.span`
     border-top: 0.001em solid black;
-    text-align: ${({colStyle}) => (colStyle && colStyle.includes('text-center')) ? 'center' : 'left'};
+    text-align: ${({colStyle}) => getCellAlignment(colStyle)};
 `
 
 const TableCaption = styled.span`
@@ -50,7 +57,8 @@ const Table = ({
     colStyles = [],
     rows = [],
     tableAlign
-    }) => (
+    }) => {
+        return(
         <TableEntryWrapper>
             {caption && <TableCaption>{caption}</TableCaption>}
             <TableAligner align={tableAlign}>
@@ -69,7 +77,12 @@ const Table = ({
                     }
                     {
                         rows
-                            .reduce((acc,r)=>([...acc,...r]),[])
+                            .reduce((acc,r)=>{
+                                if(r.type && r.type === 'row'){
+                                    return [...acc, ...r.row]
+                                }
+                                return [...acc,...r]
+                            },[])
                             .map((r,i)=>(
                                 <Cell
                                     colStyle={colStyles[i%colLabels.length]}
@@ -82,6 +95,6 @@ const Table = ({
                 </TableWrapper>
             </TableAligner>
         </TableEntryWrapper>
-)
+)}
 
 export default Table

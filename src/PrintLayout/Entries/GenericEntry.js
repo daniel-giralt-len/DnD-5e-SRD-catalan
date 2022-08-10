@@ -56,7 +56,7 @@ const renderEntry = (b,i,titleHeader,indent=true)=>{
                     <Text>{b}</Text>
                 </IndentedParagraph>
             )
-            : (<Text>{b}</Text>)   
+            : (<Text key={i}>{b}</Text>)   
     }
 
     if(b.type === 'table'){
@@ -90,7 +90,7 @@ const renderEntry = (b,i,titleHeader,indent=true)=>{
     if(b.type === 'list'){
         return (<ul key={i}>
             {b.items.map((e,i) => (
-                <li>
+                <li key={i}>
                     {renderEntry(e,i,null,false)}
                 </li>
             ))}
