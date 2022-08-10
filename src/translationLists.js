@@ -52,6 +52,15 @@ const creatureSizeLabel = {
     'G': 'Titànic',
 }
 
+const femaleCreatureSizeLabel = {
+    'S': 'Petita',
+    'M': 'Mitjana',
+    'T': 'Diminuta',
+    'L': 'Gran',
+    'H': 'Enorme',
+    'G': 'Titànica',
+}
+
 const skillLabel = {
     'athletics': 'Atletisme',
     'acrobatics': 'Acrobàcies',
@@ -91,5 +100,6 @@ export {
     armorTypeLabel,
     weaponTypeLabel,
     schoolLabel,
-    alignmentLabel
+    alignmentLabel,
+    femaleCreatureSizeLabel
 }
