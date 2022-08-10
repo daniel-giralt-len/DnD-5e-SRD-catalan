@@ -10,6 +10,7 @@ import {
 import { capitalizeFirstLetter, toSignedStr } from '../textModifiers'
 import { parseLinks } from '../EnrichedText'
 import Table from './Entries/Table'
+import EldritchInvocations from './EldritchInvocations'
 
 const SectionWrapper = styled.article`
     break-after: page;
@@ -231,6 +232,7 @@ const ClassSection = ({
             <UnusedKeysWarning rest={rest} keysToIgnore={keysToIgnore} />
             <h2>{subclassTitle}</h2>
             {renderSubclassFeatures(subclass, subclassFeature)}
+            {name === 'Bruixot' && <EldritchInvocations />}
         </BodyWrapper>
     </SectionWrapper>
 )
