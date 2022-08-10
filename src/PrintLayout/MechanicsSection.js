@@ -16,13 +16,20 @@ const MechanicsSection = ({
     sections,
     indices
 }) => (
-    <SectionWrapper>
-        {sections.map((s, i)=>(
-            <section key={i} id={indices[s.name]}>
-                <GenericEntry {...s} titleHeader={i === 0 ? 1 : 2}/>
-            </section>
-        ))}
-    </SectionWrapper>
+    <div>
+        <h1 id={indices[sections[0].name]}>{sections[0].name}</h1>
+        <SectionWrapper>
+            {sections.map((s, i)=>(
+                <section key={i} id={indices[s.name]}>
+                    <GenericEntry
+                        {...s}
+                        name={i === 0 ? null : s.name}
+                        titleHeader={i === 0 ? 1 : 2}
+                    />
+                </section>
+            ))}
+        </SectionWrapper>
+    </div>
 )
 
 export default MechanicsSection

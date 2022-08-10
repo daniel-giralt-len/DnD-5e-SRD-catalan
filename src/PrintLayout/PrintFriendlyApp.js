@@ -104,7 +104,7 @@ const PrintFriendlyApp = ({sections}) => {
         {
             mechanicsSections.map((sectionNames,i) => {
                 const subSections = sections.filter(cs => sectionNames.includes(cs.name))
-                if(i>0){return}
+                if(i>1){return}
                 return (<MechanicsSection
                     key={i}
                     indices={sectionNameToHrefId}
