@@ -8,7 +8,7 @@ const IndexList = styled.ol`
     column-count: 3;
 `
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.article`
     @media print {
         a {
             color: black;

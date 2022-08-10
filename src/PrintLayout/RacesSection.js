@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Race from './Entries/Race'
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.article`
     break-after:page;
     @media print {
         column-count: 2;

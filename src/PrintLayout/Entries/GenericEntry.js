@@ -144,7 +144,7 @@ const GenericEntry = ({
     const Title = (
         <EntryTitle
             level={titleHeader}
-            divider={titleDivider}
+            titleDivider={titleDivider}
         >
             {name}
         </EntryTitle>
