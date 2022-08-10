@@ -20,10 +20,12 @@ const ParagraphTitleStyle = styled.span`
 `
 
 const SubEntry = styled.div`
-    ${({isSubSection}) => isSubSection ? '': 'font-size: 0.9em;'}
-    > * {
-        text-indent: 0.8em;
-    }
+    ${({isSubSection}) => isSubSection ? '': `
+        font-size: 0.9em;
+        > * {
+            text-indent: 0.8em;
+        }
+    `}
 `
 
 const InsetEntry = styled(SubEntry)`
