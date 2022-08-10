@@ -7,6 +7,7 @@ import ClassSection from './ClassSection'
 import MechanicsSection from './MechanicsSection'
 import SpellListsSection from './SpellListsSection'
 import SpellsSection from './SpellsSection'
+import BestiarySection from './BestiarySection'
 
 const PrintableDocument = styled.main`
     max-width: 1200px;
@@ -58,7 +59,8 @@ const sectionNameToHrefId = {
     'Objectes': 'Objectes',
     'Metzines': 'Metzines',
     'Divinitats del Multivers': 'Divinitats del Multivers',
-    'Monstres': 'Monstres'
+    'Monstres': 'Monstres',
+    'Llista de Monstres': 'Llista de Monstres',
 }
 
 const mechanicsSections = [[
@@ -160,6 +162,10 @@ const PrintFriendlyApp = ({sections}) => {
             indices={sectionNameToHrefId}
             sections={[s['Estadístiques'], s['Modificar Criatures']]}
             hrefId={sectionNameToHrefId['Monstres']}
+        />
+        <BestiarySection
+            hrefId={sectionNameToHrefId['Llista de Monstres']}
+            {...s['Llista de Monstres']}
         />
 
     </PrintableDocument>)
