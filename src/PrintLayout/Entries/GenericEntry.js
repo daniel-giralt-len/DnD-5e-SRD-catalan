@@ -88,13 +88,22 @@ const renderEntry = (b,i,titleHeader,indent=true)=>{
     }
 
     if(b.type === 'list'){
-        return (<ul key={i}>
-            {b.items.map((e,i) => (
-                <li key={i}>
-                    {renderEntry(e,i,null,false)}
-                </li>
-            ))}
-        </ul>)
+        return (
+            <div>
+                {b.name && (<EntryTitle
+                    level={titleHeader+1}
+                >
+                    {b.name}
+                </EntryTitle>)}
+                <ul key={i}>
+                    {b.items.map((e,i) => (
+                        <li key={i}>
+                            {renderEntry(e,i,null,false)}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )
     }
 
 
