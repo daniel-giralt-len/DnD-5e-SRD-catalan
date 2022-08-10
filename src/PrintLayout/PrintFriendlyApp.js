@@ -4,6 +4,7 @@ import GenericSection from './GenericSection'
 import RacesSection from './RacesSection'
 import DocumentIndex from './DocumentIndex'
 import ClassSection from './ClassSection'
+import MechanicsSection from './MechanicsSection'
 
 const PrintableDocument = styled.main`
     max-width: 1200px;
@@ -28,8 +29,48 @@ const sectionNameToHrefId = {
     'Monjo': 'monjo',
     'Paladí': 'paladí',
     'Sortiller': 'sortiller',
+    'Passat el nivell 1': 'beyond 1',
+    'Multi-classe': 'multiclass',
+    'Alineament': 'alineament',
+    'Idiomes': 'idiomes',
+    'Inspiració': 'inspiració',
+    'Rerefons': 'rerefons',
+    'Rerefons d\'Exemple': 'rerefons sample',
+    'Equipament': 'equipament',
+    'Dots': 'dots',
+    'Dots d\'Exemple': 'dots sample',
+    'Emprar les Puntuacions de Característica': 'ability scors usage',
+    'Time': 'time',
+    'Moviment': 'moviment',
+    'Combat': 'combat',
+    'Llançament de Conjurs': 'llançament de conjurs',
 }
 
+const mechanicsSections = [[
+    'Passat el nivell 1',
+    'Multi-classe',
+    'Alineament',
+    'Idiomes',
+    'Inspiració',
+],[
+    'Rerefons',
+    'Rerefons d\'Exemple',
+],[
+    'Equipament',
+],[
+    'Dots',
+    'Dots d\'Exemple',
+],[
+    'Emprar les Puntuacions de Característica',
+],[
+    'Time',
+    'Moviment',
+],[
+    'Combat',
+],[
+    'Llançament de Conjurs',
+]
+]
 const PrintFriendlyApp = ({sections}) => {
     const s = sections.reduce((acc,ss) => ({...acc, [ss.name]:ss}),{})
     return(<PrintableDocument>
@@ -54,6 +95,17 @@ const PrintFriendlyApp = ({sections}) => {
                     subclass={classData.subclass}
                     subclassFeature={classData.subclassFeature}
                 />))
+        }
+        {
+            mechanicsSections.map((sectionNames,i) => {
+                const subSections = sections.filter(cs => sectionNames.includes(cs.name))
+                if(i>0){return}
+                return (<MechanicsSection
+                    key={i}
+                    indices={sectionNameToHrefId}
+                    sections={subSections}
+                />)
+            })
         }
     </PrintableDocument>)
 }

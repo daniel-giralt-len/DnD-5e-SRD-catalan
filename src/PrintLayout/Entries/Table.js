@@ -46,9 +46,9 @@ const TableCaption = styled.span`
 
 const Table = ({
     caption,
-    colLabels,
+    colLabels = [],
     colStyles = [],
-    rows,
+    rows = [],
     tableAlign
     }) => (
         <TableEntryWrapper>
