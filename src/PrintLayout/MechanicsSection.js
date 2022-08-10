@@ -21,23 +21,30 @@ const BodyWrapper = styled.article`
 `
 
 const MechanicsSection = ({
-    sections,
-    indices
-}) => (
-    <SectionWrapper>
-        <h1 id={indices[sections[0].name]}>{sections[0].name}</h1>
-        <BodyWrapper>
-            {sections.map((s, i)=>(
-                <section key={i} id={indices[s.name]}>
-                    <GenericEntry
-                        {...s}
-                        name={i === 0 ? null : s.name}
-                        titleHeader={i === 0 ? 1 : 2}
-                    />
-                </section>
-            ))}
-        </BodyWrapper>
-    </SectionWrapper>
-)
+    sections = [],
+    indices,
+    title
+}) => {
+    if(sections.length === 0) return
+    return (
+        <SectionWrapper>
+            {title
+                ? (<h1>{title}</h1>)
+                : (<h1 id={indices[sections[0].name]}>{sections[0].name}</h1>)
+            }
+            <BodyWrapper>
+                {sections.map((s, i)=>(
+                    <section key={i} id={indices[s.name]}>
+                        <GenericEntry
+                            {...s}
+                            name={(i === 0 && title) ? s.name : null}
+                            titleHeader={(i === 0 && !title) ? 1 : 2}
+                        />
+                    </section>
+                ))}
+            </BodyWrapper>
+        </SectionWrapper>
+    )
+}
 
 export default MechanicsSection
