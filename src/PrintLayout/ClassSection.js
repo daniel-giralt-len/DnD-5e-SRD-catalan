@@ -45,7 +45,7 @@ const Proficiencies = ({
     savingThrows = [],
     skills = []
 }) => {
-    const skillsEntry = `Escull-ne ${skills[0].choose.count} d'entre ${skills[0].choose.from.map(k=>skillLabel[k]).join(', ')}.`
+    const skillsEntry = `Escull-ne ${skills[0].choose.count} d'entre ${skills[0].choose.from.map(k=>skillLabel[k]||k).join(', ')}.`
 
     const armorEntry = armors.length === 0
     ? 'Cap.'
