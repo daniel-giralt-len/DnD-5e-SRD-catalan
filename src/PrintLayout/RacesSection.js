@@ -10,7 +10,7 @@ const SectionWrapper = styled.article`
 
 const RacesSection = ({name, entries, hrefId, RacialTraits}) => (
     <SectionWrapper>
-        <h2 id={hrefId}>{name}</h2>
+        <h1 id={hrefId}>{name}</h1>
         {RacialTraits}
         {entries.map(Race)}
     </SectionWrapper>
