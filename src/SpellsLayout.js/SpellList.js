@@ -1,21 +1,34 @@
-const SpellItem = ({name}) => (
-    <li>
-        <div>{name}</div>
-        <button>+</button>
-    </li>
-)
+import styled from 'styled-components'
+
+const SpellItemWrapper = styled.li`
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+`
+
+const Wrapper = styled.section`
+    max-height: 70%;
+    grid-area: list;
+    display: grid;
+    grid-template-columns: auto 2em;
+    padding: 0.5em 1em;
+    @media (max-width: 600px) {
+        padding: 0.25em 0.5em;
+    }
+`
 
 const SpellList = ({names}) => {
-    return (<ul>
+    return (<Wrapper>
         {names
             .map(name => (
-                <SpellItem 
-                    key={name}
-                    name={name}
-                />
+                <>
+                    <SpellItemWrapper>{name}</SpellItemWrapper>
+                    <button>+</button>
+                </>
+  
                 )
             )
         }
-    </ul>)
+    </Wrapper>)
 }
 export default SpellList

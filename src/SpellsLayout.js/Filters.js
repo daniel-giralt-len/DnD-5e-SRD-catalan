@@ -1,5 +1,11 @@
+import styled from 'styled-components'
+
+const Wrapper = styled.section`
+    grid-area: filters;
+`
+
 const Filters = ({classes, levels}) => {
-    return (<div>
+    return (<Wrapper>
         <div>
             <div>
                 {classes.map(c=>(
@@ -15,7 +21,11 @@ const Filters = ({classes, levels}) => {
                     </button>
                 ))}
             </div>
+            <div>
+                <button>Escollits</button>
+            </div>
+            <textarea placeholder="Cerca..."></textarea>
         </div>
-    </div>)
+    </Wrapper>)
 }
 export default Filters
