@@ -165,6 +165,12 @@ const PrintFriendlyApp = ({sections}) => {
         }
 
         <ObjectsSection
+            prefixSection={s['Objectes Màgics']}
+            hrefId={sectionNameToHrefId['Objectes Màgics']}
+            objects={s['Llista d\'Objectes Màgics']}
+        />
+
+        <ObjectsSection
             prefixSection={s['Objectes Màgics Conscients']}
             hrefId={sectionNameToHrefId['Objectes Màgics Conscients']}
             objects={s['Llista d\'Artefactes']}

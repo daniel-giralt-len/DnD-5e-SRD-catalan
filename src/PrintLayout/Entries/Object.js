@@ -15,7 +15,7 @@ const getSubtitle = ({
         wondrous ? 'objecte meravellós' : '',
         rarity,
         reqAttune ? `necessita harmonització${typeof reqAttune === 'string' ? ` ${reqAttune}` : ''}` : ''
-    ]
+    ].filter(s=>s.length>0)
     const m = capitalizeFirstLetter(p.join(', '))
     return `{@i ${m}}`
 }
