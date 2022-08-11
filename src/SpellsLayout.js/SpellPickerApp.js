@@ -25,7 +25,7 @@ const SpellSection = styled.section`
 `
 
 const SpellPickerApp = ({spells}) => {
-    const names = spells.map(s=>s.name)
+    const names = spells.map(s=>typeof s.srd === 'string' ? s.srd : s.name)
     const classesRaw = spells
         .map(s=>((s.classes||{}).fromClassList)||[])
         .reduce((acc,arr)=>([...acc,...arr]),[])
