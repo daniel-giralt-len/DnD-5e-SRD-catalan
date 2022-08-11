@@ -7,6 +7,7 @@ import {
     skillLabel
 } from '../../translationLists'
 import { capitalizeFirstLetter, toSignedStr } from '../../textModifiers'
+import { Bold } from '../../TextStyles'
 
 const ArticleWrapper = styled.article`
     ${({isSubrace})=> isSubrace ? '' : 'border-bottom: 1px solid black;'}
@@ -21,8 +22,6 @@ const ArticleWrapper = styled.article`
     margin-bottom: 0.8em;
     padding-bottom: 0.4em;
 `
-
-const Bold = styled.span`font-weight: bold;`
 
 const ScoreWrapper = styled.span`
     margin-left: 0.1em;

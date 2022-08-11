@@ -35,8 +35,9 @@ const InsetEntry = styled(SubEntry)`
 
 const allowedHeaderLevels = 4
 
-const EntryTitle = ({level, children, titleDivider}) => {
-    if(!children) return
+const EntryTitle = ({level, titleDivider, name}) => {
+    if(!name || name === '') return
+    const children = (<Text>{name}</Text>)
     if(level === 1){ return <h1>{children}</h1> }
     if(level === 2){ return <h2>{children}</h2> }
     if(level === 3){ return <h3>{children}</h3> }
@@ -92,9 +93,8 @@ const renderEntry = (b,i,titleHeader,indent=true)=>{
             <div key={i}>
                 {b.name && (<EntryTitle
                     level={titleHeader+1}
-                >
-                    {b.name}
-                </EntryTitle>)}
+                    name={b.name}
+                />)}
                 <ul>
                     {b.items.map((e,i) => (
                         <li key={i}>
@@ -176,9 +176,8 @@ const GenericEntry = ({
         <EntryTitle
             level={titleHeader}
             titleDivider={titleDivider}
-        >
-            {name}
-        </EntryTitle>
+            name={name}
+        />
     )
     
     return (<GenericEntryWrapper key={name}>

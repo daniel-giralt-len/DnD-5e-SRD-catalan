@@ -6,12 +6,11 @@ import SpellcastingEntry from './SpellcastingEntry'
 import Table from './Table'
 import UnusedKeysWarning from '../UnusedKeysWarning'
 import GenericEntry from './GenericEntry'
+import { Italic } from '../../TextStyles'
 
 const Wrapper = styled.div`
     break-inside: avoid-column;
 `
-
-const Italic = styled.p`font-style:italic;`
 
 const getTypeText = type => typeof type === 'string' ? type : type.type
 
@@ -118,7 +117,9 @@ const Bestiary = ({
 }) => (
     <Wrapper>
         <h2>{name}</h2>
-        <Italic>{capitalizeFirstLetter(getTypeText(type))} {getCreatureSizeText(type, size).toLowerCase()}, {getAlignmentText(alineament)}</Italic>
+        <p>
+            <Italic>{capitalizeFirstLetter(getTypeText(type))} {getCreatureSizeText(type, size).toLowerCase()}, {getAlignmentText(alineament)}</Italic>
+        </p>
         <div>
             <ColonEntry name="Classe d'Armadura (CA)" entry={getACText(ac)} />
             <ColonEntry name="Punts de Vida (PV)" entry={getHPText(hp)}/>
