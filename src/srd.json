@@ -22389,7 +22389,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -22404,7 +22404,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22414,7 +22414,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22434,7 +22434,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22444,7 +22444,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22454,7 +22454,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22634,7 +22634,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22654,7 +22654,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22875,7 +22875,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22885,7 +22885,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22895,7 +22895,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -22977,7 +22977,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -23059,7 +23059,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -23139,7 +23139,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -23150,7 +23150,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -23352,7 +23352,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -23362,7 +23362,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -23520,7 +23520,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -23590,7 +23590,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -23853,7 +23853,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -23946,14 +23946,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -23963,7 +23963,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24085,7 +24085,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24095,7 +24095,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24105,7 +24105,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24135,7 +24135,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24145,7 +24145,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24536,14 +24536,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24553,7 +24553,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24658,7 +24658,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -24731,7 +24731,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24794,7 +24794,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -24817,7 +24817,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24827,7 +24827,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24837,7 +24837,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24847,7 +24847,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -24955,7 +24955,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -25036,7 +25036,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25046,7 +25046,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25115,7 +25115,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -25176,14 +25176,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25193,7 +25193,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25253,7 +25253,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25391,7 +25391,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -25402,7 +25402,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25412,7 +25412,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25586,7 +25586,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -25606,7 +25606,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -26095,7 +26095,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -26230,7 +26230,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -26389,7 +26389,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -26523,7 +26523,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -26760,7 +26760,7 @@
             ],
             "fromClassListVariant": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB",
                 "definedInSource": "UAClassFeatureVariants"
               }
@@ -26845,7 +26845,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -26860,7 +26860,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27066,7 +27066,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27209,7 +27209,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -27228,7 +27228,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27337,7 +27337,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -27516,7 +27516,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27526,7 +27526,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27536,7 +27536,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27546,7 +27546,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27647,7 +27647,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27734,7 +27734,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27807,7 +27807,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -27834,7 +27834,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -27844,7 +27844,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -28359,7 +28359,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -28369,7 +28369,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -28419,7 +28419,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -28657,7 +28657,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -28853,7 +28853,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -29177,7 +29177,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -29192,7 +29192,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -29432,7 +29432,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -29612,7 +29612,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -30018,7 +30018,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -30028,7 +30028,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -30118,7 +30118,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -30257,7 +30257,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -30336,7 +30336,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -30439,7 +30439,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -30574,7 +30574,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -30605,7 +30605,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -30725,7 +30725,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -30736,7 +30736,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -30746,7 +30746,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -31087,7 +31087,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -31370,7 +31370,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -31574,7 +31574,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -31661,7 +31661,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -31696,7 +31696,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -31779,7 +31779,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -32258,7 +32258,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -32319,7 +32319,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -32354,7 +32354,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -32364,7 +32364,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -32584,7 +32584,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -32644,7 +32644,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -32842,7 +32842,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -32922,7 +32922,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -32932,7 +32932,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -32942,7 +32942,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -33195,7 +33195,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -33205,7 +33205,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -33407,7 +33407,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -33448,7 +33448,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -33458,7 +33458,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -33537,7 +33537,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -34157,7 +34157,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34167,7 +34167,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34177,7 +34177,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34278,7 +34278,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34288,7 +34288,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34473,7 +34473,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -34492,7 +34492,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34502,7 +34502,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34512,7 +34512,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34714,7 +34714,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34862,7 +34862,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -34877,7 +34877,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34887,7 +34887,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34897,7 +34897,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -34992,7 +34992,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -35178,7 +35178,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -35424,7 +35424,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -35464,7 +35464,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -35736,7 +35736,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -35763,7 +35763,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -35793,7 +35793,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36311,7 +36311,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -36405,7 +36405,7 @@
             ],
             "fromClassListVariant": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB",
                 "definedInSource": "TCE"
               }
@@ -36472,7 +36472,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36482,7 +36482,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36544,14 +36544,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36571,7 +36571,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36581,7 +36581,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36591,7 +36591,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36601,7 +36601,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36709,7 +36709,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36729,7 +36729,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36871,7 +36871,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36881,7 +36881,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -36950,7 +36950,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -37152,7 +37152,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -37172,7 +37172,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -37202,7 +37202,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -37311,7 +37311,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -37402,7 +37402,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -37776,7 +37776,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -37863,7 +37863,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -38114,7 +38114,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -38306,7 +38306,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -38931,14 +38931,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -38948,7 +38948,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -38978,7 +38978,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -38988,7 +38988,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39018,7 +39018,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39102,14 +39102,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39185,7 +39185,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -39274,7 +39274,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39295,7 +39295,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39325,7 +39325,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39335,7 +39335,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39355,7 +39355,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39436,7 +39436,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39446,7 +39446,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39456,7 +39456,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39802,7 +39802,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -39833,7 +39833,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40049,7 +40049,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40089,7 +40089,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40212,7 +40212,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -40306,7 +40306,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40327,7 +40327,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40503,7 +40503,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -40524,7 +40524,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40638,7 +40638,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40648,7 +40648,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -40745,7 +40745,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -41110,7 +41110,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -41312,7 +41312,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -41363,7 +41363,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -41492,7 +41492,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -41865,7 +41865,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42066,7 +42066,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -42160,7 +42160,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -42171,7 +42171,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42181,7 +42181,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42191,7 +42191,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42279,7 +42279,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -42306,7 +42306,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42381,7 +42381,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42502,7 +42502,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -42545,7 +42545,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42630,7 +42630,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -42653,7 +42653,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42857,7 +42857,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -42891,7 +42891,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42921,7 +42921,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -42931,7 +42931,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -43022,7 +43022,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -43769,7 +43769,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -43840,7 +43840,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -44201,7 +44201,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -44463,7 +44463,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -44478,7 +44478,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -44824,7 +44824,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -44947,7 +44947,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -44957,7 +44957,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -45113,7 +45113,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -45270,7 +45270,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -45564,7 +45564,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -45941,7 +45941,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -45952,7 +45952,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -45962,7 +45962,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46022,7 +46022,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46032,7 +46032,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46140,7 +46140,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46330,7 +46330,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -46410,14 +46410,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46427,7 +46427,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46735,7 +46735,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46755,7 +46755,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46785,7 +46785,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -46891,7 +46891,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -47265,7 +47265,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -47598,14 +47598,14 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -47615,7 +47615,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -47746,7 +47746,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48210,7 +48210,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48329,7 +48329,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48417,7 +48417,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48533,7 +48533,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48603,7 +48603,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48704,7 +48704,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -48721,7 +48721,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48731,7 +48731,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48741,7 +48741,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48944,7 +48944,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48954,7 +48954,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -48964,7 +48964,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49122,7 +49122,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -49137,7 +49137,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49147,7 +49147,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49222,7 +49222,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49383,7 +49383,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49570,7 +49570,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49590,7 +49590,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49690,7 +49690,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -49766,7 +49766,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -49963,7 +49963,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -49973,7 +49973,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -50284,7 +50284,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -50341,7 +50341,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -50482,7 +50482,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -50548,7 +50548,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -50558,7 +50558,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -50568,7 +50568,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -50578,7 +50578,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -50712,7 +50712,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -50743,7 +50743,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -50753,7 +50753,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -50817,7 +50817,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -50846,7 +50846,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51058,7 +51058,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51078,7 +51078,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51098,7 +51098,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51176,7 +51176,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -51282,7 +51282,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51460,7 +51460,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51470,7 +51470,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51480,7 +51480,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51490,7 +51490,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51597,7 +51597,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51785,7 +51785,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -51977,7 +51977,7 @@
             ],
             "fromClassListVariant": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB",
                 "definedInSource": "TCE"
               }
@@ -52041,7 +52041,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -52051,7 +52051,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -52148,7 +52148,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -52159,7 +52159,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -52169,7 +52169,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -52485,7 +52485,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -52538,7 +52538,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -52549,7 +52549,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -52559,7 +52559,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -52645,7 +52645,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -52835,7 +52835,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -52866,7 +52866,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -52984,7 +52984,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -53023,7 +53023,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -53033,7 +53033,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -53043,7 +53043,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -53134,7 +53134,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -53187,7 +53187,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -53343,7 +53343,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -53366,7 +53366,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -53376,7 +53376,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -53406,7 +53406,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -53701,14 +53701,14 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -53805,7 +53805,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -53878,7 +53878,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -53930,7 +53930,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -53983,7 +53983,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -54043,7 +54043,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -54344,7 +54344,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -54559,7 +54559,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -54788,7 +54788,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -54938,7 +54938,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -55038,7 +55038,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -55048,7 +55048,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -55206,7 +55206,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ]
@@ -55800,7 +55800,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -55946,7 +55946,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -56031,7 +56031,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -56405,7 +56405,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -56752,7 +56752,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -56762,7 +56762,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -56772,7 +56772,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -56782,7 +56782,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -56853,7 +56853,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -57008,7 +57008,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -57118,7 +57118,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57432,7 +57432,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57442,7 +57442,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57452,7 +57452,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57708,7 +57708,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57786,7 +57786,7 @@
           "classes": {
             "fromClassList": [
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               }
             ],
@@ -57803,7 +57803,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57833,7 +57833,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57843,7 +57843,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57853,7 +57853,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -57962,7 +57962,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -57977,7 +57977,7 @@
             "fromSubclass": [
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -58104,7 +58104,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -58114,7 +58114,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
@@ -58278,7 +58278,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -58436,7 +58436,7 @@
                 "source": "PHB"
               },
               {
-                "name": "Cleric",
+                "name": "Clergue",
                 "source": "PHB"
               },
               {
@@ -58507,7 +58507,7 @@
               },
               {
                 "class": {
-                  "name": "Cleric",
+                  "name": "Clergue",
                   "source": "PHB"
                 },
                 "subclass": {
