@@ -61,6 +61,7 @@ const sectionNameToHrefId = {
     'Divinitats del Multivers': 'Divinitats del Multivers',
     'Monstres': 'Monstres',
     'Llista de Monstres': 'Llista de Monstres',
+    'Apèndix A: Criatures Vàries': 'Apèndix A',
 }
 
 const mechanicsSections = [[
@@ -168,6 +169,11 @@ const PrintFriendlyApp = ({sections}) => {
             {...s['Llista de Monstres']}
         />
 
+        <BestiarySection
+            prefixSection={s['Apèndix A: Criatures Vàries']}
+            hrefId={sectionNameToHrefId['Apèndix A: Criatures Vàries']}
+            {...s['Llista de Criatures Vàries']}
+        />
     </PrintableDocument>)
 }
 export default PrintFriendlyApp
