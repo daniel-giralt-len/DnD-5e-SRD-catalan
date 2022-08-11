@@ -83,6 +83,16 @@ const Table = ({
                                 }
                                 return [...acc,...r]
                             },[])
+                            .map(r => {
+                                if(typeof r === 'object'){
+                                    if(r.type === 'cell' && r.roll){
+                                        const {exact, min, max} = r.roll
+                                        return exact ? exact.toString() : `${min} a ${max}`
+                                    }
+                                    console.warn('unknown row type',r.type)
+                                }
+                                return r
+                            })
                             .map((r,i)=>(
                                 <Cell
                                     colStyle={colStyles[i%colLabels.length]}

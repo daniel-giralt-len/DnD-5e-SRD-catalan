@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Bestiary from './Entries/Bestiary'
+import GenericEntry from './Entries/GenericEntry'
 
 const SectionWrapper = styled.div`
     margin-top: 1em;
@@ -21,12 +22,14 @@ const BodyWrapper = styled.article`
 `
 
 const BestiarySection = ({
+    prefixSection,
     name, entries,
     hrefId
 }) => (
     <SectionWrapper>
-        <h1 id={hrefId}>{name}</h1>
+        <h1 id={hrefId}>{prefixSection ? prefixSection.name : name}</h1>
         <BodyWrapper>
+            {prefixSection && <GenericEntry {...prefixSection} name={null} />}
             {entries.map(b=>(<Bestiary key={b.name} {...b} />))}
         </BodyWrapper>
     </SectionWrapper>

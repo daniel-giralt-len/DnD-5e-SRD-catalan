@@ -21,13 +21,23 @@ const weaponTypeLabel = {
 }
 
 const alignmentLabel = {
-	"G": "bo",
+    "G": "bo",
 	"L": "legal",
 	"N": "neutral",
 	"C": "caòtic",
 	"E": "malvat",
 	"U": "cap alineament",
-	"A": "qualsevol alineament",   
+	"A": "qualsevol alineament",
+}
+
+const alignmentComboLabel = {
+	"bo": ["G"],
+	"legal": ["L"],
+	"neutral": ["N"],
+	"caòtic": ["C"],
+	"malvat": ["E"],
+	"cap alineament": ["U"],
+	"qualsevol alineament": ["A"],
 
 	"qualsevol alineament no-bo": ["L", "NX", "C", "NY", "E"],
 	"qualsevol alineament no-legal": ["NX", "C", "G", "NY", "E"],
@@ -40,8 +50,12 @@ const alignmentLabel = {
 	"qualsevol alineament bo": ["L", "NX", "C", "G"],
 
 	"qualsevol alineament neutral": ["NX", "NY", "N"],
-
 }
+
+const getAlignmentLabel = as => (Object
+    .entries(alignmentComboLabel)
+    .find(([_,b])=> JSON.stringify(b) === JSON.stringify(as)) || [])
+    [0]
 
 const creatureSizeLabel = {
     'S': 'Petit',
@@ -50,6 +64,15 @@ const creatureSizeLabel = {
     'L': 'Gran',
     'H': 'Enorme',
     'G': 'Titànic',
+}
+
+const femaleCreatureSizeLabel = {
+    'S': 'Petita',
+    'M': 'Mitjana',
+    'T': 'Diminuta',
+    'L': 'Gran',
+    'H': 'Enorme',
+    'G': 'Titànica',
 }
 
 const skillLabel = {
@@ -91,5 +114,7 @@ export {
     armorTypeLabel,
     weaponTypeLabel,
     schoolLabel,
-    alignmentLabel
+    alignmentLabel,
+    femaleCreatureSizeLabel,
+    getAlignmentLabel
 }
