@@ -87,7 +87,7 @@ const mechanicsSections = [[
 ],[
     'Llançament de Conjurs',
 ],[
-    'Condicions'
+    'Condicions', 'Llista de Condicions'
 ]
 ]
 const runningACampaignSections = [
