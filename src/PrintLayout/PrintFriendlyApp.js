@@ -8,6 +8,7 @@ import MechanicsSection from './MechanicsSection'
 import SpellListsSection from './SpellListsSection'
 import SpellsSection from './SpellsSection'
 import BestiarySection from './BestiarySection'
+import ObjectsSection from './ObjectsSection'
 
 const PrintableDocument = styled.main`
     max-width: 1200px;
@@ -59,6 +60,8 @@ const sectionNameToHrefId = {
     'Objectes': 'Objectes',
     'Metzines': 'Metzines',
     'Divinitats del Multivers': 'Divinitats del Multivers',
+    'Objectes Màgics': 'Objectes Màgics',
+    'Objectes Màgics Conscients': 'Objectes Màgics Conscients',
     'Monstres': 'Monstres',
     'Llista de Monstres': 'Llista de Monstres',
     'Apèndix A: Criatures Vàries': 'Apèndix A',
@@ -148,6 +151,7 @@ const PrintFriendlyApp = ({sections}) => {
             hrefId={sectionNameToHrefId['Descripcions dels Conjurs']}
             spells={s['Descripcions dels Conjurs'].entries}
         />
+
         {
             runningACampaignSections.map((sectionNames,i) => {
                 const subSections = sections.filter(cs => sectionNames.includes(cs.name))
@@ -159,6 +163,13 @@ const PrintFriendlyApp = ({sections}) => {
                 />)
             })
         }
+
+        <ObjectsSection
+            prefixSection={s['Objectes Màgics Conscients']}
+            hrefId={sectionNameToHrefId['Objectes Màgics Conscients']}
+            objects={s['Llista d\'Artefactes']}
+        />
+
         <MechanicsSection
             title='Monstres'
             indices={sectionNameToHrefId}

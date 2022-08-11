@@ -59748,7 +59748,7 @@
       "id": "248"
     },
     {
-      "name": "Objectes Màgics",
+      "name": "Llista d'Objectes Màgics",
       "type": "entries",
       "entries": [
         {
@@ -68639,7 +68639,7 @@
           "source": "DMG",
           "page": 225,
           "srd": true,
-          "rarity": "artifact",
+          "rarity": "artefacte",
           "reqAttune": true,
           "wondrous": true,
           "weight": 3,

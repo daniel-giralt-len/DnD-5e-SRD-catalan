@@ -35,6 +35,7 @@ const linkBuilder = {
     sense: fallback,
     skill: fallback,
     spell: italic,
+    table: fallback
 }
 
 const buildHyperLink = (data,i) => {
