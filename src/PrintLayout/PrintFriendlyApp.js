@@ -47,7 +47,7 @@ const sectionNameToHrefId = {
     'Equipament': 'equipament',
     'Dots': 'dots',
     'Emprar les Puntuacions de Característica': 'ability scors usage',
-    'Time': 'time',
+    'Temps': 'temps',
     'Moviment': 'moviment',
     'Combat': 'combat',
     'Llançament de Conjurs': 'llançament de conjurs',
@@ -85,7 +85,7 @@ const mechanicsSections = [[
 ],[
     'Emprar les Puntuacions de Característica',
 ],[
-    'Time',
+    'Temps',
     'Moviment',
 ],[
     'Combat',
