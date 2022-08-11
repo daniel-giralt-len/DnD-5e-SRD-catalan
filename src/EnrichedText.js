@@ -35,7 +35,8 @@ const linkBuilder = {
     sense: fallback,
     skill: fallback,
     spell: italic,
-    table: fallback
+    italic: italic,
+    table: fallback,
 }
 
 const buildHyperLink = (data,i) => {
@@ -55,7 +56,7 @@ const buildHyperLink = (data,i) => {
 const parseLinks = s => s
     .toString()
     .split(/{|}/g).map((s,i)=>
-        s[0]==='@'
+        ['@'].includes(s[0])
         ? buildHyperLink(s.substring(1), i)
         : s
     )

@@ -60762,6 +60762,120 @@
           "hasFluffImages": true
         },
         {
+          "name": "Arma +1",
+          "namePrefix": " +1",
+          "source": "DMG",
+          "page": 213,
+          "srd": true,
+          "tier": "major",
+          "rarity": "poc comú",
+          "bonusWeapon": "+1",
+          "entries": [
+            "Tens un {=bonusWeapon} a les tirades d'impacte i de dany fetes amb aquesta arma màgica."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics F"
+          ]
+        },
+        {
+          "name": "Arma +2",
+          "namePrefix": " +2",
+          "source": "DMG",
+          "page": 213,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "bonusWeapon": "+2",
+          "entries": [
+            "Tens un {=bonusWeapon} a les tirades d'impacte i de dany fetes amb aquesta arma màgica."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
+        },
+        {
+          "name": "Arma +3",
+          "namePrefix": " +3",
+          "source": "DMG",
+          "page": 213,
+          "srd": true,
+          "tier": "major",
+          "rarity": "molt rar",
+          "bonusWeapon": "+3",
+          "entries": [
+            "Tens un {=bonusWeapon} a les tirades d'impacte i de dany fetes amb aquesta arma màgica."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics H"
+          ]
+        },
+        {
+          "name": "Arma Viciada",
+          "namePrefix": "Vicious ",
+          "source": "DMG",
+          "page": 209,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "entries": [
+            "When you roll a 20 with this arma màgica, the target takes an extra 7 {=dmgType}."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
+        },
+        {
+          "name": "Armadura +1",
+          "namePrefix": " +1",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "bonusAc": "+1",
+          "entries": [
+            "Tens un {=bonusAc} a la CA mentre vesteixis l'armadura."
+          ]
+        },
+        {
+          "name": "Armadura +2",
+          "namePrefix": " +2",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "tier": "major",
+          "rarity": "molt rar",
+          "bonusAc": "+2",
+          "entries": [
+            "Tens un {=bonusAc} a la CA mentre vesteixis l'armadura."
+          ]
+        },
+        {
+          "name": "Armadura +3",
+          "namePrefix": " +3",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "tier": "major",
+          "rarity": "llegendari",
+          "bonusAc": "+3",
+          "entries": [
+            "Tens un {=bonusAc} a la CA mentre vesteixis l'armadura."
+          ]
+        },
+        {
+          "name": "Armadura d'Adamantí",
+          "namePrefix": "Adamantí ",
+          "source": "DMG",
+          "page": 150,
+          "srd": true,
+          "tier": "major",
+          "rarity": "poc comú",
+          "entries": [
+            "Aquesta armadura està reforçada amb adamantí, una de les substàncies més dures que hi ha. Mentre la vesteixis, tot impacte crític que rebis es torna un impacte normal."
+          ]
+        },
+        {
           "name": "Armadura d'Invulnerabilitat",
           "source": "DMG",
           "page": 152,
@@ -60781,6 +60895,23 @@
             "Taula d'Objectes Màgics I"
           ],
           "hasFluffImages": true
+        },
+        {
+          "name": "Armadura de Mitrall",
+          "namePrefix": "Mitrall ",
+          "source": "DMG",
+          "page": 182,
+          "srd": true,
+          "tier": "minor",
+          "rarity": "poc comú",
+          "strength": null,
+          "sigil": false,
+          "entries": [
+            "El mitrall és un material lleuger i flexible. Una camisa de malla o cuirassa de mitrall es poden dur sota roba comuna. Si l'armadura, de normal, desavantatge en tirades de Destresa ({@skill Sigil}) o té un requeriment de Força, la versió feta de mitrall no ho té."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics B"
+          ]
         },
         {
           "name": "Armadura de Plaques Etèria",
@@ -60804,6 +60935,176 @@
           ],
           "lootTables": [
             "Taula d'Objectes Màgics I"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Acid",
+          "nameSuffix": " of Acid Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "àcid"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Cold",
+          "nameSuffix": " of Cold Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "fred"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Fire",
+          "nameSuffix": " of Fire Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "foc"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Force",
+          "nameSuffix": " of Force Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "força"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Lightning",
+          "nameSuffix": " of Lightning Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "elèctric"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Necrotic",
+          "nameSuffix": " of Necrotic Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "necròtic"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Poison",
+          "nameSuffix": " of Poison Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "verí"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Psychic",
+          "nameSuffix": " of Psychic Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "psíquic"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Radiant",
+          "nameSuffix": " of Radiant Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "radiant"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
+          ]
+        },
+        {
+          "name": "Armadura de resistència a Thunder",
+          "nameSuffix": " of Thunder Resistència",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "resist": [
+            "tro"
+          ],
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "hasRefs": true,
+          "entries": [
+            "{#itemEntry Armadura de Resistència}"
           ]
         },
         {
@@ -64061,6 +64362,51 @@
           "hasFluffImages": true
         },
         {
+          "name": "Defensora",
+          "namePrefix": "Defensora ",
+          "source": "DMG",
+          "page": 164,
+          "srd": true,
+          "tier": "major",
+          "rarity": "llegendari",
+          "reqAttune": true,
+          "bonusWeapon": "+3",
+          "bonusAc": "+1",
+          "entries": [
+            "Tens un +3 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica.",
+            "A cada torn teu, el primer cop que ataques amb aquesta espasa, pots transferir tot o part del bonus de l'espasa a la teva CA (i no hi serà pels atacs d'aquell torn). Per exemple, pots decidir tenir només un +1 a les tirades d'impacte i de dany i rebre un +2 a la CA. Els efectes romanen fins el final del teu proper torn. Has d'empunyar l'espasa per a rebre el bonus a CA."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics I"
+          ]
+        },
+        {
+          "name": "Destral Bersèrker",
+          "namePrefix": "Berserker ",
+          "source": "DMG",
+          "page": 155,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "curse": true,
+          "bonusWeapon": "+1",
+          "entries": [
+            "Tens un +1 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica. A més, mentre la tinguis harmonitzada, els teus punts de vida màxims s'incrementen en 1 per cada nivell que tinguis.",
+            {
+              "type": "entries",
+              "name": "Maledicció",
+              "entries": [
+                "Aquesta axe està maleïda, i, si t'hi harmonitzes, la maledicció s'extèn a tu. Mentre tinguis la maledicció, no vols separar-te de la destral i la duus sempre amb tu. A més, si pots veure o sentir a un enemic a 60 peus d'abast, tens desavantatge a tirades d'impacte fetes amb qualsevol altra arma."
+              ]
+            },
+            "Quan un enemic et danya mentre duus la destral, has de salvar per Saviesa (CD 15). Si falles, et tornes berserk. Berserk així, has d'emprar la teva acció cada ronda per a atacar amb la destral a la criatura que tinguis més propera. Si tens atacs extra com a part de l'acció Atacar, els uses. Quan derrotis a la criatura més propera, et mous a la següent que tinguis més a prop. Si tens múltiples objectius possibles, n'ataques un a l'atzar. Continues berserk fins que comencis el teu torn sense criatures a 60 peus de tu que puguis veure o sentir."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
+        },
+        {
           "name": "Diadema d'Intel·lecte",
           "source": "DMG",
           "page": 173,
@@ -64140,6 +64486,45 @@
             "Taula d'Objectes Màgics F"
           ],
           "hasFluffImages": true
+        },
+        {
+          "name": "Escut (*) +1",
+          "namePrefix": " +1",
+          "source": "DMG",
+          "page": 200,
+          "srd": true,
+          "tier": "major",
+          "rarity": "poc comú",
+          "bonusAc": "+1",
+          "entries": [
+            "Mentre duguis l'escut, tens un {=bonusAc} a la CA. Aquest bonus es suma al bonus normal de l'escut."
+          ]
+        },
+        {
+          "name": "Escut (*) +2",
+          "namePrefix": " +2",
+          "source": "DMG",
+          "page": 200,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "bonusAc": "+2",
+          "entries": [
+            "Mentre duguis l'escut, tens un {=bonusAc} a la CA. Aquest bonus es suma al bonus normal de l'escut."
+          ]
+        },
+        {
+          "name": "Escut (*) +3",
+          "namePrefix": " +3",
+          "source": "DMG",
+          "page": 200,
+          "srd": true,
+          "tier": "major",
+          "rarity": "molt rar",
+          "bonusAc": "+3",
+          "entries": [
+            "Mentre duguis l'escut, tens un {=bonusAc} a la CA. Aquest bonus es suma al bonus normal de l'escut."
+          ]
         },
         {
           "name": "Escut Animat",
@@ -64285,6 +64670,93 @@
             "Taula d'Objectes Màgics F"
           ],
           "hasFluffImages": true
+        },
+        {
+          "name": "Espasa afilada",
+          "nameSuffix": " afilada",
+          "source": "DMG",
+          "page": 206,
+          "srd": true,
+          "tier": "major",
+          "rarity": "molt rar",
+          "reqAttune": true,
+          "entries": [
+            "Quan impactes a un objecte amb aquesta espasa, el dany dels daus és màxim.",
+            "Quan ataques a una criatura amb aquesta arma i treus un 20 a impactar, fa 14 de dany tallant extra; llavors tires un altre {@dice d20}. Si treus un altre 20, li talles una de les extremitats, i l'efecta el determina el/la/li MM. Si la criatura no té extremitats, en talles un tros de cos.",
+            "A més, pots dir la paraula màgica de l'espasa perquè emeti llum forta en un radi de 10 peus i llum tènue uns 10 peus adicionals. Tornar a dir la paraula màgica o embeinar l'espasa apaga la llum."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics H"
+          ]
+        },
+        {
+          "name": "Espasa dansaire",
+          "namePrefix": "Dansaire ",
+          "source": "DMG",
+          "page": 161,
+          "srd": true,
+          "tier": "major",
+          "rarity": "molt rar",
+          "reqAttune": true,
+          "entries": [
+            "Pots, com a acció bonus, llançar aquesta espasa màgica a l'aire i dir la paraula màgica. Quan ho fas l'espasa comença a flotar, vola fins a 30 peus, i ataca a una criatura que escullis a 5 peus d'abast de l'espasa. Fa servir la teva tirada d'impacte i el modificador d'habilitat per la tirada de dany.",
+            "Mentre floti, pots, com a acció bonus, fer-la volar 30 peus més a un espai a 30 peus d'abast de tu i atacar a una criatura a 5 peus d'abast seus.",
+            "Quan l'espasa ataca per 4a vegada, vola fins a 30 peus i prova de tornar a la teva ma. Si no tens cap ma lliure, cau al terra als teus peus. Si l'espasa no pot arribar a tu, s'acosta a tu tan com pot i llavors cau al terra. Si en algun moment agafes l'espasa o te n'allunyes a més de 30 peus, l'espasa deixa de flotar."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics H"
+          ]
+        },
+        {
+          "name": "Espasa de Drenar Vida",
+          "nameSuffix": " de Drenar Vida",
+          "source": "DMG",
+          "page": 206,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "entries": [
+            "Quan ataques a aquesta criatura amb una arma màgica i treus un 20 a impactar, l'objectiu rep 10 de dany necròtic si no és un constructe o un no-mort; també obténs 10 punts de vida temporals."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
+        },
+        {
+          "name": "Espasa de Feridura",
+          "nameSuffix": " de Feridura",
+          "source": "DMG",
+          "page": 207,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "entries": [
+            "Els punts de vida que tregui aquesta espas només es poden recuperar amb un Descans Curt o Llarg, i no amb altres mètodes com regeneració o màgic.",
+            "Un cop per torn, quan impactes a una criatura amb aquesta arma màgica, pots ferir a l'objectiu. A l'inici de cada torn de la criatura ferida, rep {@dice 1d4} de dany necròtic per cada ferida rebuta, i després pot salvar per Constitució (CD 15). Si supera, acaba l'efecte de totes les ferides. Alternativament, la criatura ferida o una que hi estigui a 5 peus d'abast pot, com a acció, fer una tirada de Saviesa ({@skill Medicina}) (CD 15); si supera, acaba l'efecte de totes les ferides."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
+        },
+        {
+          "name": "Espasa Vorpal",
+          "namePrefix": "Vorpal ",
+          "source": "DMG",
+          "page": 209,
+          "srd": true,
+          "tier": "major",
+          "rarity": "llegendari",
+          "reqAttune": true,
+          "bonusWeapon": "+3",
+          "entries": [
+            "Tens un +3 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica. A més, l'arma ignora resistència al dany tallant.",
+            "Quan ataques a una criatura amb 1 o més caps i treus un 20 al dau d'impacte, en talles una. Si la criatura no pot viure sense aquell cap, mor. Una criatura és immune a aquest efecte si és immune al dany tallant, no té o necessita un cap, té accions llegendàries,o el/la/li MM decideix que el cap és massa gran perquè el talli l'arma. En ves d'això la criatura rep {@dice 6d8} de dany tallant extra."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics I"
+          ]
         },
         {
           "name": "Espelma de Convocació",
@@ -64827,6 +65299,19 @@
           "hasFluffImages": true
         },
         {
+          "name": "Fletxa d'Execució (*)",
+          "nameSuffix": " of Slaying",
+          "source": "DMG",
+          "page": 152,
+          "srd": true,
+          "tier": "minor",
+          "rarity": "molt rar",
+          "entries": [
+            "Una {@italic fletxa d'execució} és una arma màgica que executa un tipus específic de criatura. Algunes són més restrictives que d'altres: hi ha tant {@italic fletxes d'execució de dracs} com {@italic fletxes d'execució de dracs blaus}. Si una criatura és del tipus, raça, o grup determinat a la {@italic fletxa d'execució} i aquesta l'impacta, la criatura ha de salvar per Constitució (CD 17). Si falla, rep {@dice 6d10} de dany perforant extra. Si supera, en rep la meitat.",
+    				"Quan una {@italic fletxa d'execució} causa dany a una criatura, es torna no-màgica."
+          ]
+        },
+        {
           "name": "Forat Portàtil",
           "source": "DMG",
           "page": 185,
@@ -64863,6 +65348,42 @@
             "Taula d'Objectes Màgics G"
           ],
           "hasFluffImages": true
+        },
+        {
+          "name": "Fulla Fortuïta",
+          "namePrefix": "Fulla Fortuïta ",
+          "source": "DMG",
+          "page": 179,
+          "srd": true,
+          "tier": "major",
+          "rarity": "llegendari",
+          "reqAttune": true,
+          "bonusWeapon": "+1",
+          "bonusSavingThrow": "+1",
+          "charges": "{@dice 1d4 - 1}",
+          "entries": [
+            "Tens un +1 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica. Mentre duguis l'espasa, també tens un +1 a les salvades.",
+            {
+              "type": "entries",
+              "name": "Fortuna",
+              "entries": [
+                "Mentre duguis l'espasa, pots emprar la seva sort (no requereix acció) i re-tirar una tirada d'impacte, d'habilitat, o de salvada que vulguis. Has d'emprar el segon resultat. Aquest tret no es pot tornar a utilitzar fins el proper trenc d'alba."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Desig",
+              "entries": [
+                "L'espasa té {@dice 1d4 - 1} càrregues. Mentre l'empunyes, pots, com a acció, gastar 1 càrrega i llançar el conjur {@spell desig} amb ell. Aquest tret no es pot tornar a utilitzar fins el proper trenc d'alba. The sword perd aquest tret if si no li queden càrregues."
+              ]
+            }
+          ],
+          "attachedSpells": [
+            "desig"
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics I"
+          ]
         },
         {
           "name": "Fulla Solar",
@@ -65169,6 +65690,22 @@
           "hasFluffImages": true
         },
         {
+          "name": "Llengua-Flama",
+          "namePrefix": "Llengua-Flama ",
+          "source": "DMG",
+          "page": 170,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "reqAttune": true,
+          "entries": [
+            "Pots, com a acció bonus, dir la paraula màgica de l'espasa: llavors sorgiran flames de la fulla. Emeten llum forta en un radi de 40 peus i llum tènue uns 40 peus adicionals. Encesa així, l'espasa fa un  {@dice 2d6} de dany de foc extra a tot objectiu que impacti. Les flames romanen fins que les apagues dient la paraula màgica com a acció bonus, o bé fins que deixis anar o embeinis l'espasa."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
+        },
+        {
           "name": "Maça Castigadora",
           "source": "DMG",
           "page": 179,
@@ -65397,6 +65934,27 @@
           "hasFluffImages": true
         },
         {
+          "name": "Marca-Gebre",
+          "namePrefix": "Marca-Gebre ",
+          "source": "DMG",
+          "page": 171,
+          "srd": true,
+          "resist": [
+            "foc"
+          ],
+          "tier": "major",
+          "rarity": "molt rar",
+          "reqAttune": true,
+          "entries": [
+            "Quan impactes amb aquesta espasa màgica, l'objectiu rep {@dice 1d6} de dany de fred extra. A més, mentre empunyes l'espasa, tens resistència al dany de foc.",
+            "En temperatures congel·lants, la fulla desprèn llum forta en un radi de 10 peus i llum tènue uns 10 peus adicionals.",
+            "Quan desembeines l'arma, pots apagar tota flama no-màgica a 30 peus de tu. Només pots fer això 1 cop per hora."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics H"
+          ]
+        },
+        {
           "name": "Martell de Guspires",
           "source": "DMG",
           "page": 173,
@@ -65434,6 +65992,40 @@
             "Taula d'Objectes Màgics I"
           ],
           "hasFluffImages": true
+        },
+        {
+          "name": "Mata-Dracs",
+          "namePrefix": "Mata-Dracs ",
+          "source": "DMG",
+          "page": 166,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "bonusWeapon": "+1",
+          "entries": [
+            "Tens un +1 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica.",
+            "Quan impactes a un drac amb aquesta arma, li fas {@dice 3d6} de dany extra del tipus de l'arma. En aquest context, \"drac\" significa tota criatura de tipus drac; per tant, inclou tortugues drac, wíverns, i així."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
+        },
+        {
+          "name": "Mata-Gegants",
+          "namePrefix": "Mata-Gegants ",
+          "source": "DMG",
+          "page": 172,
+          "srd": true,
+          "tier": "major",
+          "rarity": "rar",
+          "bonusWeapon": "+1",
+          "entries": [
+            "Tens un +1 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica.",
+            "Quan impactes a un gegant amb aquesta arma, li fas {@dice 2d6} de dany extra del tipus de l'arma i ha de salvar per Força (CD 15). Si falla, cau {@condition enderrocat}. En aquest context, \"gegant\" significa tota criatura de tipus gegant; per tant, inclou ettins, tròls, i així."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics G"
+          ]
         },
         {
           "name": "Medalló de Pensaments",
@@ -65487,6 +66079,73 @@
           "hasFluffImages": true
         },
         {
+          "name": "Munició +1",
+          "namePrefix": " +1",
+          "source": "DMG",
+          "page": 150,
+          "srd": true,
+          "tier": "minor",
+          "rarity": "poc comú",
+          "bonusWeapon": "+1",
+          "entries": [
+            "Tens un {=bonusWeapon} a tirades d'impacte i de dany fetes amb aquesta munició màgica. Un cop impacta a un objectiu, la munició ja no és màgica."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics B"
+          ]
+        },
+        {
+          "name": "Munició +2",
+          "namePrefix": " +2",
+          "source": "DMG",
+          "page": 150,
+          "srd": true,
+          "tier": "minor",
+          "rarity": "rar",
+          "bonusWeapon": "+2",
+          "entries": [
+            "Tens un {=bonusWeapon} a tirades d'impacte i de dany fetes amb aquesta munició màgica. Un cop impacta a un objectiu, la munició ja no és màgica."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics C"
+          ]
+        },
+        {
+          "name": "Munició +3",
+          "namePrefix": " +3",
+          "source": "DMG",
+          "page": 150,
+          "srd": true,
+          "tier": "minor",
+          "rarity": "molt rar",
+          "bonusWeapon": "+3",
+          "entries": [
+            "Tens un {=bonusWeapon} a tirades d'impacte i de dany fetes amb aquesta munició màgica. Un cop impacta a un objectiu, la munició ja no és màgica."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics D"
+          ]
+        },
+        {
+          "name": "Nou Drenavides",
+          "namePrefix": "Nou Drenavides ",
+          "source": "DMG",
+          "page": 183,
+          "srd": true,
+          "tier": "major",
+          "rarity": "molt rar",
+          "reqAttune": true,
+          "bonusWeapon": "+2",
+          "charges": "{@dice 1d8 + 1}",
+          "entries": [
+            "Tens un +2 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica.",
+            "L'espasa té {@dice 1d8 + 1} càrregues. Si impactes amb un crític contra una criatura amb 100 punts de vida o menys, ha de salvar per Constitució (CD 15). Si falla, és derrotada instantàniament: l'espasa arranca la seva energia vital del seu cos (excepte dels constructes i els no-morts). L'espasa perd una càrrega si es derrota una criatura així. Quan l'espasa es queda sense càrregues, perd aquesta propietat."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics H"
+          ]
+        },
+        {
           "name": "Oli d'Eterietat",
           "source": "DMG",
           "page": 183,
@@ -65538,6 +66197,70 @@
           "lootTables": [
             "Taula d'Objectes Màgics B"
           ]
+        },
+        {
+          "name": "Orbe dels Dracs",
+          "source": "DMG",
+          "page": 225,
+          "srd": true,
+          "rarity": "artefacte",
+          "reqAttune": true,
+          "wondrous": true,
+          "weight": 3,
+          "recharge": "trenc d'alba",
+          "charges": 7,
+          "entries": [
+            "Fa molt de temps els elfs i els humans lliuraren una guerra terrible contra dracs malvats. Quan tot semblava perdut, un grup de mags poderosos empraren la seva millor màgia i forjaren les cinc Orbes dels Dracs per a derrotar-los. Cada orbe es dugué a cinc torres on es feren servir per a accelerar la victòria. Els mags les feien servir d'esquer pels dracs, i tot seguit els destruien amb màgia poderosa.",
+            "Les torres, amb el pas dels anys, acabaren caient, i les orbes o bé es destruiren o bé es tornaren llegenda; es creu que només n'han sobreviscut 3. La seva màgia s'ha desfigurat amb els segles: tot i que segueixen cridant als dracs, també tenen un cert control sobre ells.",
+            "Cada orbe conté l'essència d'un drac malvat, una presència que rebutja que li treguin la màgia que la composa. Si no tens prou força de personalitat, et pots convertir en un esclau de l'orbe.",
+            "Una orbe és un a bola de vidre d'unes 10 polzades de diametre, i té gravats. Quan s'usa, creix a unes 20 polzades de diametre i hi apareix boirina a dins.",
+            "Quan t'hi harmonitzes, pots, com a acció, mirar a les profunditats de l'orb i dir la paraula màgica. Llavors has de fer una tirada de Carisma (CD 15). Si superes, controles l'orbe mentre duri l'harmonització. Si falles, esdevéns {@condition fascinat} per ella mentre dure l'harmonització.",
+            "{@condition fascinat} així, no pots acabar l'harmonització voluntàriament, i l'orbe et llança {@spell suggestió} a voluntat (CD 18). Amb el conjur t'urgeix a complir els seus propòsits malvats. L'essència dracònica de l'orbe pot voler diverses coses: l'aniquilació d'una gent en particular, ser lliure, escampar patiment pel món, que el culte de Tiamat proliferi, o quelcom més que decideixi el/la/li MM.",
+            {
+              "type": "entries",
+              "name": "Propietats Aleatòries",
+              "entries": [
+                "Una Orbe dels Dracs té les propietats aleatòries segëunts:",
+                {
+                  "type": "list",
+                  "items": [
+                    "2 {@table Artifact Properties; Minor Beneficial Properties|dmg|propietats beneficioses menor}",
+                    "1 {@table Artifact Properties; Minor Detrimental Properties|dmg|propietat perjudicial menor}",
+                    "1 {@table Artifact Properties; Major Detrimental Properties|dmg|propietat perjudicial major}"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Conjurs",
+              "entries": [
+                "L'orbe té 7 càrregues i en recupera {@dice 1d4 + 3} de gastades a trenc d'alba. Si controles l'orbe pots, com a acció i gastant 1 càrrega o més, llançar un dels conjurs següents (CD 18): {@spell curar ferides} (a nivell 5, 3 càrregues), {@spell llum del dia} (1 càrrega), {@spell abjurar la mort} (2 càrregues), or {@spell escodrinyar} (3 càrregues). També pots, com a acció, llançar el conjur {@spell detectar màgia} sense gastar càrregues."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Atraure Dracs",
+              "entries": [
+                "Mentre controlis l'orbe, pots, com a acció, fer que l'artefacte emeti un missatge telepàtic en totes direccions a 40 milles. Tot drac malvat tindrà la necessitat d'apropar-se a l'orbe tant com pugui i per la ruta més ràpida. Les divinitats dracòniques com ara  {@creature Tiamat|RoT} no els afecta. Els dracs que atregui l'orbe poden ser hostils vers a tu. Un cop empris aquesta propietat, no hi pots tornar durant 1 hora."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Destruir una Orbe",
+              "entries": [
+                "Una Orbe dels Dracs sembla fràgil però és invulnerable a la majoria del dany, com ara dels atacs i alenades de drac. Un conjur {@spell desintegrar} o un bon impacte amb una arma màgica +3 pot destruir-la."
+              ]
+            }
+          ],
+          "attachedSpells": [
+            "detectar màgia",
+            "curar ferides",
+            "llum del dia",
+            "abjurar la mort",
+            "escodrinyar"
+          ],
+          "hasFluffImages": true
         },
         {
           "name": "Pedra d'Ioun, Absorció",
@@ -68357,6 +69080,29 @@
           ]
         },
         {
+          "name": "Venjador Sagrat",
+          "namePrefix": "Venjador Sagrat ",
+          "source": "DMG",
+          "page": 174,
+          "srd": true,
+          "tier": "major",
+          "rarity": "llegendari",
+          "reqAttune": "per un paladí",
+          "reqAttuneTags": [
+            {
+              "class": "paladí"
+            }
+          ],
+          "bonusWeapon": "+3",
+          "entries": [
+            "Tens un +3 a a les tirades d'impacte i de dany fetes amb aquesta arma màgica. Quan impactes a un diastre o a un no-mort amb l'arma, la criatura rep un {@dice 2d10} de dany radiant extra.",
+            "Mentre empunyis l'espasa desembeinada, crea una aura centrada en tu de 10 peus de radi. Tu i tota criatura amistosa a tu a l'àrea té avantatge a salvades contra conjurs i altres efectes màgics. Si tens 17 o més nivells de paladí, el radi és de 30 peus."
+          ],
+          "lootTables": [
+            "Taula d'Objectes Màgics I"
+          ]
+        },
+        {
           "name": "Ventall de Tifons",
           "source": "DMG",
           "page": 213,
@@ -68633,72 +69379,7 @@
     {
       "name": "Llista d'Artefactes",
       "type": "entries",
-      "entries": [
-        {
-          "name": "Orbe dels Dracs",
-          "source": "DMG",
-          "page": 225,
-          "srd": true,
-          "rarity": "artefacte",
-          "reqAttune": true,
-          "wondrous": true,
-          "weight": 3,
-          "recharge": "trenc d'alba",
-          "charges": 7,
-          "entries": [
-            "Fa molt de temps els elfs i els humans lliuraren una guerra terrible contra dracs malvats. Quan tot semblava perdut, un grup de mags poderosos empraren la seva millor màgia i forjaren les cinc Orbes dels Dracs per a derrotar-los. Cada orbe es dugué a cinc torres on es feren servir per a accelerar la victòria. Els mags les feien servir d'esquer pels dracs, i tot seguit els destruien amb màgia poderosa.",
-            "Les torres, amb el pas dels anys, acabaren caient, i les orbes o bé es destruiren o bé es tornaren llegenda; es creu que només n'han sobreviscut 3. La seva màgia s'ha desfigurat amb els segles: tot i que segueixen cridant als dracs, també tenen un cert control sobre ells.",
-            "Cada orbe conté l'essència d'un drac malvat, una presència que rebutja que li treguin la màgia que la composa. Si no tens prou força de personalitat, et pots convertir en un esclau de l'orbe.",
-            "Una orbe és un a bola de vidre d'unes 10 polzades de diametre, i té gravats. Quan s'usa, creix a unes 20 polzades de diametre i hi apareix boirina a dins.",
-            "Quan t'hi harmonitzes, pots, com a acció, mirar a les profunditats de l'orb i dir la paraula màgica. Llavors has de fer una tirada de Carisma (CD 15). Si superes, controles l'orbe mentre duri l'harmonització. Si falles, esdevéns {@condition fascinat} per ella mentre dure l'harmonització.",
-            "{@condition fascinat} així, no pots acabar l'harmonització voluntàriament, i l'orbe et llança {@spell suggestió} a voluntat (CD 18). Amb el conjur t'urgeix a complir els seus propòsits malvats. L'essència dracònica de l'orbe pot voler diverses coses: l'aniquilació d'una gent en particular, ser lliure, escampar patiment pel món, que el culte de Tiamat proliferi, o quelcom més que decideixi el/la/li MM.",
-            {
-              "type": "entries",
-              "name": "Propietats Aleatòries",
-              "entries": [
-                "Una Orbe dels Dracs té les propietats aleatòries segëunts:",
-                {
-                  "type": "list",
-                  "items": [
-                    "2 {@table Artifact Properties; Minor Beneficial Properties|dmg|propietats beneficioses menor}",
-                    "1 {@table Artifact Properties; Minor Detrimental Properties|dmg|propietat perjudicial menor}",
-                    "1 {@table Artifact Properties; Major Detrimental Properties|dmg|propietat perjudicial major}"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "entries",
-              "name": "Conjurs",
-              "entries": [
-                "L'orbe té 7 càrregues i en recupera {@dice 1d4 + 3} de gastades a trenc d'alba. Si controles l'orbe pots, com a acció i gastant 1 càrrega o més, llançar un dels conjurs següents (CD 18): {@spell curar ferides} (a nivell 5, 3 càrregues), {@spell llum del dia} (1 càrrega), {@spell abjurar la mort} (2 càrregues), or {@spell escodrinyar} (3 càrregues). També pots, com a acció, llançar el conjur {@spell detectar màgia} sense gastar càrregues."
-              ]
-            },
-            {
-              "type": "entries",
-              "name": "Atraure Dracs",
-              "entries": [
-                "Mentre controlis l'orbe, pots, com a acció, fer que l'artefacte emeti un missatge telepàtic en totes direccions a 40 milles. Tot drac malvat tindrà la necessitat d'apropar-se a l'orbe tant com pugui i per la ruta més ràpida. Les divinitats dracòniques com ara  {@creature Tiamat|RoT} no els afecta. Els dracs que atregui l'orbe poden ser hostils vers a tu. Un cop empris aquesta propietat, no hi pots tornar durant 1 hora."
-              ]
-            },
-            {
-              "type": "entries",
-              "name": "Destruir una Orbe",
-              "entries": [
-                "Una Orbe dels Dracs sembla fràgil però és invulnerable a la majoria del dany, com ara dels atacs i alenades de drac. Un conjur {@spell desintegrar} o un bon impacte amb una arma màgica +3 pot destruir-la."
-              ]
-            }
-          ],
-          "attachedSpells": [
-            "detectar màgia",
-            "curar ferides",
-            "llum del dia",
-            "abjurar la mort",
-            "escodrinyar"
-          ],
-          "hasFluffImages": true
-        }
-      ]
+      "entries": []
     },
     {
       "type": "inset",

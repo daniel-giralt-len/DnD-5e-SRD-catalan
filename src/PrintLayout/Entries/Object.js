@@ -20,6 +20,17 @@ const getSubtitle = ({
     return `{@i ${m}}`
 }
 
+const cleanReferences = (e,o) => {
+    if(typeof e !== 'string') return e
+    return e.replace(/{=(.*?)}/gi, (match,data)=>{
+        if(data==='bonusAc') { return o.bonusAc }
+        if(data==='bonusWeapon') { return o.bonusWeapon }
+        if(data==='dmgType') { return 'del dany de l\'arma extra' }
+        console.warn('no reference for',data)
+    })
+
+}
+
 const Object = (o) => (
     <Wrapper>
         <GenericEntry 
@@ -27,7 +38,7 @@ const Object = (o) => (
             titleHeader={4}
             entries={[
                 getSubtitle(o),
-                ...o.entries
+                ...o.entries.map(e=>cleanReferences(e,o))
             ]}
         />
     </Wrapper>
