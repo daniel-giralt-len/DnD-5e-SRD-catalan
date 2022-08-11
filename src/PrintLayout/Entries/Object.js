@@ -38,7 +38,6 @@ const cleanReferences = (e,o) => {
             const [type, ...rest]=data.split(' ')
             if(type === 'itemEntry') {
                 const itemName = rest.join(' ')
-                console.log(itemName)
                 const entry = srd.references.baseItems
                     .find(i=>i.name === itemName)
                     .entriesTemplate[0]
