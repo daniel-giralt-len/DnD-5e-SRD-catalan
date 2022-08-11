@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { useState } from 'react'
 
 import SpellList from "./SpellList"
 import Filters from "./Filters"
+import getItemRegex from './getItemRegex'
 import Spell from "../PrintLayout/Entries/Spell"
 
 const Wrapper = styled.main`
@@ -17,6 +19,7 @@ const Wrapper = styled.main`
     grid-template-areas:
         "filters spell"
         "list    spell";
+    column-gap: 1em;
     padding: 0.3em;
 `
 
@@ -25,7 +28,16 @@ const SpellSection = styled.section`
 `
 
 const SpellPickerApp = ({spells}) => {
-    const names = spells.map(s=>typeof s.srd === 'string' ? s.srd : s.name)
+
+    const [searchedText, setSearchedText] = useState('')
+    const searchRegex = getItemRegex(searchedText)
+    const handleSearchChange = event => setSearchedText(event.target.value || '')
+
+    const filteredSpells = spells
+        .filter(spell => searchRegex.test(spell.name))
+
+    const names = filteredSpells
+        .map(s=>typeof s.srd === 'string' ? s.srd : s.name)
     const classesRaw = spells
         .map(s=>((s.classes||{}).fromClassList)||[])
         .reduce((acc,arr)=>([...acc,...arr]),[])
@@ -40,6 +52,7 @@ const SpellPickerApp = ({spells}) => {
         <Filters
             classes={classes}
             levels={levels}
+            handleSearchChange={handleSearchChange}
         />
         <SpellList names={names} />
         {selectedSpell && (

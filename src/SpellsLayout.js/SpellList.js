@@ -11,7 +11,7 @@ const Wrapper = styled.section`
     grid-area: list;
     display: grid;
     grid-template-columns: auto 2em;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     @media (max-width: 600px) {
         padding: 0.25em 0.5em;
     }

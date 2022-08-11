@@ -1,10 +1,15 @@
 import styled from 'styled-components'
+import SearchBar from './SearchBar'
+
 
 const Wrapper = styled.section`
     grid-area: filters;
 `
 
-const Filters = ({classes, levels}) => {
+const Filters = ({classes,
+    levels,
+    handleSearchChange
+}) => {
     return (<Wrapper>
         <div>
             <div>
@@ -24,7 +29,9 @@ const Filters = ({classes, levels}) => {
             <div>
                 <button>Escollits</button>
             </div>
-            <textarea placeholder="Cerca..."></textarea>
+            <SearchBar
+                onChange={handleSearchChange}
+            />
         </div>
     </Wrapper>)
 }
