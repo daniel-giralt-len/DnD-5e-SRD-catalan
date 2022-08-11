@@ -56554,7 +56554,7 @@
             "Conjures un tirarany enganxós a un punt a l'abast. El tirarany omple un cub de 20 peus de costat durant la duració del conjur. L'àrea es torna terreny difícil i poc ofuscada..",
             "Si la teranyina no té dues àncores (com en parets o en arbres) ni poden escapar-se pel terra, paret, o sostre, aquesta es comença a desfer i el conjur s'acaba a l'inici del teu proper torn. Els tiraranys estirats en una superfície plana fan 5 peus d'ample.",
             "Tota criatura que comenci el seu torn a dins del tirarany o que hi entri durant el seu torn ha de salvar per Destresa. Si falla, estarà {@condition restrained} fins que pugui sortir del tirarany o en trenqui la part que la reté.",
-            "Tota criatura {condition restrained} així pot, com a acció, fer una tirada de Força contra la teva CD de salvació de conjur. Si supera, ja no està {@condition restrained}.",
+            "Tota criatura {@condition restrained} així pot, com a acció, fer una tirada de Força contra la teva CD de salvació de conjur. Si supera, ja no està {@condition restrained}.",
             "El tirarany és inflamable. Tot cub de 5 peus de costat que entri en contacte amb un foc es cremarà passada 1 ronda i farà {@damage 2d4} de dany de foc a les criatures que hi comencin el torn."
           ],
           "damageInflict": [
@@ -65308,7 +65308,7 @@
           "rarity": "molt rar",
           "entries": [
             "Una {@italic fletxa d'execució} és una arma màgica que executa un tipus específic de criatura. Algunes són més restrictives que d'altres: hi ha tant {@italic fletxes d'execució de dracs} com {@italic fletxes d'execució de dracs blaus}. Si una criatura és del tipus, raça, o grup determinat a la {@italic fletxa d'execució} i aquesta l'impacta, la criatura ha de salvar per Constitució (CD 17). Si falla, rep {@dice 6d10} de dany perforant extra. Si supera, en rep la meitat.",
-    				"Quan una {@italic fletxa d'execució} causa dany a una criatura, es torna no-màgica."
+            "Quan una {@italic fletxa d'execució} causa dany a una criatura, es torna no-màgica."
           ]
         },
         {
@@ -116351,6 +116351,58 @@
           ]
         }
       ]
-    }
+    },
+    "baseItems": [
+      {
+        "name": "Ring of Resistència",
+        "source": "DMG",
+        "entriesTemplate": [
+          "Tens resistència al dany {{item.resist}} mentre vesteixis l'anell."
+        ]
+      },
+      {
+        "name": "Armadura de Resistència",
+        "source": "DMG",
+        "entriesTemplate": [
+          "Tens resistència al dany {{item.resist}} mentre vesteixis l'armadura."
+        ]
+      },
+      {
+        "name": "Potion of Resistència",
+        "source": "DMG",
+        "entriesTemplate": [
+          "Si et beus aquesta poció, guanyes resistència al dany de {{item.resist}} durant 1 hora."
+        ]
+      },
+      {
+        "name": "Absorbing Tattoo",
+        "source": "TCE",
+        "entriesTemplate": [
+          "Produced by a special needle, this magic tattoo features designs that emphasize one color ({{item.detail1}}).",
+          {
+            "type": "entries",
+            "name": "Tattoo Attunement",
+            "entries": [
+              "To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
+              "If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Resistència al Dany",
+            "entries": [
+              "While the tattoo is on your skin, tens resistència al dany {{item.resist}}."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Absorbir Dany",
+            "entries": [
+              "When you take {{item.resist}} damage, you can use your reaction to gain immunity against that instance of the damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, no es pot tornar a emprar fins el proper trenc d'alba."
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
