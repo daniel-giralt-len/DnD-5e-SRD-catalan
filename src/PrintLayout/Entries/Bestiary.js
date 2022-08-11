@@ -86,6 +86,7 @@ const getDamageVulnerableTexts = l => getDamageTexts(l, 'vulnerable')
 const getDamageTexts = (is,k) => {
     return is.map(i => {
         if(typeof i === 'string') { return i }
+        if(i.special) return i.special
         return `i ${i[k].join(', ')} ${i.note}`
     }).join(', ')
 }

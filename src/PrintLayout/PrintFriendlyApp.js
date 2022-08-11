@@ -62,6 +62,7 @@ const sectionNameToHrefId = {
     'Monstres': 'Monstres',
     'Llista de Monstres': 'Llista de Monstres',
     'Apèndix A: Criatures Vàries': 'Apèndix A',
+    'Apèndix B: Personatges No Jugables': 'Apèndix B'
 }
 
 const mechanicsSections = [[
@@ -173,6 +174,12 @@ const PrintFriendlyApp = ({sections}) => {
             prefixSection={s['Apèndix A: Criatures Vàries']}
             hrefId={sectionNameToHrefId['Apèndix A: Criatures Vàries']}
             {...s['Llista de Criatures Vàries']}
+        />
+
+        <BestiarySection
+            prefixSection={s['Apèndix B: Personatges No Jugables']}
+            hrefId={sectionNameToHrefId['Apèndix B: Personatges No Jugables']}
+            {...s['Llista de PNJs']}
         />
     </PrintableDocument>)
 }
