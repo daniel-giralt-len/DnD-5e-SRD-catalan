@@ -46,7 +46,7 @@ const Filters = ({
                     selected={showOnlyChosen}
                     onClick={handleChosenOnlyChange}
                 >
-                    Escollits
+                    Només escollits
                 </FilterButton>
             </div>
             <SearchBar
