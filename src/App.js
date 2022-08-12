@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import SpellPickerApp from './SpellsLayout.js/SpellPickerApp';
+import SpellPickerApp from './SpellsLayout/SpellPickerApp';
 
 const GlobalStyle = createGlobalStyle`
   html, button, input, textarea {

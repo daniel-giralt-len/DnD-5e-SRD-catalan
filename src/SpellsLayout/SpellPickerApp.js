@@ -9,7 +9,7 @@ import Spell from "../PrintLayout/Entries/Spell"
 const Wrapper = styled.main`
     display: grid;
     @media (max-width: 600px) {
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-areas:
             "filters"
             "list"
@@ -55,8 +55,8 @@ const SpellPickerApp = ({spells}) => {
             .reduce((acc,lvl)=>
                 ({...acc, [lvl]:{selected:false}})
             ,{}))
-    const [selectedSpellIndex,setSelectedSpell] = useState(null)
-    const [showOnlySelected, setShowOnlySelected] = useState(false)
+    const [selectedSpellIndex,setSelectedSpellIndex] = useState(null)
+    const [showOnlyChosen, setShowOnlyChosen] = useState(false)
 
     const handleClassChange = name => {
         const newClasses = {...classes}
@@ -68,22 +68,27 @@ const SpellPickerApp = ({spells}) => {
         newLevels[name].selected = !newLevels[name].selected
         return setLevels(newLevels)
     }
-    const handleSelectedOnlyChange = () => setShowOnlySelected(!showOnlySelected)
+    const handleChosenOnlyChange = () => setShowOnlyChosen(!showOnlyChosen)
+    const handleSelectedSpellChange = name => name===selectedSpellIndex ? setSelectedSpellIndex(null) : setSelectedSpellIndex(name)
 
     return (<Wrapper>
         <Filters
             classes={classes}
             levels={levels}
-            showOnlySelected={showOnlySelected}
+            showOnlyChosen={showOnlyChosen}
             handleSearchChange={handleSearchChange}
             handleClassChange={handleClassChange}
             handleLevelChange={handleLevelChange}
-            handleSelectedOnlyChange={handleSelectedOnlyChange}
+            handleChosenOnlyChange={handleChosenOnlyChange}
         />
-        <SpellList names={names} />
+        <SpellList
+            names={names}
+            selectedSpellIndex={selectedSpellIndex}
+            handleSelectedSpellChange={handleSelectedSpellChange}
+        />
         {selectedSpellIndex && (
             <SpellSection>
-                <Spell {...spells[selectedSpellIndex]}/>
+                <Spell {...spells.find(s=> (typeof s.srd === 'string' ? s.srd : s.name) === selectedSpellIndex)}/>
             </SpellSection>
         )}
     </Wrapper>)

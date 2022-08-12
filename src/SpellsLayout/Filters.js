@@ -26,11 +26,11 @@ const FilterButton = styled.button`
 const Filters = ({
     classes,
     levels,
-    showOnlySelected,
+    showOnlyChosen,
     handleSearchChange,
     handleClassChange,
     handleLevelChange,
-    handleSelectedOnlyChange
+    handleChosenOnlyChange
 }) => {
     return (<Wrapper>
         <div>
@@ -60,8 +60,8 @@ const Filters = ({
             </div>
             <div>
                 <FilterButton
-                    selected={showOnlySelected}
-                    onClick={handleSelectedOnlyChange}
+                    selected={showOnlyChosen}
+                    onClick={handleChosenOnlyChange}
                 >
                     Escollits
                 </FilterButton>
