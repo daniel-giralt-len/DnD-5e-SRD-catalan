@@ -22348,6 +22348,7 @@
       "entries": [
         {
           "name": "Abjurar la Mort",
+          "englishName": "Death Ward",
           "source": "PHB",
           "page": 230,
           "srd": true,
@@ -22532,6 +22533,7 @@
         },
         {
           "name": "Adormir",
+          "englishName": "Sleep",
           "source": "PHB",
           "page": 276,
           "srd": true,
@@ -22681,6 +22683,7 @@
         },
         {
           "name": "Alarma",
+          "englishName": "Alarm",
           "source": "PHB",
           "page": 211,
           "srd": true,
@@ -22801,6 +22804,7 @@
         },
         {
           "name": "Alentir",
+          "englishName": "Slow",
           "source": "PHB",
           "page": 277,
           "srd": true,
@@ -22936,6 +22940,7 @@
         },
         {
           "name": "Aliança Planar",
+          "englishName": "Planar Ally",
           "source": "PHB",
           "page": 265,
           "srd": true,
@@ -22985,6 +22990,7 @@
         },
         {
           "name": "Amistat Animal",
+          "englishName": "Animal Friendship",
           "source": "PHB",
           "page": 212,
           "srd": true,
@@ -23090,6 +23096,7 @@
         },
         {
           "name": "Animar els Morts",
+          "englishName": "Animate Dead",
           "source": "PHB",
           "page": 212,
           "srd": true,
@@ -23206,6 +23213,7 @@
         },
         {
           "name": "Animar Objectes",
+          "englishName": "Animate Objects",
           "source": "PHB",
           "page": 213,
           "srd": true,
@@ -23391,6 +23399,7 @@
         },
         {
           "name": "Antipatia/Simpatia",
+          "englishName": "Antipathy/Sympathy",
           "source": "PHB",
           "page": 214,
           "srd": true,
@@ -23485,6 +23494,7 @@
         },
         {
           "name": "Anul·lar Maledicció",
+          "englishName": "Remove Curse",
           "source": "PHB",
           "page": 271,
           "srd": true,
@@ -23540,6 +23550,7 @@
         },
         {
           "name": "Apaivagar Emocions",
+          "englishName": "Calm Emotions",
           "source": "PHB",
           "page": 221,
           "srd": true,
@@ -23664,6 +23675,7 @@
         },
         {
           "name": "Aparentar",
+          "englishName": "Seeming",
           "source": "PHB",
           "page": 274,
           "srd": true,
@@ -23815,6 +23827,7 @@
         },
         {
           "name": "Apedaçar",
+          "englishName": "Mending",
           "source": "PHB",
           "page": 259,
           "srd": true,
@@ -23889,6 +23902,7 @@
         },
         {
           "name": "Arma Espiritual",
+          "englishName": "Spiritual Weapon",
           "source": "PHB",
           "page": 278,
           "srd": true,
@@ -24016,6 +24030,7 @@
         },
         {
           "name": "Arma Màgica",
+          "englishName": "Magic Weapon",
           "source": "PHB",
           "page": 257,
           "srd": true,
@@ -24193,6 +24208,7 @@
         },
         {
           "name": "Armadura de Mag",
+          "englishName": "Mage Armor",
           "source": "PHB",
           "page": 256,
           "srd": true,
@@ -24262,6 +24278,7 @@
         },
         {
           "name": "Arts de Druida",
+          "englishName": "Druidcraft",
           "source": "PHB",
           "page": 236,
           "srd": true,
@@ -24342,6 +24359,7 @@
         },
         {
           "name": "Assassí Fantasmagòric",
+          "englishName": "Phantasmal Killer",
           "source": "PHB",
           "page": 265,
           "srd": true,
@@ -24486,6 +24504,7 @@
         },
         {
           "name": "Auguri",
+          "englishName": "Augury",
           "source": "PHB",
           "page": 215,
           "srd": true,
@@ -24608,6 +24627,7 @@
         },
         {
           "name": "Aura Divina",
+          "englishName": "Holy Aura",
           "source": "PHB",
           "page": 251,
           "srd": true,
@@ -24666,9 +24686,11 @@
         },
         {
           "name": "Aura Màgica d'en Nystul",
+          "englishName": "Nystul's Magic Aura",
           "source": "PHB",
           "page": 263,
           "srd": "Aura Màgica de l'Arcanista",
+          "englishSrd": "Arcanist's Magic Aura",
           "level": 2,
           "school": "I",
           "time": [
@@ -24744,6 +24766,7 @@
         },
         {
           "name": "Auxiliar",
+          "englishName": "Aid",
           "source": "PHB",
           "page": 211,
           "srd": true,
@@ -24910,6 +24933,7 @@
         },
         {
           "name": "Banquet d'Heroi",
+          "englishName": "Heroes' Feast",
           "source": "PHB",
           "page": 250,
           "srd": true,
@@ -24979,9 +25003,11 @@
         },
         {
           "name": "Barraca Diminuta d'en Leomund",
+          "englishName": "Leomund's Tiny Hut",
           "source": "PHB",
           "page": 255,
           "srd": "Barraca Diminuta",
+          "englishSrd": "Tiny Hut",
           "level": 3,
           "school": "V",
           "time": [
@@ -25067,6 +25093,7 @@
         },
         {
           "name": "Barrera d'Armes",
+          "englishName": "Blade Barrier",
           "source": "PHB",
           "page": 218,
           "srd": true,
@@ -25123,6 +25150,7 @@
         },
         {
           "name": "Batussa Incendiària",
+          "englishName": "Flame Strike",
           "source": "PHB",
           "page": 242,
           "srd": true,
@@ -25340,6 +25368,7 @@
         },
         {
           "name": "Beneir",
+          "englishName": "Bless",
           "source": "PHB",
           "page": 219,
           "srd": true,
@@ -25445,6 +25474,7 @@
         },
         {
           "name": "Boca Màgica",
+          "englishName": "Magic Mouth",
           "source": "PHB",
           "page": 257,
           "srd": true,
@@ -25522,6 +25552,7 @@
         },
         {
           "name": "Bola de Foc",
+          "englishName": "Fireball",
           "source": "PHB",
           "page": 241,
           "srd": true,
@@ -25697,6 +25728,7 @@
         },
         {
           "name": "Bola de Foc Posposada",
+          "englishName": "Delayed Blast Fireball",
           "source": "PHB",
           "page": 230,
           "srd": true,
@@ -25769,6 +25801,7 @@
         },
         {
           "name": "Bonabaia",
+          "englishName": "Goodberry",
           "source": "PHB",
           "page": 246,
           "srd": true,
@@ -25826,6 +25859,7 @@
         },
         {
           "name": "Botar",
+          "englishName": "Jump",
           "source": "PHB",
           "page": 254,
           "srd": true,
@@ -25942,6 +25976,7 @@
         },
         {
           "name": "Braó Electritzant",
+          "englishName": "Shocking Grasp",
           "source": "PHB",
           "page": 275,
           "srd": true,
@@ -26035,6 +26070,7 @@
         },
         {
           "name": "Brot d'Espines",
+          "englishName": "Spike Growth",
           "source": "PHB",
           "page": 277,
           "srd": true,
@@ -26182,6 +26218,7 @@
         },
         {
           "name": "Caminar per l'Aigua",
+          "englishName": "Water Walk",
           "source": "PHB",
           "page": 287,
           "srd": true,
@@ -26296,6 +26333,7 @@
         },
         {
           "name": "Camp Antimàgic",
+          "englishName": "Antimagic Field",
           "source": "PHB",
           "page": 213,
           "srd": true,
@@ -26401,6 +26439,7 @@
         },
         {
           "name": "Canviaformes",
+          "englishName": "Shapechange",
           "source": "PHB",
           "page": 274,
           "srd": true,
@@ -26466,6 +26505,7 @@
         },
         {
           "name": "Captivar",
+          "englishName": "Enthrall",
           "source": "PHB",
           "page": 238,
           "srd": true,
@@ -26564,6 +26604,7 @@
         },
         {
           "name": "Carn a Pedra",
+          "englishName": "Flesh to Stone",
           "source": "PHB",
           "page": 243,
           "srd": true,
@@ -26654,6 +26695,7 @@
         },
         {
           "name": "Càstig Marcador",
+          "englishName": "Branding Smite",
           "source": "PHB",
           "page": 219,
           "srd": true,
@@ -26783,6 +26825,7 @@
         },
         {
           "name": "Ceguera/Sordera",
+          "englishName": "Blindness/Deafness",
           "source": "PHB",
           "page": 219,
           "srd": true,
@@ -26933,6 +26976,7 @@
         },
         {
           "name": "Cercle de la Mort",
+          "englishName": "Circle of Death",
           "source": "PHB",
           "page": 221,
           "srd": true,
@@ -27004,6 +27048,7 @@
         },
         {
           "name": "Cercle de teletransport",
+          "englishName": "Teleportation Circle",
           "source": "PHB",
           "page": 282,
           "srd": true,
@@ -27139,6 +27184,7 @@
         },
         {
           "name": "Cercle Màgic",
+          "englishName": "Magic Circle",
           "source": "PHB",
           "page": 256,
           "srd": true,
@@ -27289,6 +27335,7 @@
         },
         {
           "name": "Clarividència",
+          "englishName": "Clairvoyance",
           "source": "PHB",
           "page": 222,
           "srd": true,
@@ -27417,6 +27464,7 @@
         },
         {
           "name": "Clonació",
+          "englishName": "Clone",
           "source": "PHB",
           "page": 222,
           "srd": true,
@@ -27466,6 +27514,7 @@
         },
         {
           "name": "Closca Contravida",
+          "englishName": "Antilife Shell",
           "source": "PHB",
           "page": 213,
           "srd": true,
@@ -27587,9 +27636,11 @@
         },
         {
           "name": "Cofre Secret d'en Leomund",
+          "englishName": "Leomund's Secret Chest",
           "source": "PHB",
           "page": 254,
           "srd": "Cofre Secret",
+          "englishSrd": "Secret Chest",
           "level": 4,
           "school": "C",
           "time": [
@@ -27674,6 +27725,7 @@
         },
         {
           "name": "Comprendre Idiomes",
+          "englishName": "Comprehend Languages",
           "source": "PHB",
           "page": 224,
           "srd": true,
@@ -27765,6 +27817,7 @@
         },
         {
           "name": "Comunió",
+          "englishName": "Commune",
           "source": "PHB",
           "page": 223,
           "srd": true,
@@ -27877,6 +27930,7 @@
         },
         {
           "name": "Comunió amb la Natura",
+          "englishName": "Commune with Nature",
           "source": "PHB",
           "page": 224,
           "srd": true,
@@ -28020,6 +28074,7 @@
         },
         {
           "name": "Con de Fred",
+          "englishName": "Cone of Cold",
           "source": "PHB",
           "page": 224,
           "srd": true,
@@ -28231,6 +28286,7 @@
         },
         {
           "name": "Confusió",
+          "englishName": "Confusion",
           "source": "PHB",
           "page": 224,
           "srd": true,
@@ -28452,6 +28508,7 @@
         },
         {
           "name": "Conjurar Fata",
+          "englishName": "Conjure Fey",
           "source": "PHB",
           "page": 226,
           "srd": true,
@@ -28518,6 +28575,7 @@
         },
         {
           "name": "Consagrar",
+          "englishName": "Hallow",
           "source": "PHB",
           "page": 249,
           "srd": true,
@@ -28695,6 +28753,7 @@
         },
         {
           "name": "Contactar Plà Forani",
+          "englishName": "Contact Other Plane",
           "source": "PHB",
           "page": 226,
           "srd": true,
@@ -28759,6 +28818,7 @@
         },
         {
           "name": "Contagiar",
+          "englishName": "Contagion",
           "source": "PHB",
           "page": 227,
           "srd": true,
@@ -28917,6 +28977,7 @@
         },
         {
           "name": "Contingència",
+          "englishName": "Contingency",
           "source": "PHB",
           "page": 227,
           "srd": true,
@@ -28967,6 +29028,7 @@
         },
         {
           "name": "Contraconjur",
+          "englishName": "Counterspell",
           "source": "PHB",
           "page": 228,
           "srd": true,
@@ -29091,6 +29153,7 @@
         },
         {
           "name": "Control d'Aigua",
+          "englishName": "Control Water",
           "source": "PHB",
           "page": 227,
           "srd": true,
@@ -29285,6 +29348,7 @@
         },
         {
           "name": "Controlar el Temps",
+          "englishName": "Control Weather",
           "source": "PHB",
           "page": 228,
           "srd": true,
@@ -29448,6 +29512,7 @@
         },
         {
           "name": "Convocar Animals",
+          "englishName": "Conjure Animals",
           "source": "PHB",
           "page": 225,
           "srd": true,
@@ -29559,6 +29624,7 @@
         },
         {
           "name": "Convocar Celestial",
+          "englishName": "Conjure Celestial",
           "source": "PHB",
           "page": 225,
           "srd": true,
@@ -29620,6 +29686,7 @@
         },
         {
           "name": "Convocar Elemental",
+          "englishName": "Conjure Elemental",
           "source": "PHB",
           "page": 225,
           "srd": true,
@@ -29739,6 +29806,7 @@
         },
         {
           "name": "Convocar Elementals Menors",
+          "englishName": "Conjure Minor Elementals",
           "source": "PHB",
           "page": 226,
           "srd": true,
@@ -29844,6 +29912,7 @@
         },
         {
           "name": "Convocar Habitants del Bosc",
+          "englishName": "Conjure Woodland Beings",
           "source": "PHB",
           "page": 226,
           "srd": true,
@@ -29920,6 +29989,7 @@
         },
         {
           "name": "Creació",
+          "englishName": "Creation",
           "source": "PHB",
           "page": 229,
           "srd": true,
@@ -30085,6 +30155,7 @@
         },
         {
           "name": "Crear Menjar i Aigua",
+          "englishName": "Create Food and Water",
           "source": "PHB",
           "page": 229,
           "srd": true,
@@ -30205,6 +30276,7 @@
         },
         {
           "name": "Crear No-Morts",
+          "englishName": "Create Undead",
           "source": "PHB",
           "page": 229,
           "srd": true,
@@ -30273,6 +30345,7 @@
         },
         {
           "name": "Crear o Destruir Aigua",
+          "englishName": "Create or Destroy Water",
           "source": "PHB",
           "page": 229,
           "srd": true,
@@ -30384,6 +30457,7 @@
         },
         {
           "name": "Creixement de la Flora",
+          "englishName": "Plant Growth",
           "source": "PHB",
           "page": 266,
           "srd": true,
@@ -30523,6 +30597,7 @@
         },
         {
           "name": "Curar Ferides",
+          "englishName": "Cure Wounds",
           "source": "PHB",
           "page": 230,
           "srd": true,
@@ -30672,6 +30747,7 @@
         },
         {
           "name": "Curar Ferides Massiu",
+          "englishName": "Mass Cure Wounds",
           "source": "PHB",
           "page": 258,
           "srd": true,
@@ -30789,9 +30865,11 @@
         },
         {
           "name": "Dansa Irresistible de l'Otto",
+          "englishName": "Otto's Irresistible Dance",
           "source": "PHB",
           "page": 264,
           "srd": "Dansa Irresistible",
+          "englishSrd": "Irresistible Dance",
           "level": 6,
           "school": "E",
           "time": [
@@ -30848,6 +30926,7 @@
         },
         {
           "name": "Demiplà",
+          "englishName": "Demiplane",
           "source": "PHB",
           "page": 231,
           "srd": true,
@@ -30913,6 +30992,7 @@
         },
         {
           "name": "Descens de Ploma",
+          "englishName": "Feather Fall",
           "source": "PHB",
           "page": 239,
           "srd": true,
@@ -30998,6 +31078,7 @@
         },
         {
           "name": "Desconcertar",
+          "englishName": "Mislead",
           "source": "PHB",
           "page": 260,
           "srd": true,
@@ -31138,6 +31219,7 @@
         },
         {
           "name": "Desig",
+          "englishName": "Wish",
           "source": "PHB",
           "page": 288,
           "srd": true,
@@ -31238,6 +31320,7 @@
         },
         {
           "name": "Desintegrar",
+          "englishName": "Disintegrate",
           "source": "PHB",
           "page": 233,
           "srd": true,
@@ -31308,6 +31391,7 @@
         },
         {
           "name": "Desterrament",
+          "englishName": "Banishment",
           "source": "PHB",
           "page": 217,
           "srd": true,
@@ -31536,6 +31620,7 @@
         },
         {
           "name": "Detectar el Bé i el Mal",
+          "englishName": "Detect Evil and Good",
           "source": "PHB",
           "page": 231,
           "srd": true,
@@ -31616,6 +31701,7 @@
         },
         {
           "name": "Detectar Màgia",
+          "englishName": "Detect Magic",
           "source": "PHB",
           "page": 231,
           "srd": true,
@@ -31737,6 +31823,7 @@
         },
         {
           "name": "Detectar Malalties i Metzines",
+          "englishName": "Detect Poison and Disease",
           "source": "PHB",
           "page": 231,
           "srd": true,
@@ -31813,6 +31900,7 @@
         },
         {
           "name": "Detectar Pensaments",
+          "englishName": "Detect Thoughts",
           "source": "PHB",
           "page": 231,
           "srd": true,
@@ -31954,6 +32042,7 @@
         },
         {
           "name": "Deturar el Temps",
+          "englishName": "Time Stop",
           "source": "PHB",
           "page": 283,
           "srd": true,
@@ -31998,6 +32087,7 @@
         },
         {
           "name": "Difuminar",
+          "englishName": "Blur",
           "source": "PHB",
           "page": 219,
           "srd": true,
@@ -32122,9 +32212,11 @@
         },
         {
           "name": "Disc Flotant d'en Tenser",
+          "englishName": "Tenser's Floating Disk",
           "source": "PHB",
           "page": 282,
           "srd": "Disc Flotant",
+          "englishSrd": "Floating Disk",
           "level": 1,
           "school": "C",
           "time": [
@@ -32196,6 +32288,7 @@
         },
         {
           "name": "Dissipar el Bé i el Mal",
+          "englishName": "Dispel Evil and Good",
           "source": "PHB",
           "page": 233,
           "srd": true,
@@ -32270,6 +32363,7 @@
         },
         {
           "name": "Dissipar Màgia",
+          "englishName": "Dispel Magic",
           "source": "PHB",
           "page": 234,
           "srd": true,
@@ -32447,6 +32541,7 @@
         },
         {
           "name": "Dit de la Mort",
+          "englishName": "Finger of Death",
           "source": "PHB",
           "page": 241,
           "srd": true,
@@ -32511,6 +32606,7 @@
         },
         {
           "name": "Dominar Bèstia",
+          "englishName": "Dominate Beast",
           "source": "PHB",
           "page": 234,
           "srd": true,
@@ -32683,6 +32779,7 @@
         },
         {
           "name": "Dominar Criatura",
+          "englishName": "Dominate Monster",
           "source": "PHB",
           "page": 235,
           "srd": true,
@@ -32765,6 +32862,7 @@
         },
         {
           "name": "Dominar Humanoide",
+          "englishName": "Dominate Person",
           "source": "PHB",
           "page": 235,
           "srd": true,
@@ -32975,6 +33073,7 @@
         },
         {
           "name": "Ego Alteració",
+          "englishName": "Alter Self",
           "source": "PHB",
           "page": 211,
           "srd": true,
@@ -33124,6 +33223,7 @@
         },
         {
           "name": "Ego Camuflatge",
+          "englishName": "Disguise Self",
           "source": "PHB",
           "page": 233,
           "srd": true,
@@ -33306,6 +33406,7 @@
         },
         {
           "name": "Eixam de Meteorits",
+          "englishName": "Meteor Swarm",
           "source": "PHB",
           "page": 259,
           "srd": true,
@@ -33365,6 +33466,7 @@
         },
         {
           "name": "Encàrrec",
+          "englishName": "Sending",
           "source": "PHB",
           "page": 274,
           "srd": true,
@@ -33495,6 +33597,7 @@
         },
         {
           "name": "Endevinació",
+          "englishName": "Divination",
           "source": "PHB",
           "page": 234,
           "srd": true,
@@ -33631,6 +33734,7 @@
         },
         {
           "name": "Engarjolament",
+          "englishName": "Imprisonment",
           "source": "PHB",
           "page": 252,
           "srd": true,
@@ -33745,6 +33849,7 @@
         },
         {
           "name": "Engrandir/Enxiquir",
+          "englishName": "Enlarge/Reduce",
           "source": "PHB",
           "page": 237,
           "srd": true,
@@ -33897,6 +34002,7 @@
         },
         {
           "name": "Enredar",
+          "englishName": "Entangle",
           "source": "PHB",
           "page": 238,
           "srd": true,
@@ -34008,6 +34114,7 @@
         },
         {
           "name": "Esberlacervells",
+          "englishName": "Feeblemind",
           "source": "PHB",
           "page": 239,
           "srd": true,
@@ -34077,6 +34184,7 @@
         },
         {
           "name": "Escalfar el Metall",
+          "englishName": "Heat Metal",
           "source": "PHB",
           "page": 250,
           "srd": true,
@@ -34206,6 +34314,7 @@
         },
         {
           "name": "Esclatar",
+          "englishName": "Shatter",
           "source": "PHB",
           "page": 275,
           "srd": true,
@@ -34367,6 +34476,7 @@
         },
         {
           "name": "Escodrinyar",
+          "englishName": "Scrying",
           "source": "PHB",
           "page": 273,
           "srd": true,
@@ -34587,6 +34697,7 @@
         },
         {
           "name": "Escriptura Il·lusòria",
+          "englishName": "Illusory Script",
           "source": "PHB",
           "page": 252,
           "srd": true,
@@ -34663,6 +34774,7 @@
         },
         {
           "name": "Escut",
+          "englishName": "Shield",
           "source": "PHB",
           "page": 275,
           "srd": true,
@@ -34817,6 +34929,7 @@
         },
         {
           "name": "Escut de Fe",
+          "englishName": "Shield of Faith",
           "source": "PHB",
           "page": 275,
           "srd": true,
@@ -34918,6 +35031,7 @@
         },
         {
           "name": "Escut de Foc",
+          "englishName": "Fire Shield",
           "source": "PHB",
           "page": 242,
           "srd": true,
@@ -35108,6 +35222,7 @@
         },
         {
           "name": "Esfera de Flames",
+          "englishName": "Flaming Sphere",
           "source": "PHB",
           "page": 242,
           "srd": true,
@@ -35270,9 +35385,11 @@
         },
         {
           "name": "Esfera Glaçada de l'Otiluk",
+          "englishName": "Otiluke's Freezing Sphere",
           "source": "PHB",
           "page": 263,
           "srd": "Esfera Glaçada",
+          "englishSrd": "Freezing Sphere",
           "level": 6,
           "school": "V",
           "time": [
@@ -35342,9 +35459,11 @@
         },
         {
           "name": "Esfera Resistent de l'Otiluk",
+          "englishName": "Otiluke's Resilient Sphere",
           "source": "PHB",
           "page": 264,
           "srd": "Esfera Resistent",
+          "englishSrd": "Resilient Sphere",
           "level": 4,
           "school": "V",
           "time": [
@@ -35483,9 +35602,11 @@
         },
         {
           "name": "Espasa d'en Mordenkainen",
+          "englishName": "Mordenkainen's Sword",
           "source": "PHB",
           "page": 262,
           "srd": "Espasa Arcana",
+          "englishSrd": "Arcane Sword",
           "level": 7,
           "school": "V",
           "time": [
@@ -35551,6 +35672,7 @@
         },
         {
           "name": "Espasa de Foc",
+          "englishName": "Flame Blade",
           "source": "PHB",
           "page": 242,
           "srd": true,
@@ -35637,6 +35759,7 @@
         },
         {
           "name": "Esperonar Habilitat",
+          "englishName": "Enhance Ability",
           "source": "PHB",
           "page": 237,
           "srd": true,
@@ -35854,6 +35977,7 @@
         },
         {
           "name": "Esprai de Colors",
+          "englishName": "Color Spray",
           "source": "PHB",
           "page": 222,
           "srd": true,
@@ -35934,6 +36058,7 @@
         },
         {
           "name": "Esprai de Verí",
+          "englishName": "Poison Spray",
           "source": "PHB",
           "page": 266,
           "srd": true,
@@ -36024,6 +36149,7 @@
         },
         {
           "name": "Esprai Prismàtic",
+          "englishName": "Prismatic Spray",
           "source": "PHB",
           "page": 267,
           "srd": true,
@@ -36161,6 +36287,7 @@
         },
         {
           "name": "Esquitx Àcid",
+          "englishName": "Acid Splash",
           "source": "PHB",
           "page": 211,
           "srd": true,
@@ -36251,6 +36378,7 @@
         },
         {
           "name": "Eterietat",
+          "englishName": "Etherealness",
           "source": "PHB",
           "page": 238,
           "srd": true,
@@ -36343,6 +36471,7 @@
         },
         {
           "name": "Explosió Solar",
+          "englishName": "Sunburst",
           "source": "PHB",
           "page": 279,
           "srd": true,
@@ -36414,6 +36543,7 @@
         },
         {
           "name": "Fabricar",
+          "englishName": "Fabricate",
           "source": "PHB",
           "page": 239,
           "srd": true,
@@ -36503,6 +36633,7 @@
         },
         {
           "name": "Far d'Esperança",
+          "englishName": "Beacon of Hope",
           "source": "PHB",
           "page": 217,
           "srd": true,
@@ -36628,6 +36759,7 @@
         },
         {
           "name": "Fascinar Persona",
+          "englishName": "Charm Person",
           "source": "PHB",
           "page": 221,
           "srd": true,
@@ -36824,6 +36956,7 @@
         },
         {
           "name": "Favor Diví",
+          "englishName": "Divine Favor",
           "source": "PHB",
           "page": 234,
           "srd": true,
@@ -36894,6 +37027,7 @@
         },
         {
           "name": "Flama Sagrada",
+          "englishName": "Sacred Flame",
           "source": "PHB",
           "page": 272,
           "srd": true,
@@ -36986,9 +37120,11 @@
         },
         {
           "name": "Fletxa Àcida d'en Melf",
+          "englishName": "Melf's Acid Arrow",
           "source": "PHB",
           "page": 259,
           "srd": "Fletxa Àcida",
+          "englishSrd": "Acid Arrow",
           "level": 2,
           "school": "V",
           "time": [
@@ -37089,6 +37225,7 @@
         },
         {
           "name": "Foc Follet",
+          "englishName": "Faerie Fire",
           "source": "PHB",
           "page": 239,
           "srd": true,
@@ -37271,6 +37408,7 @@
         },
         {
           "name": "Foc Perenne",
+          "englishName": "Continual Flame",
           "source": "PHB",
           "page": 227,
           "srd": true,
@@ -37355,6 +37493,7 @@
         },
         {
           "name": "Fondre's dins la Pedra",
+          "englishName": "Meld into Stone",
           "source": "PHB",
           "page": 259,
           "srd": true,
@@ -37486,6 +37625,7 @@
         },
         {
           "name": "Forma Gasosa",
+          "englishName": "Gaseous Form",
           "source": "PHB",
           "page": 244,
           "srd": true,
@@ -37686,6 +37826,7 @@
         },
         {
           "name": "Formes Animals",
+          "englishName": "Animal Shapes",
           "source": "PHB",
           "page": 212,
           "srd": true,
@@ -37740,6 +37881,7 @@
         },
         {
           "name": "Formular el Retorn",
+          "englishName": "Word of Recall",
           "source": "PHB",
           "page": 289,
           "srd": true,
@@ -37784,6 +37926,7 @@
         },
         {
           "name": "Foscor",
+          "englishName": "Darkness",
           "source": "PHB",
           "page": 230,
           "srd": true,
@@ -37980,6 +38123,7 @@
         },
         {
           "name": "Gàbia de Força",
+          "englishName": "Forcecage",
           "source": "PHB",
           "page": 243,
           "srd": true,
@@ -38048,6 +38192,7 @@
         },
         {
           "name": "Geas",
+          "englishName": "Geas",
           "source": "PHB",
           "page": 244,
           "srd": true,
@@ -38152,6 +38297,7 @@
         },
         {
           "name": "Gerra Màgica",
+          "englishName": "Magic Jar",
           "source": "PHB",
           "page": 257,
           "srd": true,
@@ -38218,6 +38364,7 @@
         },
         {
           "name": "Glif de Guarda",
+          "englishName": "Glyph of Warding",
           "source": "PHB",
           "page": 245,
           "srd": true,
@@ -38376,6 +38523,7 @@
         },
         {
           "name": "Globus d'Invulnerabilitat",
+          "englishName": "Globe of Invulnerability",
           "source": "PHB",
           "page": 245,
           "srd": true,
@@ -38440,9 +38588,11 @@
         },
         {
           "name": "Gos Lleial d'en Mordenkainen",
+          "englishName": "Mordenkainen's Faithful Hound",
           "source": "PHB",
           "page": 261,
           "srd": "Gos Lleial",
+          "englishSrd": "Faithful Hound",
           "level": 4,
           "school": "C",
           "time": [
@@ -38514,6 +38664,7 @@
         },
         {
           "name": "Greix",
+          "englishName": "Grease",
           "source": "PHB",
           "page": 246,
           "srd": true,
@@ -38590,6 +38741,7 @@
         },
         {
           "name": "Grimpat d'Aranya",
+          "englishName": "Spider Climb",
           "source": "PHB",
           "page": 277,
           "srd": true,
@@ -38715,6 +38867,7 @@
         },
         {
           "name": "Grotesc",
+          "englishName": "Weird",
           "source": "PHB",
           "page": 288,
           "srd": true,
@@ -38785,6 +38938,7 @@
         },
         {
           "name": "Guardar i Guarir",
+          "englishName": "Guards and Wards",
           "source": "PHB",
           "page": 248,
           "srd": true,
@@ -38885,6 +39039,7 @@
         },
         {
           "name": "Guardià de Fe",
+          "englishName": "Guardian of Faith",
           "source": "PHB",
           "page": 246,
           "srd": true,
@@ -39040,6 +39195,7 @@
         },
         {
           "name": "Guardians Espirituals",
+          "englishName": "Spirit Guardians",
           "source": "PHB",
           "page": 278,
           "srd": true,
@@ -39145,6 +39301,7 @@
         },
         {
           "name": "Guia",
+          "englishName": "Guidance",
           "source": "PHB",
           "page": 248,
           "srd": true,
@@ -39211,6 +39368,7 @@
         },
         {
           "name": "Heroisme",
+          "englishName": "Heroism",
           "source": "PHB",
           "page": 250,
           "srd": true,
@@ -39374,6 +39532,7 @@
         },
         {
           "name": "Identificar",
+          "englishName": "Identify",
           "source": "PHB",
           "page": 252,
           "srd": true,
@@ -39477,6 +39636,7 @@
         },
         {
           "name": "Il·lusió Menor",
+          "englishName": "Minor Illusion",
           "source": "PHB",
           "page": 260,
           "srd": true,
@@ -39605,6 +39765,7 @@
         },
         {
           "name": "Il·lusió Programada",
+          "englishName": "Programmed Illusion",
           "source": "PHB",
           "page": 269,
           "srd": true,
@@ -39663,6 +39824,7 @@
         },
         {
           "name": "Imatge Major",
+          "englishName": "Major Image",
           "source": "PHB",
           "page": 258,
           "srd": true,
@@ -39747,6 +39909,7 @@
         },
         {
           "name": "Imatge Mirall",
+          "englishName": "Mirror Image",
           "source": "PHB",
           "page": 260,
           "srd": true,
@@ -39896,6 +40059,7 @@
         },
         {
           "name": "Imatge Silenciosa",
+          "englishName": "Silent Image",
           "source": "PHB",
           "page": 276,
           "srd": true,
@@ -39970,6 +40134,7 @@
         },
         {
           "name": "Immobilitzar Criatura",
+          "englishName": "Hold Monster",
           "source": "PHB",
           "page": 251,
           "srd": true,
@@ -40148,6 +40313,7 @@
         },
         {
           "name": "Immobilitzar Humanoide",
+          "englishName": "Hold Person",
           "source": "PHB",
           "page": 251,
           "srd": true,
@@ -40366,6 +40532,7 @@
         },
         {
           "name": "Impacte Veritable",
+          "englishName": "True Strike",
           "source": "PHB",
           "page": 284,
           "srd": true,
@@ -40434,6 +40601,7 @@
         },
         {
           "name": "Imposar Maledicció",
+          "englishName": "Bestow Curse",
           "source": "PHB",
           "page": 218,
           "srd": true,
@@ -40579,6 +40747,7 @@
         },
         {
           "name": "Indetectable",
+          "englishName": "Nondetection",
           "source": "PHB",
           "page": 263,
           "srd": true,
@@ -40695,6 +40864,7 @@
         },
         {
           "name": "Infligir Ferides",
+          "englishName": "Inflict Wounds",
           "source": "PHB",
           "page": 253,
           "srd": true,
@@ -40775,6 +40945,7 @@
         },
         {
           "name": "Insecte Gegant",
+          "englishName": "Giant Insect",
           "source": "PHB",
           "page": 245,
           "srd": true,
@@ -40878,9 +41049,11 @@
         },
         {
           "name": "Insta-Convocacions d'en Drawmij",
+          "englishName": "Drawmij's Instant Summons",
           "source": "PHB",
           "page": 235,
           "srd": "Insta-Convocacions",
+          "englishSrd": "Instant Summons",
           "level": 6,
           "school": "C",
           "time": [
@@ -40931,6 +41104,7 @@
         },
         {
           "name": "Invertir la Gravetat",
+          "englishName": "Reverse Gravity",
           "source": "PHB",
           "page": 272,
           "srd": true,
@@ -40994,6 +41168,7 @@
         },
         {
           "name": "Invisibilitat",
+          "englishName": "Invisibility",
           "source": "PHB",
           "page": 254,
           "srd": true,
@@ -41183,6 +41358,7 @@
         },
         {
           "name": "Invisibilitat Superior",
+          "englishName": "Greater Invisibility",
           "source": "PHB",
           "page": 246,
           "srd": true,
@@ -41424,6 +41600,7 @@
         },
         {
           "name": "Invocar Llamps",
+          "englishName": "Call Lightning",
           "source": "PHB",
           "page": 220,
           "srd": true,
@@ -41542,6 +41719,7 @@
         },
         {
           "name": "Laberint",
+          "englishName": "Maze",
           "source": "PHB",
           "page": 258,
           "srd": true,
@@ -41603,6 +41781,7 @@
         },
         {
           "name": "Levitar",
+          "englishName": "Levitate",
           "source": "PHB",
           "page": 255,
           "srd": true,
@@ -41721,6 +41900,7 @@
         },
         {
           "name": "Llamp en Cadena",
+          "englishName": "Chain Lightning",
           "source": "PHB",
           "page": 221,
           "srd": true,
@@ -41790,6 +41970,7 @@
         },
         {
           "name": "Llampec",
+          "englishName": "Lightning Bolt",
           "source": "PHB",
           "page": 255,
           "srd": true,
@@ -41928,6 +42109,7 @@
         },
         {
           "name": "Llarg de Gambals",
+          "englishName": "Longstrider",
           "source": "PHB",
           "page": 256,
           "srd": true,
@@ -42023,6 +42205,7 @@
         },
         {
           "name": "Llenguatges",
+          "englishName": "Tongues",
           "source": "PHB",
           "page": 283,
           "srd": true,
@@ -42113,6 +42296,7 @@
         },
         {
           "name": "Llevar als Morts",
+          "englishName": "Raise Dead",
           "source": "PHB",
           "page": 270,
           "srd": true,
@@ -42234,6 +42418,7 @@
         },
         {
           "name": "Llibertat de Moviments",
+          "englishName": "Freedom of Movement",
           "source": "PHB",
           "page": 244,
           "srd": true,
@@ -42458,6 +42643,7 @@
         },
         {
           "name": "Llum",
+          "englishName": "Light",
           "source": "PHB",
           "page": 255,
           "srd": true,
@@ -42588,6 +42774,7 @@
         },
         {
           "name": "Llum del Dia",
+          "englishName": "Daylight",
           "source": "PHB",
           "page": 230,
           "srd": true,
@@ -42723,6 +42910,7 @@
         },
         {
           "name": "Llums Dansaires",
+          "englishName": "Dancing Lights",
           "source": "PHB",
           "page": 230,
           "srd": true,
@@ -42813,6 +43001,7 @@
         },
         {
           "name": "Localitzar Criatura",
+          "englishName": "Locate Creature",
           "source": "PHB",
           "page": 256,
           "srd": true,
@@ -42978,6 +43167,7 @@
         },
         {
           "name": "Localitzar Objecte",
+          "englishName": "Locate Object",
           "source": "PHB",
           "page": 256,
           "srd": true,
@@ -43082,6 +43272,7 @@
         },
         {
           "name": "Localitzar Plantes o Animals",
+          "englishName": "Locate Animals or Plants",
           "source": "PHB",
           "page": 256,
           "srd": true,
@@ -43160,6 +43351,7 @@
         },
         {
           "name": "Logomàquia",
+          "englishName": "Glibness",
           "source": "PHB",
           "page": 245,
           "srd": true,
@@ -43207,9 +43399,11 @@
         },
         {
           "name": "Mà d'en Bigby",
+          "englishName": "Bigby's Hand",
           "source": "PHB",
           "page": 218,
           "srd": "Mà Arcana",
+          "englishSrd": "Arcane Hand",
           "level": 5,
           "school": "V",
           "time": [
@@ -43352,6 +43546,7 @@
         },
         {
           "name": "Mà de Mag",
+          "englishName": "Mage Hand",
           "source": "PHB",
           "page": 256,
           "srd": true,
@@ -43537,6 +43732,7 @@
         },
         {
           "name": "Mà Morta",
+          "englishName": "Chill Touch",
           "source": "PHB",
           "page": 221,
           "srd": true,
@@ -43633,6 +43829,7 @@
         },
         {
           "name": "Mal d'Ull",
+          "englishName": "Eyebite",
           "source": "PHB",
           "page": 238,
           "srd": true,
@@ -43724,6 +43921,7 @@
         },
         {
           "name": "Malmenar",
+          "englishName": "Harm",
           "source": "PHB",
           "page": 249,
           "srd": true,
@@ -43777,6 +43975,7 @@
         },
         {
           "name": "Mans Ardents",
+          "englishName": "Burning Hands",
           "source": "PHB",
           "page": 220,
           "srd": true,
@@ -43988,9 +44187,11 @@
         },
         {
           "name": "Mansió Magnífica d'en Mordenkainen",
+          "englishName": "Mordenkainen's Magnificent Mansion",
           "source": "PHB",
           "page": 261,
           "srd": "Mansió Magnífica",
+          "englishSrd": "Magnificent Mansion",
           "level": 7,
           "school": "C",
           "time": [
@@ -44043,6 +44244,7 @@
         },
         {
           "name": "Marca de Caça",
+          "englishName": "Hunter's Mark",
           "source": "PHB",
           "page": 251,
           "srd": true,
@@ -44132,6 +44334,7 @@
         },
         {
           "name": "Matanúvol",
+          "englishName": "Cloudkill",
           "source": "PHB",
           "page": 222,
           "srd": true,
@@ -44322,6 +44525,7 @@
         },
         {
           "name": "Ment en Blanc",
+          "englishName": "Mind Blank",
           "source": "PHB",
           "page": 259,
           "srd": true,
@@ -44373,6 +44577,7 @@
         },
         {
           "name": "Miratge Arcà",
+          "englishName": "Mirage Arcane",
           "source": "PHB",
           "page": 260,
           "srd": true,
@@ -44428,6 +44633,7 @@
         },
         {
           "name": "Misericòrdia",
+          "englishName": "Spare the Dying",
           "source": "PHB",
           "page": 277,
           "srd": true,
@@ -44521,6 +44727,7 @@
         },
         {
           "name": "Missatge",
+          "englishName": "Message",
           "source": "PHB",
           "page": 259,
           "srd": true,
@@ -44619,6 +44826,7 @@
         },
         {
           "name": "Missatger Animal",
+          "englishName": "Animal Messenger",
           "source": "PHB",
           "page": 212,
           "srd": true,
@@ -44706,6 +44914,7 @@
         },
         {
           "name": "Missil Èldritx",
+          "englishName": "Eldritch Blast",
           "source": "PHB",
           "page": 237,
           "srd": true,
@@ -44761,6 +44970,7 @@
         },
         {
           "name": "Missil Màgic",
+          "englishName": "Magic Missile",
           "source": "PHB",
           "page": 257,
           "srd": true,
@@ -44871,6 +45081,7 @@
         },
         {
           "name": "Modificar Memòria",
+          "englishName": "Modify Memory",
           "source": "PHB",
           "page": 261,
           "srd": true,
@@ -45003,6 +45214,7 @@
         },
         {
           "name": "Mofa i Escarni",
+          "englishName": "Vicious Mockery",
           "source": "PHB",
           "page": 285,
           "srd": true,
@@ -45080,6 +45292,7 @@
         },
         {
           "name": "Moldejar la Pedra",
+          "englishName": "Stone Shape",
           "source": "PHB",
           "page": 278,
           "srd": true,
@@ -45214,6 +45427,7 @@
         },
         {
           "name": "Mot Diví",
+          "englishName": "Divine Word",
           "source": "PHB",
           "page": 234,
           "srd": true,
@@ -45278,6 +45492,7 @@
         },
         {
           "name": "Moure la Terra",
+          "englishName": "Move Earth",
           "source": "PHB",
           "page": 263,
           "srd": true,
@@ -45340,6 +45555,7 @@
         },
         {
           "name": "Muntura Espectral",
+          "englishName": "Phantom Steed",
           "source": "PHB",
           "page": 265,
           "srd": true,
@@ -45422,6 +45638,7 @@
         },
         {
           "name": "Núvol d'Incendi",
+          "englishName": "Incendiary Cloud",
           "source": "PHB",
           "page": 253,
           "srd": true,
@@ -45495,6 +45712,7 @@
         },
         {
           "name": "Núvol de Boira",
+          "englishName": "Fog Cloud",
           "source": "PHB",
           "page": 243,
           "srd": true,
@@ -45651,6 +45869,7 @@
         },
         {
           "name": "Núvol Fètid",
+          "englishName": "Stinking Cloud",
           "source": "PHB",
           "page": 278,
           "srd": true,
@@ -45768,6 +45987,7 @@
         },
         {
           "name": "Obrir els ulls",
+          "englishName": "Awaken",
           "source": "PHB",
           "page": 216,
           "srd": true,
@@ -45848,6 +46068,7 @@
         },
         {
           "name": "Ordre Imperativa",
+          "englishName": "Command",
           "source": "PHB",
           "page": 223,
           "srd": true,
@@ -46077,6 +46298,7 @@
         },
         {
           "name": "Pampalluga",
+          "englishName": "Blink",
           "source": "PHB",
           "page": 219,
           "srd": true,
@@ -46191,6 +46413,7 @@
         },
         {
           "name": "Pany Arcà",
+          "englishName": "Arcane Lock",
           "source": "PHB",
           "page": 215,
           "srd": true,
@@ -46278,6 +46501,7 @@
         },
         {
           "name": "Paraula de Curació",
+          "englishName": "Healing Word",
           "source": "PHB",
           "page": 250,
           "srd": true,
@@ -46362,6 +46586,7 @@
         },
         {
           "name": "Paraula de Curació Massiva",
+          "englishName": "Mass Healing Word",
           "source": "PHB",
           "page": 258,
           "srd": true,
@@ -46470,6 +46695,7 @@
         },
         {
           "name": "Paraula de Poder Atordir",
+          "englishName": "Power Word Stun",
           "source": "PHB",
           "page": 267,
           "srd": true,
@@ -46535,6 +46761,7 @@
         },
         {
           "name": "Paraula de Poder Matar",
+          "englishName": "Power Word Kill",
           "source": "PHB",
           "page": 266,
           "srd": true,
@@ -46593,6 +46820,7 @@
         },
         {
           "name": "Paret d'Espines",
+          "englishName": "Wall of Thorns",
           "source": "PHB",
           "page": 287,
           "srd": true,
@@ -46661,6 +46889,7 @@
         },
         {
           "name": "Paret de Foc",
+          "englishName": "Wall of Fire",
           "source": "PHB",
           "page": 285,
           "srd": true,
@@ -46838,6 +47067,7 @@
         },
         {
           "name": "Paret de Força",
+          "englishName": "Wall of Force",
           "source": "PHB",
           "page": 285,
           "srd": true,
@@ -46984,6 +47214,7 @@
         },
         {
           "name": "Paret de Glaç",
+          "englishName": "Wall of Ice",
           "source": "PHB",
           "page": 285,
           "srd": true,
@@ -47052,6 +47283,7 @@
         },
         {
           "name": "Paret de Pedra",
+          "englishName": "Wall of Stone",
           "source": "PHB",
           "page": 287,
           "srd": true,
@@ -47204,6 +47436,7 @@
         },
         {
           "name": "Paret del Vent",
+          "englishName": "Wind Wall",
           "source": "PHB",
           "page": 288,
           "srd": true,
@@ -47343,6 +47576,7 @@
         },
         {
           "name": "Paret Prismàtica",
+          "englishName": "Prismatic Wall",
           "source": "PHB",
           "page": 267,
           "srd": true,
@@ -47478,6 +47712,7 @@
         },
         {
           "name": "Parla Vegetal",
+          "englishName": "Speak with Plants",
           "source": "PHB",
           "page": 277,
           "srd": true,
@@ -47555,6 +47790,7 @@
         },
         {
           "name": "Parlar amb els Morts",
+          "englishName": "Speak with Dead",
           "source": "PHB",
           "page": 277,
           "srd": true,
@@ -47692,6 +47928,7 @@
         },
         {
           "name": "Parlar Animal",
+          "englishName": "Speak with Animals",
           "source": "PHB",
           "page": 277,
           "srd": true,
@@ -47799,6 +48036,7 @@
         },
         {
           "name": "Pas Boira",
+          "englishName": "Misty Step",
           "source": "PHB",
           "page": 260,
           "srd": true,
@@ -47989,6 +48227,7 @@
         },
         {
           "name": "Pas del Vent",
+          "englishName": "Wind Walk",
           "source": "PHB",
           "page": 288,
           "srd": true,
@@ -48045,6 +48284,7 @@
         },
         {
           "name": "Passaparets",
+          "englishName": "Passwall",
           "source": "PHB",
           "page": 264,
           "srd": true,
@@ -48158,6 +48398,7 @@
         },
         {
           "name": "Passar Desapercebudament",
+          "englishName": "Pass without Trace",
           "source": "PHB",
           "page": 264,
           "srd": true,
@@ -48280,6 +48521,7 @@
         },
         {
           "name": "Passeig pels Arbres",
+          "englishName": "Tree Stride",
           "source": "PHB",
           "page": 283,
           "srd": true,
@@ -48362,6 +48604,7 @@
         },
         {
           "name": "Pell d'Escorça",
+          "englishName": "Barkskin",
           "source": "PHB",
           "page": 217,
           "srd": true,
@@ -48452,6 +48695,7 @@
         },
         {
           "name": "Pell de Pedra",
+          "englishName": "Stoneskin",
           "source": "PHB",
           "page": 278,
           "srd": true,
@@ -48643,6 +48887,7 @@
         },
         {
           "name": "Perdició",
+          "englishName": "Bane",
           "source": "PHB",
           "page": 216,
           "srd": true,
@@ -48800,6 +49045,7 @@
         },
         {
           "name": "Picaporta",
+          "englishName": "Knock",
           "source": "PHB",
           "page": 254,
           "srd": true,
@@ -48869,6 +49115,7 @@
         },
         {
           "name": "Plaga",
+          "englishName": "Blight",
           "source": "PHB",
           "page": 219,
           "srd": true,
@@ -49064,6 +49311,7 @@
         },
         {
           "name": "Plaga d'Insectes",
+          "englishName": "Insect Plague",
           "source": "PHB",
           "page": 254,
           "srd": true,
@@ -49312,6 +49560,7 @@
         },
         {
           "name": "Polimorfia",
+          "englishName": "Polymorph",
           "source": "PHB",
           "page": 266,
           "srd": true,
@@ -49418,6 +49667,7 @@
         },
         {
           "name": "Polimorfia Veritable",
+          "englishName": "True Polymorph",
           "source": "PHB",
           "page": 283,
           "srd": true,
@@ -49510,6 +49760,7 @@
         },
         {
           "name": "Porta Dimensional",
+          "englishName": "Dimension Door",
           "source": "PHB",
           "page": 233,
           "srd": true,
@@ -49642,6 +49893,7 @@
         },
         {
           "name": "Portal",
+          "englishName": "Gate",
           "source": "PHB",
           "page": 244,
           "srd": true,
@@ -49718,6 +49970,7 @@
         },
         {
           "name": "Pregària de Sanació",
+          "englishName": "Prayer of Healing",
           "source": "PHB",
           "page": 267,
           "srd": true,
@@ -49794,6 +50047,7 @@
         },
         {
           "name": "Presagiar",
+          "englishName": "Foresight",
           "source": "PHB",
           "page": 244,
           "srd": true,
@@ -49862,6 +50116,7 @@
         },
         {
           "name": "Pressa",
+          "englishName": "Haste",
           "source": "PHB",
           "page": 250,
           "srd": true,
@@ -50042,6 +50297,7 @@
         },
         {
           "name": "Prestidigitació",
+          "englishName": "Prestidigitation",
           "source": "PHB",
           "page": 267,
           "srd": true,
@@ -50146,6 +50402,7 @@
         },
         {
           "name": "Produir Flama",
+          "englishName": "Produce Flame",
           "source": "PHB",
           "page": 269,
           "srd": true,
@@ -50231,6 +50488,7 @@
         },
         {
           "name": "Prohibició",
+          "englishName": "Forbiddance",
           "source": "PHB",
           "page": 243,
           "srd": true,
@@ -50292,6 +50550,7 @@
         },
         {
           "name": "Projecció Astral",
+          "englishName": "Astral Projection",
           "source": "PHB",
           "page": 215,
           "srd": true,
@@ -50361,6 +50620,7 @@
         },
         {
           "name": "Projectar Imatge",
+          "englishName": "Project Image",
           "source": "PHB",
           "page": 270,
           "srd": true,
@@ -50435,6 +50695,7 @@
         },
         {
           "name": "Protegir de l'Energia",
+          "englishName": "Protection from Energy",
           "source": "PHB",
           "page": 270,
           "srd": true,
@@ -50669,6 +50930,7 @@
         },
         {
           "name": "Protegir de les Metzines",
+          "englishName": "Protection from Poison",
           "source": "PHB",
           "page": 270,
           "srd": true,
@@ -50772,6 +51034,7 @@
         },
         {
           "name": "Protegir del Bé i del Mal",
+          "englishName": "Protection from Evil and Good",
           "source": "PHB",
           "page": 270,
           "srd": true,
@@ -50986,6 +51249,7 @@
         },
         {
           "name": "Pseudo Vida",
+          "englishName": "False Life",
           "source": "PHB",
           "page": 239,
           "srd": true,
@@ -51137,6 +51401,7 @@
         },
         {
           "name": "Purificar Menjar i Beure",
+          "englishName": "Purify Food and Drink",
           "source": "PHB",
           "page": 270,
           "srd": true,
@@ -51216,6 +51481,7 @@
         },
         {
           "name": "Ràfega de Vent",
+          "englishName": "Gust of Wind",
           "source": "PHB",
           "page": 248,
           "srd": true,
@@ -51401,6 +51667,7 @@
         },
         {
           "name": "Raig d'Afebliment",
+          "englishName": "Ray of Enfeeblement",
           "source": "PHB",
           "page": 271,
           "srd": true,
@@ -51533,6 +51800,7 @@
         },
         {
           "name": "Raig d'Incendi",
+          "englishName": "Scorching Ray",
           "source": "PHB",
           "page": 273,
           "srd": true,
@@ -51698,6 +51966,7 @@
         },
         {
           "name": "Raig de Lluna",
+          "englishName": "Moonbeam",
           "source": "PHB",
           "page": 261,
           "srd": true,
@@ -51808,6 +52077,7 @@
         },
         {
           "name": "Raig Gebre",
+          "englishName": "Ray of Frost",
           "source": "PHB",
           "page": 271,
           "srd": true,
@@ -51910,6 +52180,7 @@
         },
         {
           "name": "Raig Solar",
+          "englishName": "Sunbeam",
           "source": "PHB",
           "page": 279,
           "srd": true,
@@ -51986,6 +52257,7 @@
         },
         {
           "name": "Rampell",
+          "englishName": "Compulsion",
           "source": "PHB",
           "page": 224,
           "srd": true,
@@ -52106,6 +52378,7 @@
         },
         {
           "name": "Recordar Llegendes",
+          "englishName": "Legend Lore",
           "source": "PHB",
           "page": 254,
           "srd": true,
@@ -52230,6 +52503,7 @@
         },
         {
           "name": "Reencarnar",
+          "englishName": "Reincarnate",
           "source": "PHB",
           "page": 271,
           "srd": true,
@@ -52437,6 +52711,7 @@
         },
         {
           "name": "Regeneració",
+          "englishName": "Regenerate",
           "source": "PHB",
           "page": 271,
           "srd": true,
@@ -52497,6 +52772,7 @@
         },
         {
           "name": "Repòs Gentil",
+          "englishName": "Gentle Repose",
           "source": "PHB",
           "page": 245,
           "srd": true,
@@ -52604,6 +52880,7 @@
         },
         {
           "name": "Resistència",
+          "englishName": "Resistance",
           "source": "PHB",
           "page": 272,
           "srd": true,
@@ -52678,6 +52955,7 @@
         },
         {
           "name": "Respirar sota l'aigua",
+          "englishName": "Water Breathing",
           "source": "PHB",
           "page": 287,
           "srd": true,
@@ -52796,6 +53074,7 @@
         },
         {
           "name": "Restabliment Menor",
+          "englishName": "Lesser Restoration",
           "source": "PHB",
           "page": 255,
           "srd": true,
@@ -52931,6 +53210,7 @@
         },
         {
           "name": "Restabliment Superior",
+          "englishName": "Greater Restoration",
           "source": "PHB",
           "page": 246,
           "srd": true,
@@ -53086,6 +53366,7 @@
         },
         {
           "name": "Resurrecció",
+          "englishName": "Resurrection",
           "source": "PHB",
           "page": 272,
           "srd": true,
@@ -53142,6 +53423,7 @@
         },
         {
           "name": "Resurrecció Veritable",
+          "englishName": "True Resurrection",
           "source": "PHB",
           "page": 284,
           "srd": true,
@@ -53199,6 +53481,7 @@
         },
         {
           "name": "Retirada Estratègica",
+          "englishName": "Expeditious Retreat",
           "source": "PHB",
           "page": 238,
           "srd": true,
@@ -53300,6 +53583,7 @@
         },
         {
           "name": "Revifar",
+          "englishName": "Revivify",
           "source": "PHB",
           "page": 272,
           "srd": true,
@@ -53451,9 +53735,11 @@
         },
         {
           "name": "Riure Horrible de la Tasha",
+          "englishName": "Tasha's Hideous Laughter",
           "source": "PHB",
           "page": 280,
           "srd": "Riure Horrible",
+          "englishSrd": "Hideous Laughter",
           "level": 1,
           "school": "E",
           "time": [
@@ -53536,6 +53822,7 @@
         },
         {
           "name": "Sageta de Foc",
+          "englishName": "Fire Bolt",
           "source": "PHB",
           "page": 242,
           "srd": true,
@@ -53646,6 +53933,7 @@
         },
         {
           "name": "Sageta Guia",
+          "englishName": "Guiding Bolt",
           "source": "PHB",
           "page": 248,
           "srd": true,
@@ -53757,6 +54045,7 @@
         },
         {
           "name": "Saltar de Pla",
+          "englishName": "Plane Shift",
           "source": "PHB",
           "page": 266,
           "srd": true,
@@ -53829,6 +54118,7 @@
         },
         {
           "name": "Sanar",
+          "englishName": "Heal",
           "source": "PHB",
           "page": 250,
           "srd": true,
@@ -53890,6 +54180,7 @@
         },
         {
           "name": "Sanar Massiu",
+          "englishName": "Mass Heal",
           "source": "PHB",
           "page": 258,
           "srd": true,
@@ -53938,6 +54229,7 @@
         },
         {
           "name": "Santuari",
+          "englishName": "Sanctuary",
           "source": "PHB",
           "page": 272,
           "srd": true,
@@ -54096,9 +54388,11 @@
         },
         {
           "name": "Santuari Privat d'en Mordenkainen",
+          "englishName": "Mordenkainen's Private Sanctum",
           "source": "PHB",
           "page": 262,
           "srd": "Santuari Privat",
+          "englishSrd": "Private Sanctum",
           "level": 4,
           "school": "A",
           "time": [
@@ -54190,6 +54484,7 @@
         },
         {
           "name": "Segrestar",
+          "englishName": "Sequester",
           "source": "PHB",
           "page": 274,
           "srd": true,
@@ -54246,6 +54541,7 @@
         },
         {
           "name": "Senefes Hipnòtiques",
+          "englishName": "Hypnotic Pattern",
           "source": "PHB",
           "page": 252,
           "srd": true,
@@ -54377,6 +54673,7 @@
         },
         {
           "name": "Servent Invisible",
+          "englishName": "Unseen Servant",
           "source": "PHB",
           "page": 284,
           "srd": true,
@@ -54450,6 +54747,7 @@
         },
         {
           "name": "Shillelagh",
+          "englishName": "Shillelagh",
           "source": "PHB",
           "page": 275,
           "srd": true,
@@ -54508,6 +54806,7 @@
         },
         {
           "name": "Silenci",
+          "englishName": "Silence",
           "source": "PHB",
           "page": 275,
           "srd": true,
@@ -54662,6 +54961,7 @@
         },
         {
           "name": "Símbol",
+          "englishName": "Symbol",
           "source": "PHB",
           "page": 280,
           "srd": true,
@@ -54812,6 +55112,7 @@
         },
         {
           "name": "Simulacre",
+          "englishName": "Simulacrum",
           "source": "PHB",
           "page": 276,
           "srd": true,
@@ -54866,6 +55167,7 @@
         },
         {
           "name": "Somnis",
+          "englishName": "Dream",
           "source": "PHB",
           "page": 236,
           "srd": true,
@@ -54969,6 +55271,7 @@
         },
         {
           "name": "Suggestió",
+          "englishName": "Suggestion",
           "source": "PHB",
           "page": 279,
           "srd": true,
@@ -55079,6 +55382,7 @@
         },
         {
           "name": "Suggestió Massiva",
+          "englishName": "Mass Suggestion",
           "source": "PHB",
           "page": 258,
           "srd": true,
@@ -55157,6 +55461,7 @@
         },
         {
           "name": "Taumatúrgia",
+          "englishName": "Thaumaturgy",
           "source": "PHB",
           "page": 282,
           "srd": true,
@@ -55288,6 +55593,7 @@
         },
         {
           "name": "Teleportació",
+          "englishName": "Teleport",
           "source": "PHB",
           "page": 281,
           "srd": true,
@@ -55447,6 +55753,7 @@
         },
         {
           "name": "Teleportació Floral",
+          "englishName": "Transport via Plants",
           "source": "PHB",
           "page": 283,
           "srd": true,
@@ -55495,6 +55802,7 @@
         },
         {
           "name": "Telequinesi",
+          "englishName": "Telekinesis",
           "source": "PHB",
           "page": 280,
           "srd": true,
@@ -55607,6 +55915,7 @@
         },
         {
           "name": "Temor",
+          "englishName": "Fear",
           "source": "PHB",
           "page": 239,
           "srd": true,
@@ -55734,6 +56043,7 @@
         },
         {
           "name": "Tempesta d'Aiguaneu",
+          "englishName": "Sleet Storm",
           "source": "PHB",
           "page": 276,
           "srd": true,
@@ -55903,6 +56213,7 @@
         },
         {
           "name": "Tempesta de Foc",
+          "englishName": "Fire Storm",
           "source": "PHB",
           "page": 242,
           "srd": true,
@@ -55962,6 +56273,7 @@
         },
         {
           "name": "Tempesta de Gel",
+          "englishName": "Ice Storm",
           "source": "PHB",
           "page": 252,
           "srd": true,
@@ -56115,6 +56427,7 @@
         },
         {
           "name": "Tempesta Retribuïdora",
+          "englishName": "Storm of Vengeance",
           "source": "PHB",
           "page": 279,
           "srd": true,
@@ -56209,9 +56522,11 @@
         },
         {
           "name": "Tentacles Obscurs de l'Evard",
+          "englishName": "Evard's Black Tentacles",
           "source": "PHB",
           "page": 238,
           "srd": "Tentacles Obscurs",
+          "englishSrd": "Black Tentacles",
           "level": 4,
           "school": "C",
           "time": [
@@ -56329,6 +56644,7 @@
         },
         {
           "name": "Terratrèmol",
+          "englishName": "Earthquake",
           "source": "PHB",
           "page": 236,
           "srd": true,
@@ -56421,6 +56737,7 @@
         },
         {
           "name": "Terreny Il·lusori",
+          "englishName": "Hallucinatory Terrain",
           "source": "PHB",
           "page": 249,
           "srd": true,
@@ -56517,6 +56834,7 @@
         },
         {
           "name": "Tirarany",
+          "englishName": "Web",
           "source": "PHB",
           "page": 287,
           "srd": true,
@@ -56683,6 +57001,7 @@
         },
         {
           "name": "Toc Vampíric",
+          "englishName": "Vampiric Touch",
           "source": "PHB",
           "page": 285,
           "srd": true,
@@ -56807,6 +57126,7 @@
         },
         {
           "name": "Trobar el Camí",
+          "englishName": "Find the Path",
           "source": "PHB",
           "page": 240,
           "srd": true,
@@ -56865,6 +57185,7 @@
         },
         {
           "name": "Trobar Familiar",
+          "englishName": "Find Familiar",
           "source": "PHB",
           "page": 240,
           "srd": true,
@@ -56926,6 +57247,7 @@
         },
         {
           "name": "Trobar Muntura",
+          "englishName": "Find Steed",
           "source": "PHB",
           "page": 240,
           "srd": true,
@@ -56974,6 +57296,7 @@
         },
         {
           "name": "Trobar Trampes",
+          "englishName": "Find Traps",
           "source": "PHB",
           "page": 241,
           "srd": true,
@@ -57044,6 +57367,7 @@
         },
         {
           "name": "Tronada",
+          "englishName": "Thunderwave",
           "source": "PHB",
           "page": 282,
           "srd": true,
@@ -57264,6 +57588,7 @@
         },
         {
           "name": "Truc de la Corda",
+          "englishName": "Rope Trick",
           "source": "PHB",
           "page": 272,
           "srd": true,
@@ -57372,6 +57697,7 @@
         },
         {
           "name": "Ull Arcà",
+          "englishName": "Arcane Eye",
           "source": "PHB",
           "page": 214,
           "srd": true,
@@ -57541,6 +57867,7 @@
         },
         {
           "name": "Venjança dels Inferns",
+          "englishName": "Hellish Rebuke",
           "source": "PHB",
           "page": 250,
           "srd": true,
@@ -57645,6 +57972,7 @@
         },
         {
           "name": "Veure Invisibilitat",
+          "englishName": "See Invisibility",
           "source": "PHB",
           "page": 274,
           "srd": true,
@@ -57739,6 +58067,7 @@
         },
         {
           "name": "Vincle de Guarda",
+          "englishName": "Warding Bond",
           "source": "PHB",
           "page": 287,
           "srd": true,
@@ -57897,6 +58226,7 @@
         },
         {
           "name": "Vincle Planar",
+          "englishName": "Planar Binding",
           "source": "PHB",
           "page": 265,
           "srd": true,
@@ -58042,9 +58372,11 @@
         },
         {
           "name": "Vincle Telepàtic d'en Rary",
+          "englishName": "Rary's Telepathic Bond",
           "source": "PHB",
           "page": 270,
           "srd": "Vincle Telepàtic",
+          "englishSrd": "Telepathic Bond",
           "level": 5,
           "school": "D",
           "time": [
@@ -58149,6 +58481,7 @@
         },
         {
           "name": "Visió de Foscor",
+          "englishName": "Darkvision",
           "source": "PHB",
           "page": 230,
           "srd": true,
@@ -58233,6 +58566,7 @@
         },
         {
           "name": "Visió Veritable",
+          "englishName": "True Seeing",
           "source": "PHB",
           "page": 284,
           "srd": true,
@@ -58298,6 +58632,7 @@
         },
         {
           "name": "Volar",
+          "englishName": "Fly",
           "source": "PHB",
           "page": 243,
           "srd": true,
@@ -58388,6 +58723,7 @@
         },
         {
           "name": "Zona de la Veritat",
+          "englishName": "Zone of Truth",
           "source": "PHB",
           "page": 289,
           "srd": true,
@@ -70161,6 +70497,7 @@
       "entries": [
         {
           "name": "Abolet",
+          "englishName": "Aboleth",
           "source": "MM",
           "page": 13,
           "srd": true,
@@ -70337,6 +70674,7 @@
         },
         {
           "name": "Androesfinx",
+          "englishName": "Androsphinx",
           "source": "MM",
           "page": 281,
           "srd": true,
@@ -70601,6 +70939,7 @@
         },
         {
           "name": "Ankheg",
+          "englishName": "Ankheg",
           "source": "MM",
           "page": 21,
           "srd": true,
@@ -70700,6 +71039,7 @@
         },
         {
           "name": "Armadura Animada",
+          "englishName": "Animated Armor",
           "group": "Objectes Animats",
           "source": "MM",
           "page": 19,
@@ -70841,6 +71181,7 @@
         },
         {
           "name": "Àzer",
+          "englishName": "Azer",
           "source": "MM",
           "page": 22,
           "srd": true,
@@ -70947,6 +71288,7 @@
         },
         {
           "name": "Balor",
+          "englishName": "Balor",
           "source": "MM",
           "page": 55,
           "srd": true,
@@ -71130,6 +71472,7 @@
         },
         {
           "name": "Basilisk",
+          "englishName": "Basilisk",
           "source": "MM",
           "page": 24,
           "srd": true,
@@ -71226,6 +71569,7 @@
         },
         {
           "name": "Behir",
+          "englishName": "Behir",
           "source": "MM",
           "page": 25,
           "srd": true,
@@ -71355,6 +71699,7 @@
         },
         {
           "name": "Boca Embarbussada",
+          "englishName": "Gibbering Mouther",
           "source": "MM",
           "page": 157,
           "srd": true,
@@ -71472,6 +71817,7 @@
         },
         {
           "name": "Bulette",
+          "englishName": "Bulette",
           "source": "MM",
           "page": 34,
           "srd": true,
@@ -71574,6 +71920,7 @@
         },
         {
           "name": "Ca Infernal",
+          "englishName": "Hell Hound",
           "source": "MM",
           "page": 182,
           "srd": true,
@@ -71720,6 +72067,7 @@
         },
         {
           "name": "Capera",
+          "englishName": "Cloaker",
           "source": "MM",
           "page": 41,
           "srd": true,
@@ -71867,6 +72215,7 @@
         },
         {
           "name": "Catifa d'Asfixia",
+          "englishName": "Rug of Smothering",
           "group": "Objectes Animats",
           "source": "MM",
           "page": 20,
@@ -72001,6 +72350,7 @@
         },
         {
           "name": "Cave Bear",
+          "englishName": "Cave Bear",
           "source": "MM",
           "page": 334,
           "srd": true,
@@ -72102,6 +72452,7 @@
         },
         {
           "name": "Centaure",
+          "englishName": "Centaur",
           "source": "MM",
           "page": 38,
           "srd": true,
@@ -72223,6 +72574,7 @@
         },
         {
           "name": "Chuul",
+          "englishName": "Chuul",
           "source": "MM",
           "page": 40,
           "srd": true,
@@ -72358,6 +72710,7 @@
         },
         {
           "name": "Cocatriu",
+          "englishName": "Cockatrice",
           "source": "MM",
           "page": 42,
           "srd": true,
@@ -72436,6 +72789,7 @@
         },
         {
           "name": "Couatl",
+          "englishName": "Couatl",
           "source": "MM",
           "page": 43,
           "srd": true,
@@ -72624,6 +72978,7 @@
         },
         {
           "name": "Cria de Drac Blanc",
+          "englishName": "White Dragon Wyrmling",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 102,
@@ -72730,6 +73085,7 @@
         },
         {
           "name": "Cria de Drac Blau",
+          "englishName": "Blue Dragon Wyrmling",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 91,
@@ -72829,6 +73185,7 @@
         },
         {
           "name": "Cria de Drac d'Argent",
+          "englishName": "Silver Dragon Wyrmling",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 118,
@@ -72949,6 +73306,7 @@
         },
         {
           "name": "Cria de Drac Daurat",
+          "englishName": "Gold Dragon Wyrmling",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 115,
@@ -73070,6 +73428,7 @@
         },
         {
           "name": "Cria de Drac de Bronze",
+          "englishName": "Bronze Dragon Wyrmling",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 109,
@@ -73191,6 +73550,7 @@
         },
         {
           "name": "Cria de Drac de Coure",
+          "englishName": "Copper Dragon Wyrmling",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 111,
@@ -73301,6 +73661,7 @@
         },
         {
           "name": "Cria de Drac de Llautó",
+          "englishName": "Brass Dragon Wyrmling",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 106,
@@ -73414,6 +73775,7 @@
         },
         {
           "name": "Cria de Drac Negre",
+          "englishName": "Black Dragon Wyrmling",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 88,
@@ -73524,6 +73886,7 @@
         },
         {
           "name": "Cria de Drac Verd",
+          "englishName": "Green Dragon Wyrmling",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 95,
@@ -73632,6 +73995,7 @@
         },
         {
           "name": "Cria de Drac Vermell",
+          "englishName": "Red Dragon Wyrmling",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 98,
@@ -73737,6 +74101,7 @@
         },
         {
           "name": "Cub Gelatinós",
+          "englishName": "Gelatinous Cube",
           "source": "MM",
           "page": 242,
           "srd": true,
@@ -73850,6 +74215,7 @@
         },
         {
           "name": "Cuc lila",
+          "englishName": "Purple Worm",
           "source": "MM",
           "page": 255,
           "srd": true,
@@ -73962,6 +74328,7 @@
         },
         {
           "name": "Deva",
+          "englishName": "Deva",
           "group": "Angels",
           "source": "MM",
           "page": 16,
@@ -74128,6 +74495,7 @@
         },
         {
           "name": "Diable Banyut",
+          "englishName": "Horned Devil",
           "source": "MM",
           "page": 74,
           "srd": true,
@@ -74278,6 +74646,7 @@
         },
         {
           "name": "Diable Barbut",
+          "englishName": "Bearded Devil",
           "source": "MM",
           "page": 70,
           "srd": true,
@@ -74441,6 +74810,7 @@
         },
         {
           "name": "Diable d'Espines",
+          "englishName": "Barbed Devil",
           "source": "MM",
           "page": 70,
           "srd": true,
@@ -74618,6 +74988,7 @@
         },
         {
           "name": "Diable d'Ossos",
+          "englishName": "Bone Devil",
           "source": "MM",
           "page": 71,
           "srd": true,
@@ -74808,6 +75179,7 @@
         },
         {
           "name": "Diable de l'Esvoranc",
+          "englishName": "Pit Fiend",
           "source": "MM",
           "page": 77,
           "srd": true,
@@ -75007,6 +75379,7 @@
         },
         {
           "name": "Diable de les Cadenes",
+          "englishName": "Chain Devil",
           "source": "MM",
           "page": 72,
           "srd": true,
@@ -75163,6 +75536,7 @@
         },
         {
           "name": "Diablet",
+          "englishName": "Imp",
           "source": "MM",
           "page": 76,
           "srd": true,
@@ -75337,6 +75711,7 @@
         },
         {
           "name": "Dimoni de Gel",
+          "englishName": "Ice Devil",
           "source": "MM",
           "page": 75,
           "srd": true,
@@ -75521,6 +75896,7 @@
         },
         {
           "name": "Djinni",
+          "englishName": "Djinni",
           "group": "Genies",
           "source": "MM",
           "page": 144,
@@ -75707,6 +76083,7 @@
         },
         {
           "name": "Doppelganger",
+          "englishName": "Doppelganger",
           "source": "MM",
           "page": 82,
           "srd": true,
@@ -75862,6 +76239,7 @@
         },
         {
           "name": "Drac Blanc Adult",
+          "englishName": "Adult White Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 101,
@@ -76062,6 +76440,7 @@
         },
         {
           "name": "Drac Blanc Ancià",
+          "englishName": "Ancient White Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 100,
@@ -76250,6 +76629,7 @@
         },
         {
           "name": "Drac Blanc Juvenil",
+          "englishName": "Young White Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 101,
@@ -76390,6 +76770,7 @@
         },
         {
           "name": "Drac Blau Adult",
+          "englishName": "Adult Blue Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 91,
@@ -76578,6 +76959,7 @@
         },
         {
           "name": "Drac Blau Ancià",
+          "englishName": "Ancient Blue Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 90,
@@ -76762,6 +77144,7 @@
         },
         {
           "name": "Drac Blau Juvenil",
+          "englishName": "Young Blue Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 91,
@@ -76897,6 +77280,7 @@
         },
         {
           "name": "Drac d'Argent Adult",
+          "englishName": "Adult Silver Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 117,
@@ -77101,6 +77485,7 @@
         },
         {
           "name": "Drac d'Argent Ancià",
+          "englishName": "Ancient Silver Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 116,
@@ -77297,6 +77682,7 @@
         },
         {
           "name": "Drac d'Argent Juvenil",
+          "englishName": "Young Silver Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 118,
@@ -77440,6 +77826,7 @@
         },
         {
           "name": "Drac Daurat Adult",
+          "englishName": "Adult Gold Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 114,
@@ -77651,6 +78038,7 @@
         },
         {
           "name": "Drac Daurat Ancià",
+          "englishName": "Ancient Gold Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 113,
@@ -77854,6 +78242,7 @@
         },
         {
           "name": "Drac Daurat Juvenil",
+          "englishName": "Young Gold Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 115,
@@ -78001,6 +78390,7 @@
         },
         {
           "name": "Drac de Bronze Adult",
+          "englishName": "Adult Bronze Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 108,
@@ -78222,6 +78612,7 @@
         },
         {
           "name": "Drac de Bronze Ancià",
+          "englishName": "Ancient Bronze Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 107,
@@ -78431,6 +78822,7 @@
         },
         {
           "name": "Drac de Bronze Juvenil",
+          "englishName": "Young Bronze Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 108,
@@ -78587,6 +78979,7 @@
         },
         {
           "name": "Drac de Coure Adult",
+          "englishName": "Adult Copper Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 112,
@@ -78782,6 +79175,7 @@
         },
         {
           "name": "Drac de Coure Ancià",
+          "englishName": "Ancient Copper Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 110,
@@ -78981,6 +79375,7 @@
         },
         {
           "name": "Drac de Coure Juvenil",
+          "englishName": "Young Copper Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 112,
@@ -79120,6 +79515,7 @@
         },
         {
           "name": "Drac de Llautó Adult",
+          "englishName": "Adult Brass Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 105,
@@ -79318,6 +79714,7 @@
         },
         {
           "name": "Drac de Llautó Ancià",
+          "englishName": "Ancient Brass Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 104,
@@ -79518,6 +79915,7 @@
         },
         {
           "name": "Drac de Llautó Juvenil",
+          "englishName": "Young Brass Dragon",
           "group": "Metallic Dragon",
           "source": "MM",
           "page": 105,
@@ -79660,6 +80058,7 @@
         },
         {
           "name": "Drac Negre Adult",
+          "englishName": "Adult Black Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 88,
@@ -79857,6 +80256,7 @@
         },
         {
           "name": "Drac Negre Ancià",
+          "englishName": "Ancient Black Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 87,
@@ -80037,6 +80437,7 @@
         },
         {
           "name": "Drac Negre Juvenil",
+          "englishName": "Young Black Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 88,
@@ -80179,6 +80580,7 @@
         },
         {
           "name": "Drac Tortuga",
+          "englishName": "Dragon Turtle",
           "source": "MM",
           "page": 119,
           "srd": true,
@@ -80327,6 +80729,7 @@
         },
         {
           "name": "Drac Verd Adult",
+          "englishName": "Adult Green Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 94,
@@ -80525,6 +80928,7 @@
         },
         {
           "name": "Drac Verd Ancià",
+          "englishName": "Ancient Green Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 93,
@@ -80720,6 +81124,7 @@
         },
         {
           "name": "Drac Verd Juvenil",
+          "englishName": "Young Green Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 94,
@@ -80875,6 +81280,7 @@
         },
         {
           "name": "Drac Vermell Adult",
+          "englishName": "Adult Red Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 98,
@@ -81068,6 +81474,7 @@
         },
         {
           "name": "Drac Vermell Ancià",
+          "englishName": "Ancient Red Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 97,
@@ -81255,6 +81662,7 @@
         },
         {
           "name": "Drac Vermell Juvenil",
+          "englishName": "Young Red Dragon",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 98,
@@ -81387,6 +81795,7 @@
         },
         {
           "name": "Draider",
+          "englishName": "Drider",
           "source": "MM",
           "page": 120,
           "srd": true,
@@ -81569,6 +81978,7 @@
         },
         {
           "name": "Drètx",
+          "englishName": "Dretch",
           "source": "MM",
           "page": 57,
           "srd": true,
@@ -81698,6 +82108,7 @@
         },
         {
           "name": "Dríada",
+          "englishName": "Dryad",
           "source": "MM",
           "page": 121,
           "srd": true,
@@ -81860,6 +82271,7 @@
         },
         {
           "name": "Dróu",
+          "englishName": "Drow",
           "source": "MM",
           "page": 128,
           "srd": true,
@@ -82030,6 +82442,7 @@
         },
         {
           "name": "Duergar",
+          "englishName": "Duergar",
           "source": "MM",
           "page": 122,
           "srd": true,
@@ -82172,6 +82585,7 @@
         },
         {
           "name": "Efreeti",
+          "englishName": "Efreeti",
           "group": "Genies",
           "source": "MM",
           "page": 145,
@@ -82350,6 +82764,7 @@
         },
         {
           "name": "Eixam d'Aranyes",
+          "englishName": "Swarm of Spiders",
           "source": "MM",
           "page": 338,
           "srd": true,
@@ -82488,6 +82903,7 @@
         },
         {
           "name": "Eixam d'Escarabats",
+          "englishName": "Swarm of Beetles",
           "source": "MM",
           "page": 338,
           "srd": true,
@@ -82581,6 +82997,7 @@
         },
         {
           "name": "Eixam de Centpeus",
+          "englishName": "Swarm of Centipedes",
           "source": "MM",
           "page": 338,
           "srd": true,
@@ -82685,6 +83102,7 @@
         },
         {
           "name": "Elemental d'Aigua",
+          "englishName": "Water Elemental",
           "source": "MM",
           "page": 125,
           "srd": true,
@@ -82852,6 +83270,7 @@
         },
         {
           "name": "Elemental d'Aire",
+          "englishName": "Air Elemental",
           "source": "MM",
           "page": 124,
           "srd": true,
@@ -83022,6 +83441,7 @@
         },
         {
           "name": "Elemental de Foc",
+          "englishName": "Fire Elemental",
           "source": "MM",
           "page": 125,
           "srd": true,
@@ -83181,6 +83601,7 @@
         },
         {
           "name": "Elemental de Terra",
+          "englishName": "Earth Elemental",
           "source": "MM",
           "page": 124,
           "srd": true,
@@ -83328,6 +83749,7 @@
         },
         {
           "name": "Engendre de Vampir",
+          "englishName": "Vampire Spawn",
           "source": "MM",
           "page": 298,
           "srd": true,
@@ -83501,6 +83923,7 @@
         },
         {
           "name": "Erinyes",
+          "englishName": "Erinyes",
           "source": "MM",
           "page": 73,
           "srd": true,
@@ -83670,6 +84093,7 @@
         },
         {
           "name": "Espasa Voladora",
+          "englishName": "Flying Sword",
           "group": "Objectes Animats",
           "source": "MM",
           "page": 20,
@@ -83812,6 +84236,7 @@
         },
         {
           "name": "Espectre",
+          "englishName": "Specter",
           "source": "MM",
           "page": 279,
           "srd": true,
@@ -83991,6 +84416,7 @@
         },
         {
           "name": "Esquelet",
+          "englishName": "Skeleton",
           "source": "MM",
           "page": 272,
           "srd": true,
@@ -84131,6 +84557,7 @@
         },
         {
           "name": "Esquelet de Cavall de Guerra",
+          "englishName": "Warhorse Skeleton",
           "source": "MM",
           "page": 273,
           "srd": true,
@@ -84213,6 +84640,7 @@
         },
         {
           "name": "Esquelet de Minotaure",
+          "englishName": "Minotaur Skeleton",
           "source": "MM",
           "page": 273,
           "srd": true,
@@ -84342,6 +84770,7 @@
         },
         {
           "name": "Estirge",
+          "englishName": "Stirge",
           "source": "MM",
           "page": 284,
           "srd": true,
@@ -84457,6 +84886,7 @@
         },
         {
           "name": "Ettercap",
+          "englishName": "Ettercap",
           "source": "MM",
           "page": 131,
           "srd": true,
@@ -84621,6 +85051,7 @@
         },
         {
           "name": "Ettin",
+          "englishName": "Ettin",
           "source": "MM",
           "page": 132,
           "srd": true,
@@ -84746,6 +85177,7 @@
         },
         {
           "name": "Fantasma",
+          "englishName": "Ghost",
           "source": "MM",
           "page": 147,
           "srd": true,
@@ -84945,6 +85377,7 @@
         },
         {
           "name": "Foguet Follet",
+          "englishName": "Will-o'-Wisp",
           "source": "MM",
           "page": 301,
           "srd": true,
@@ -85118,6 +85551,7 @@
         },
         {
           "name": "Follet",
+          "englishName": "Sprite",
           "source": "MM",
           "page": 283,
           "srd": true,
@@ -85240,6 +85674,7 @@
         },
         {
           "name": "Fong Violeta",
+          "englishName": "Violet Fungus",
           "source": "MM",
           "page": 138,
           "srd": true,
@@ -85336,6 +85771,7 @@
         },
         {
           "name": "Gàrgola",
+          "englishName": "Gargoyle",
           "source": "MM",
           "page": 140,
           "srd": true,
@@ -85493,6 +85929,7 @@
         },
         {
           "name": "Gegant de la Pedra",
+          "englishName": "Stone Giant",
           "source": "MM",
           "page": 156,
           "srd": true,
@@ -85654,6 +86091,7 @@
         },
         {
           "name": "Gegant de les Tempestes",
+          "englishName": "Storm Giant",
           "source": "MM",
           "page": 156,
           "srd": true,
@@ -85836,6 +86274,7 @@
         },
         {
           "name": "Gegant del Foc",
+          "englishName": "Fire Giant",
           "source": "MM",
           "page": 154,
           "srd": true,
@@ -85985,6 +86424,7 @@
         },
         {
           "name": "Gegant del Fred",
+          "englishName": "Frost Giant",
           "source": "MM",
           "page": 155,
           "srd": true,
@@ -86124,6 +86564,7 @@
         },
         {
           "name": "Gegant dels Núvols",
+          "englishName": "Cloud Giant",
           "source": "MM",
           "page": 154,
           "srd": true,
@@ -86320,6 +86761,7 @@
         },
         {
           "name": "Gegant dels Turons",
+          "englishName": "Hill Giant",
           "source": "MM",
           "page": 155,
           "srd": true,
@@ -86452,6 +86894,7 @@
         },
         {
           "name": "Gelatina Ocre",
+          "englishName": "Ochre Jelly",
           "source": "MM",
           "page": 243,
           "srd": true,
@@ -86583,6 +87026,7 @@
         },
         {
           "name": "Ghast",
+          "englishName": "Ghast",
           "source": "MM",
           "page": 148,
           "srd": true,
@@ -86728,6 +87172,7 @@
         },
         {
           "name": "Glabrezu",
+          "englishName": "Glabrezu",
           "source": "MM",
           "page": 58,
           "srd": true,
@@ -86914,6 +87359,7 @@
         },
         {
           "name": "Gnòl",
+          "englishName": "Gnoll",
           "source": "MM",
           "page": 163,
           "srd": true,
@@ -87043,6 +87489,7 @@
         },
         {
           "name": "Gnom de les profunditats (Svirfneblin)",
+          "englishName": "Deep Gnome (Svirfneblin)",
           "source": "MM",
           "page": 164,
           "srd": true,
@@ -87190,6 +87637,7 @@
         },
         {
           "name": "Gòblin",
+          "englishName": "Goblin",
           "source": "MM",
           "page": 166,
           "srd": true,
@@ -87342,6 +87790,7 @@
         },
         {
           "name": "Gòlem d'Argila",
+          "englishName": "Clay Golem",
           "source": "MM",
           "page": 168,
           "srd": true,
@@ -87501,6 +87950,7 @@
         },
         {
           "name": "Gòlem de Carn",
+          "englishName": "Flesh Golem",
           "source": "MM",
           "page": 169,
           "srd": true,
@@ -87679,6 +88129,7 @@
         },
         {
           "name": "Gòlem de Ferro",
+          "englishName": "Iron Golem",
           "source": "MM",
           "page": 170,
           "srd": true,
@@ -87848,6 +88299,7 @@
         },
         {
           "name": "Gòlem de Pedra",
+          "englishName": "Stone Golem",
           "source": "MM",
           "page": 170,
           "srd": true,
@@ -88017,6 +88469,7 @@
         },
         {
           "name": "Gorgona",
+          "englishName": "Gorgon",
           "source": "MM",
           "page": 171,
           "srd": true,
@@ -88133,6 +88586,7 @@
         },
         {
           "name": "Grick",
+          "englishName": "Grick",
           "source": "MM",
           "page": 173,
           "srd": true,
@@ -88255,6 +88709,7 @@
         },
         {
           "name": "Grifó",
+          "englishName": "Griffon",
           "source": "MM",
           "page": 174,
           "srd": true,
@@ -88378,6 +88833,7 @@
         },
         {
           "name": "Grímloc",
+          "englishName": "Grimlock",
           "source": "MM",
           "page": 175,
           "srd": true,
@@ -88486,6 +88942,7 @@
         },
         {
           "name": "Guardià-Escut",
+          "englishName": "Shield Guardian",
           "source": "MM",
           "page": 271,
           "srd": true,
@@ -88638,6 +89095,7 @@
         },
         {
           "name": "Guerrer Tribal",
+          "englishName": "Tribal Warrior",
           "source": "MM",
           "page": 350,
           "srd": true,
@@ -88745,6 +89203,7 @@
         },
         {
           "name": "Gul",
+          "englishName": "Ghoul",
           "source": "MM",
           "page": 148,
           "srd": true,
@@ -88884,6 +89343,7 @@
         },
         {
           "name": "Gynoesfinx",
+          "englishName": "Gynosphinx",
           "source": "MM",
           "page": 282,
           "srd": true,
@@ -89101,6 +89561,7 @@
         },
         {
           "name": "Harpia",
+          "englishName": "Harpy",
           "source": "MM",
           "page": 181,
           "srd": true,
@@ -89219,6 +89680,7 @@
         },
         {
           "name": "Hezrou",
+          "englishName": "Hezrou",
           "source": "MM",
           "page": 60,
           "srd": true,
@@ -89383,6 +89845,7 @@
         },
         {
           "name": "Hidra",
+          "englishName": "Hydra",
           "source": "MM",
           "page": 190,
           "srd": true,
@@ -89524,6 +89987,7 @@
         },
         {
           "name": "Hipògrif",
+          "englishName": "Hippogriff",
           "source": "MM",
           "page": 184,
           "srd": true,
@@ -89627,6 +90091,7 @@
         },
         {
           "name": "Hobgòblin",
+          "englishName": "Hobgoblin",
           "source": "MM",
           "page": 186,
           "srd": true,
@@ -89762,6 +90227,7 @@
         },
         {
           "name": "Home-llop",
+          "englishName": "Werewolf",
           "group": "Licàntrops",
           "source": "MM",
           "page": 211,
@@ -89944,6 +90410,7 @@
         },
         {
           "name": "Home-Ós",
+          "englishName": "Werebear",
           "group": "Licàntrops",
           "source": "MM",
           "page": 208,
@@ -90098,6 +90565,7 @@
         },
         {
           "name": "Home-rata",
+          "englishName": "Wererat",
           "group": "Licàntrops",
           "source": "MM",
           "page": 209,
@@ -90267,6 +90735,7 @@
         },
         {
           "name": "Home-Senglar",
+          "englishName": "Wereboar",
           "group": "Licàntrops",
           "source": "MM",
           "page": 209,
@@ -90442,6 +90911,7 @@
         },
         {
           "name": "Home-Tigre",
+          "englishName": "Weretiger",
           "group": "Licàntrops",
           "source": "MM",
           "page": 210,
@@ -90610,6 +91080,7 @@
         },
         {
           "name": "Homúncul",
+          "englishName": "Homunculus",
           "source": "MM",
           "page": 188,
           "srd": true,
@@ -90717,6 +91188,7 @@
         },
         {
           "name": "Incubus",
+          "englishName": "Incubus",
           "source": "MM",
           "page": 285,
           "srd": true,
@@ -90885,6 +91357,7 @@
         },
         {
           "name": "Kóbold",
+          "englishName": "Kobold",
           "source": "MM",
           "page": 195,
           "srd": true,
@@ -91025,6 +91498,7 @@
         },
         {
           "name": "Kraken",
+          "englishName": "Kraken",
           "source": "MM",
           "page": 197,
           "srd": true,
@@ -91237,6 +91711,7 @@
         },
         {
           "name": "Lamia",
+          "englishName": "Lamia",
           "source": "MM",
           "page": 201,
           "srd": true,
@@ -91375,6 +91850,7 @@
         },
         {
           "name": "Lemure",
+          "englishName": "Lemure",
           "source": "MM",
           "page": 76,
           "srd": true,
@@ -91481,6 +91957,7 @@
         },
         {
           "name": "Lítx",
+          "englishName": "Lich",
           "source": "MM",
           "page": 202,
           "srd": true,
@@ -91755,6 +92232,7 @@
         },
         {
           "name": "Llangardent",
+          "englishName": "Lizardfolk",
           "source": "MM",
           "page": 204,
           "srd": true,
@@ -91908,6 +92386,7 @@
         },
         {
           "name": "Llim Gris",
+          "englishName": "Gray Ooze",
           "source": "MM",
           "page": 243,
           "srd": true,
@@ -92045,6 +92524,7 @@
         },
         {
           "name": "Magmin",
+          "englishName": "Magmin",
           "source": "MM",
           "page": 212,
           "srd": true,
@@ -92159,6 +92639,7 @@
         },
         {
           "name": "Malson",
+          "englishName": "Nightmare",
           "source": "MM",
           "page": 235,
           "srd": true,
@@ -92267,6 +92748,7 @@
         },
         {
           "name": "Mantícora",
+          "englishName": "Manticore",
           "source": "MM",
           "page": 213,
           "srd": true,
@@ -92406,6 +92888,7 @@
         },
         {
           "name": "Mantombra",
+          "englishName": "Darkmantle",
           "source": "MM",
           "page": 46,
           "srd": true,
@@ -92506,6 +92989,7 @@
         },
         {
           "name": "Marilith",
+          "englishName": "Marilith",
           "source": "MM",
           "page": 61,
           "srd": true,
@@ -92696,6 +93180,7 @@
         },
         {
           "name": "Medusa",
+          "englishName": "Medusa",
           "source": "MM",
           "page": 214,
           "srd": true,
@@ -92831,6 +93316,7 @@
         },
         {
           "name": "Mèfit de Gel",
+          "englishName": "Ice Mephit",
           "source": "MM",
           "page": 215,
           "srd": true,
@@ -92988,6 +93474,7 @@
         },
         {
           "name": "Mèfit de Magma",
+          "englishName": "Magma Mephit",
           "source": "MM",
           "page": 216,
           "srd": true,
@@ -93143,6 +93630,7 @@
         },
         {
           "name": "Mèfit de Pols",
+          "englishName": "Dust Mephit",
           "source": "MM",
           "page": 215,
           "srd": true,
@@ -93284,6 +93772,7 @@
         },
         {
           "name": "Mèfit de Vapor",
+          "englishName": "Steam Mephit",
           "source": "MM",
           "page": 217,
           "srd": true,
@@ -93423,6 +93912,7 @@
         },
         {
           "name": "Merrow",
+          "englishName": "Merrow",
           "source": "MM",
           "page": 219,
           "srd": true,
@@ -93555,6 +94045,7 @@
         },
         {
           "name": "Mimic",
+          "englishName": "Mimic",
           "source": "MM",
           "page": 220,
           "srd": true,
@@ -93710,6 +94201,7 @@
         },
         {
           "name": "Minotaure",
+          "englishName": "Minotaur",
           "source": "MM",
           "page": 223,
           "srd": true,
@@ -93844,6 +94336,7 @@
         },
         {
           "name": "Mòmia",
+          "englishName": "Mummy",
           "source": "MM",
           "page": 228,
           "srd": true,
@@ -93992,6 +94485,7 @@
         },
         {
           "name": "Monticle Movedís",
+          "englishName": "Shambling Mound",
           "source": "MM",
           "page": 270,
           "srd": true,
@@ -94133,6 +94627,7 @@
         },
         {
           "name": "Morfolita",
+          "englishName": "Roper",
           "source": "MM",
           "page": 261,
           "srd": true,
@@ -94270,6 +94765,7 @@
         },
         {
           "name": "Mussolós",
+          "englishName": "Owlbear",
           "source": "MM",
           "page": 249,
           "srd": true,
@@ -94411,6 +94907,7 @@
         },
         {
           "name": "Naga Espiritual",
+          "englishName": "Spirit Naga",
           "source": "MM",
           "page": 234,
           "srd": true,
@@ -94583,6 +95080,7 @@
         },
         {
           "name": "Naga Guardiana",
+          "englishName": "Guardian Naga",
           "source": "MM",
           "page": 234,
           "srd": true,
@@ -94762,6 +95260,7 @@
         },
         {
           "name": "Nalfeshnee",
+          "englishName": "Nalfeshnee",
           "source": "MM",
           "page": 62,
           "srd": true,
@@ -94936,6 +95435,7 @@
         },
         {
           "name": "Ogre",
+          "englishName": "Ogre",
           "source": "MM",
           "page": 237,
           "srd": true,
@@ -95073,6 +95573,7 @@
         },
         {
           "name": "Ombra",
+          "englishName": "Shadow",
           "source": "MM",
           "page": 269,
           "srd": true,
@@ -95232,6 +95733,7 @@
         },
         {
           "name": "Oni",
+          "englishName": "Oni",
           "source": "MM",
           "page": 239,
           "srd": true,
@@ -95408,6 +95910,7 @@
         },
         {
           "name": "Orc",
+          "englishName": "Orc",
           "source": "MM",
           "page": 246,
           "srd": true,
@@ -95559,6 +96062,7 @@
         },
         {
           "name": "Osgut",
+          "englishName": "Bugbear",
           "source": "MM",
           "page": 33,
           "srd": true,
@@ -95707,6 +96211,7 @@
         },
         {
           "name": "Otyugh",
+          "englishName": "Otyugh",
           "source": "MM",
           "page": 248,
           "srd": true,
@@ -95841,6 +96346,7 @@
         },
         {
           "name": "Pegàs",
+          "englishName": "Pegasus",
           "source": "MM",
           "page": 250,
           "srd": true,
@@ -95927,6 +96433,7 @@
         },
         {
           "name": "Plànetar",
+          "englishName": "Planetar",
           "group": "Angels",
           "source": "MM",
           "page": 17,
@@ -96100,6 +96607,7 @@
         },
         {
           "name": "Pleiosaure",
+          "englishName": "Plesiosaurus",
           "group": "Dinosaures",
           "source": "MM",
           "page": 80,
@@ -96188,6 +96696,7 @@
         },
         {
           "name": "Pseudodrac",
+          "englishName": "Pseudodragon",
           "source": "MM",
           "page": 254,
           "srd": true,
@@ -96345,6 +96854,7 @@
         },
         {
           "name": "Pudding Negre",
+          "englishName": "Black Pudding",
           "source": "MM",
           "page": 241,
           "srd": true,
@@ -96481,6 +96991,7 @@
         },
         {
           "name": "Quàsit",
+          "englishName": "Quasit",
           "source": "MM",
           "page": 63,
           "srd": true,
@@ -96649,6 +97160,7 @@
         },
         {
           "name": "Quimera",
+          "englishName": "Chimera",
           "source": "MM",
           "page": 39,
           "srd": true,
@@ -96782,6 +97294,7 @@
         },
         {
           "name": "Rakshasa",
+          "englishName": "Rakshasa",
           "source": "MM",
           "page": 257,
           "srd": true,
@@ -96949,6 +97462,7 @@
         },
         {
           "name": "Remorhaz",
+          "englishName": "Remorhaz",
           "source": "MM",
           "page": 258,
           "srd": true,
@@ -97069,6 +97583,7 @@
         },
         {
           "name": "Reptador Invisible",
+          "englishName": "Invisible Stalker",
           "source": "MM",
           "page": 192,
           "srd": true,
@@ -97230,6 +97745,7 @@
         },
         {
           "name": "Roch",
+          "englishName": "Roc",
           "source": "MM",
           "page": 260,
           "srd": true,
@@ -97363,6 +97879,7 @@
         },
         {
           "name": "Rovellera",
+          "englishName": "Rust Monster",
           "source": "MM",
           "page": 262,
           "srd": true,
@@ -97472,6 +97989,7 @@
         },
         {
           "name": "Rusc de Vespes",
+          "englishName": "Swarm of Wasps",
           "source": "MM",
           "page": 338,
           "srd": true,
@@ -97575,6 +98093,7 @@
         },
         {
           "name": "Saga de la Nit",
+          "englishName": "Night Hag",
           "source": "MM",
           "page": 178,
           "srd": true,
@@ -97850,6 +98369,7 @@
         },
         {
           "name": "Saga de Mar",
+          "englishName": "Sea Hag",
           "source": "MM",
           "page": 179,
           "srd": true,
@@ -98079,6 +98599,7 @@
         },
         {
           "name": "Saga Verda",
+          "englishName": "Green Hag",
           "source": "MM",
           "page": 177,
           "srd": true,
@@ -98319,6 +98840,7 @@
         },
         {
           "name": "Sahuagin",
+          "englishName": "Sahuagin",
           "source": "MM",
           "page": 263,
           "srd": true,
@@ -98464,6 +98986,7 @@
         },
         {
           "name": "Salamàndrid",
+          "englishName": "Salamander",
           "source": "MM",
           "page": 266,
           "srd": true,
@@ -98607,6 +99130,7 @@
         },
         {
           "name": "Sàtir",
+          "englishName": "Satyr",
           "source": "MM",
           "page": 267,
           "srd": true,
@@ -98761,6 +99285,7 @@
         },
         {
           "name": "Senyor de les Mòmies",
+          "englishName": "Mummy Lord",
           "source": "MM",
           "page": 229,
           "srd": true,
@@ -99028,6 +99553,7 @@
         },
         {
           "name": "Sirènid",
+          "englishName": "Merfolk",
           "source": "MM",
           "page": 218,
           "srd": true,
@@ -99120,6 +99646,7 @@
         },
         {
           "name": "Solar",
+          "englishName": "Solar",
           "group": "Angels",
           "source": "MM",
           "page": 18,
@@ -99339,6 +99866,7 @@
         },
         {
           "name": "Súcube/Íncube",
+          "englishName": "Succubus",
           "source": "MM",
           "page": 285,
           "srd": true,
@@ -99510,6 +100038,7 @@
         },
         {
           "name": "Tarasca",
+          "englishName": "Tarrasque",
           "source": "MM",
           "page": 286,
           "srd": true,
@@ -99721,6 +100250,7 @@
         },
         {
           "name": "Tiranosaure Rex",
+          "englishName": "Tyrannosaurus Rex",
           "group": "Dinosaures",
           "source": "MM",
           "page": 80,
@@ -99812,6 +100342,7 @@
         },
         {
           "name": "Treant",
+          "englishName": "Treant",
           "source": "MM",
           "page": 289,
           "srd": true,
@@ -99968,6 +100499,7 @@
         },
         {
           "name": "Triceratops",
+          "englishName": "Triceratops",
           "group": "Dinosaures",
           "source": "MM",
           "page": 80,
@@ -100050,6 +100582,7 @@
         },
         {
           "name": "Tròl",
+          "englishName": "Troll",
           "source": "MM",
           "page": 291,
           "srd": true,
@@ -100238,6 +100771,7 @@
         },
         {
           "name": "Unicorn",
+          "englishName": "Unicorn",
           "source": "MM",
           "page": 294,
           "srd": true,
@@ -100443,6 +100977,7 @@
         },
         {
           "name": "Vampir",
+          "englishName": "Vampire",
           "source": "MM",
           "page": 297,
           "srd": true,
@@ -100684,6 +101219,7 @@
         },
         {
           "name": "Veterà Mig-Drac Vermell",
+          "englishName": "Half-Red Dragon Veteran",
           "group": "Chromatic Dragon",
           "source": "MM",
           "page": 180,
@@ -100814,6 +101350,7 @@
         },
         {
           "name": "Vrock",
+          "englishName": "Vrock",
           "source": "MM",
           "page": 64,
           "srd": true,
@@ -100997,6 +101534,7 @@
         },
         {
           "name": "Wight",
+          "englishName": "Wight",
           "source": "MM",
           "page": 300,
           "srd": true,
@@ -101175,6 +101713,7 @@
         },
         {
           "name": "Wívern",
+          "englishName": "Wyvern",
           "source": "MM",
           "page": 303,
           "srd": true,
@@ -101294,6 +101833,7 @@
         },
         {
           "name": "Wraith",
+          "englishName": "Wraith",
           "source": "MM",
           "page": 302,
           "srd": true,
@@ -101470,6 +102010,7 @@
         },
         {
           "name": "Xisclador",
+          "englishName": "Shrieker",
           "source": "MM",
           "page": 138,
           "srd": true,
@@ -101547,6 +102088,7 @@
         },
         {
           "name": "Xorn",
+          "englishName": "Xorn",
           "source": "MM",
           "page": 304,
           "srd": true,
@@ -101678,6 +102220,7 @@
         },
         {
           "name": "Zombi",
+          "englishName": "Zombie",
           "source": "MM",
           "page": 316,
           "srd": true,
@@ -101818,6 +102361,7 @@
         },
         {
           "name": "Zombi d'Ogre",
+          "englishName": "Ogre Zombie",
           "source": "MM",
           "page": 316,
           "srd": true,
@@ -102886,6 +103430,7 @@
       "entries": [
         {
           "name": "Àguila",
+          "englishName": "Eagle",
           "source": "MM",
           "page": 322,
           "srd": true,
@@ -102960,6 +103505,7 @@
         },
         {
           "name": "Àguila Gegant",
+          "englishName": "Giant Eagle",
           "source": "MM",
           "page": 324,
           "srd": true,
@@ -103063,6 +103609,7 @@
         },
         {
           "name": "Ant",
+          "englishName": "Elk",
           "source": "MM",
           "page": 322,
           "srd": true,
@@ -103153,6 +103700,7 @@
         },
         {
           "name": "Ant Gegant",
+          "englishName": "Giant Elk",
           "source": "MM",
           "page": 325,
           "srd": true,
@@ -103253,6 +103801,7 @@
         },
         {
           "name": "Aranya",
+          "englishName": "Spider",
           "source": "MM",
           "page": 337,
           "srd": true,
@@ -103346,6 +103895,7 @@
         },
         {
           "name": "Aranya de Fase",
+          "englishName": "Phase Spider",
           "source": "MM",
           "page": 334,
           "srd": true,
@@ -103468,6 +104018,7 @@
         },
         {
           "name": "Aranya Gegant",
+          "englishName": "Giant Spider",
           "source": "MM",
           "page": 328,
           "srd": true,
@@ -103633,6 +104184,7 @@
         },
         {
           "name": "Aranya-Llop Gegant",
+          "englishName": "Giant Wolf Spider",
           "source": "MM",
           "page": 330,
           "srd": true,
@@ -103749,6 +104301,7 @@
         },
         {
           "name": "Arbre Despert",
+          "englishName": "Awakened Tree",
           "source": "MM",
           "page": 317,
           "srd": true,
@@ -103857,6 +104410,7 @@
         },
         {
           "name": "Arbust Despert",
+          "englishName": "Awakened Shrub",
           "source": "MM",
           "page": 317,
           "srd": true,
@@ -103946,6 +104500,7 @@
         },
         {
           "name": "Babuí",
+          "englishName": "Baboon",
           "source": "MM",
           "page": 318,
           "srd": true,
@@ -104024,6 +104579,7 @@
         },
         {
           "name": "Becstral",
+          "englishName": "Axe Beak",
           "source": "MM",
           "page": 317,
           "srd": true,
@@ -104094,6 +104650,7 @@
         },
         {
           "name": "Cabra",
+          "englishName": "Goat",
           "source": "MM",
           "page": 330,
           "srd": true,
@@ -104197,6 +104754,7 @@
         },
         {
           "name": "Cabra Gegant",
+          "englishName": "Giant Goat",
           "source": "MM",
           "page": 326,
           "srd": true,
@@ -104289,6 +104847,7 @@
         },
         {
           "name": "Camell",
+          "englishName": "Camel",
           "source": "MM",
           "page": 320,
           "srd": true,
@@ -104348,6 +104907,7 @@
         },
         {
           "name": "Cavall de Càrrega",
+          "englishName": "Draft Horse",
           "source": "MM",
           "page": 321,
           "srd": true,
@@ -104416,6 +104976,7 @@
         },
         {
           "name": "Cavall de Guerra",
+          "englishName": "Warhorse",
           "source": "MM",
           "page": 340,
           "srd": true,
@@ -104551,6 +105112,7 @@
         },
         {
           "name": "Cavall de Munta",
+          "englishName": "Riding Horse",
           "source": "MM",
           "page": 336,
           "srd": true,
@@ -104627,6 +105189,7 @@
         },
         {
           "name": "Cavallet de Mar",
+          "englishName": "Sea Horse",
           "source": "MM",
           "page": 337,
           "srd": true,
@@ -104673,6 +105236,7 @@
         },
         {
           "name": "Cavallet de Mar Gegant",
+          "englishName": "Giant Sea Horse",
           "source": "MM",
           "page": 328,
           "srd": true,
@@ -104757,6 +105321,7 @@
         },
         {
           "name": "Centpeus Gegant",
+          "englishName": "Giant Centipede",
           "source": "MM",
           "page": 323,
           "srd": true,
@@ -104846,6 +105411,7 @@
         },
         {
           "name": "Cérvol",
+          "englishName": "Deer",
           "source": "MM",
           "page": 321,
           "srd": true,
@@ -104906,6 +105472,7 @@
         },
         {
           "name": "Cocodril",
+          "englishName": "Crocodile",
           "source": "MM",
           "page": 320,
           "srd": true,
@@ -105008,6 +105575,7 @@
         },
         {
           "name": "Cocodril Gegant",
+          "englishName": "Giant Crocodile",
           "source": "MM",
           "page": 324,
           "srd": true,
@@ -105115,6 +105683,7 @@
         },
         {
           "name": "Corb",
+          "englishName": "Raven",
           "source": "MM",
           "page": 335,
           "srd": true,
@@ -105192,6 +105761,7 @@
         },
         {
           "name": "Cranc",
+          "englishName": "Crab",
           "source": "MM",
           "page": 320,
           "srd": true,
@@ -105281,6 +105851,7 @@
         },
         {
           "name": "Cranc Gegant",
+          "englishName": "Giant Crab",
           "source": "MM",
           "page": 324,
           "srd": true,
@@ -105393,6 +105964,7 @@
         },
         {
           "name": "Eixam d'Insectes",
+          "englishName": "Swarm of Insects",
           "source": "MM",
           "page": 338,
           "srd": true,
@@ -105512,6 +106084,7 @@
         },
         {
           "name": "Eixam de Quippers",
+          "englishName": "Swarm of Quippers",
           "source": "MM",
           "page": 338,
           "srd": true,
@@ -105636,6 +106209,7 @@
         },
         {
           "name": "Eixam de Rates",
+          "englishName": "Swarm of Rats",
           "source": "MM",
           "page": 339,
           "srd": true,
@@ -105759,6 +106333,7 @@
         },
         {
           "name": "Eixam de Ratpenats",
+          "englishName": "Swarm of Bats",
           "source": "MM",
           "page": 337,
           "srd": true,
@@ -105889,6 +106464,7 @@
         },
         {
           "name": "Eixam de Serps Verinoses",
+          "englishName": "Swarm of Poisonous Snakes",
           "source": "MM",
           "page": 338,
           "srd": true,
@@ -106002,6 +106578,7 @@
         },
         {
           "name": "Elefant",
+          "englishName": "Elephant",
           "source": "MM",
           "page": 322,
           "srd": true,
@@ -106081,6 +106658,7 @@
         },
         {
           "name": "Esbart de Corbs",
+          "englishName": "Swarm of Ravens",
           "source": "MM",
           "page": 339,
           "srd": true,
@@ -106193,6 +106771,7 @@
         },
         {
           "name": "Escarabat Igni Gegant",
+          "englishName": "Giant Fire Beetle",
           "source": "MM",
           "page": 325,
           "srd": true,
@@ -106280,6 +106859,7 @@
         },
         {
           "name": "Escorpí",
+          "englishName": "Scorpion",
           "source": "MM",
           "page": 337,
           "srd": true,
@@ -106348,6 +106928,7 @@
         },
         {
           "name": "Escorpí Gegant",
+          "englishName": "Giant Scorpion",
           "source": "MM",
           "page": 327,
           "srd": true,
@@ -106447,6 +107028,7 @@
         },
         {
           "name": "Falcó",
+          "englishName": "Hawk",
           "source": "MM",
           "page": 330,
           "srd": true,
@@ -106526,6 +107108,7 @@
         },
         {
           "name": "Falcó de Sang",
+          "englishName": "Blood Hawk",
           "source": "MM",
           "page": 319,
           "srd": true,
@@ -106622,6 +107205,7 @@
         },
         {
           "name": "Gat",
+          "englishName": "Cat",
           "source": "MM",
           "page": 320,
           "srd": true,
@@ -106722,6 +107306,7 @@
         },
         {
           "name": "Gos de la Mort",
+          "englishName": "Death Dog",
           "source": "MM",
           "page": 321,
           "srd": true,
@@ -106820,6 +107405,7 @@
         },
         {
           "name": "Gos Pampalluga",
+          "englishName": "Blink Dog",
           "source": "MM",
           "page": 318,
           "srd": true,
@@ -106921,6 +107507,7 @@
         },
         {
           "name": "Granota",
+          "englishName": "Frog",
           "source": "MM",
           "page": 322,
           "srd": true,
@@ -106994,6 +107581,7 @@
         },
         {
           "name": "Granota Gegant",
+          "englishName": "Giant Frog",
           "source": "MM",
           "page": 325,
           "srd": true,
@@ -107109,6 +107697,7 @@
         },
         {
           "name": "Gripau Gegant",
+          "englishName": "Giant Toad",
           "source": "MM",
           "page": 329,
           "srd": true,
@@ -107219,6 +107808,7 @@
         },
         {
           "name": "Hiena",
+          "englishName": "Hyena",
           "source": "MM",
           "page": 331,
           "srd": true,
@@ -107296,6 +107886,7 @@
         },
         {
           "name": "Hiena Gegant",
+          "englishName": "Giant Hyena",
           "source": "MM",
           "page": 326,
           "srd": true,
@@ -107375,6 +107966,7 @@
         },
         {
           "name": "Lleó",
+          "englishName": "Lion",
           "source": "MM",
           "page": 331,
           "srd": true,
@@ -107482,6 +108074,7 @@
         },
         {
           "name": "Llop",
+          "englishName": "Wolf",
           "source": "MM",
           "page": 341,
           "srd": true,
@@ -107600,6 +108193,7 @@
         },
         {
           "name": "Llop Hivernal",
+          "englishName": "Winter Wolf",
           "source": "MM",
           "page": 340,
           "srd": true,
@@ -107725,6 +108319,7 @@
         },
         {
           "name": "Llop Terrible",
+          "englishName": "Dire Wolf",
           "source": "MM",
           "page": 321,
           "srd": true,
@@ -107824,6 +108419,7 @@
         },
         {
           "name": "Mamut",
+          "englishName": "Mammoth",
           "source": "MM",
           "page": 332,
           "srd": true,
@@ -107908,6 +108504,7 @@
         },
         {
           "name": "Mastí",
+          "englishName": "Mastiff",
           "source": "MM",
           "page": 332,
           "srd": true,
@@ -108003,6 +108600,7 @@
         },
         {
           "name": "Mostela",
+          "englishName": "Weasel",
           "source": "MM",
           "page": 340,
           "srd": true,
@@ -108072,6 +108670,7 @@
         },
         {
           "name": "Mostela Gegant",
+          "englishName": "Giant Weasel",
           "source": "MM",
           "page": 329,
           "srd": true,
@@ -108154,6 +108753,7 @@
         },
         {
           "name": "Mula",
+          "englishName": "Mule",
           "source": "MM",
           "page": 333,
           "srd": true,
@@ -108232,6 +108832,7 @@
         },
         {
           "name": "Mussol",
+          "englishName": "Owl",
           "source": "MM",
           "page": 333,
           "srd": true,
@@ -108328,6 +108929,7 @@
         },
         {
           "name": "Mussol Gegant",
+          "englishName": "Giant Owl",
           "source": "MM",
           "page": 327,
           "srd": true,
@@ -108437,6 +109039,7 @@
         },
         {
           "name": "Orca",
+          "englishName": "Killer Whale",
           "source": "MM",
           "page": 331,
           "srd": true,
@@ -108543,6 +109146,7 @@
         },
         {
           "name": "Ós Bru",
+          "englishName": "Brown Bear",
           "source": "MM",
           "page": 319,
           "srd": true,
@@ -108655,6 +109259,7 @@
         },
         {
           "name": "Ós Negre",
+          "englishName": "Black Bear",
           "source": "MM",
           "page": 318,
           "srd": true,
@@ -108759,6 +109364,7 @@
         },
         {
           "name": "Ós Polar",
+          "englishName": "Polar Bear",
           "source": "MM",
           "page": 334,
           "srd": true,
@@ -108867,6 +109473,7 @@
         },
         {
           "name": "Pantera",
+          "englishName": "Panther",
           "source": "MM",
           "page": 333,
           "srd": true,
@@ -108964,6 +109571,7 @@
         },
         {
           "name": "Poni",
+          "englishName": "Pony",
           "source": "MM",
           "page": 335,
           "srd": true,
@@ -109020,6 +109628,7 @@
         },
         {
           "name": "Pop",
+          "englishName": "Octopus",
           "source": "MM",
           "page": 333,
           "srd": true,
@@ -109131,6 +109740,7 @@
         },
         {
           "name": "Pop Gegant",
+          "englishName": "Giant Octopus",
           "source": "MM",
           "page": 326,
           "srd": true,
@@ -109253,6 +109863,7 @@
         },
         {
           "name": "Quipper",
+          "englishName": "Quipper",
           "source": "MM",
           "page": 335,
           "srd": true,
@@ -109347,6 +109958,7 @@
         },
         {
           "name": "Rata",
+          "englishName": "Rat",
           "source": "MM",
           "page": 335,
           "srd": true,
@@ -109441,6 +110053,7 @@
         },
         {
           "name": "Rata Gegant",
+          "englishName": "Giant Rat",
           "source": "MM",
           "page": 327,
           "srd": true,
@@ -109567,6 +110180,7 @@
         },
         {
           "name": "Ratpenat",
+          "englishName": "Bat",
           "source": "MM",
           "page": 318,
           "srd": true,
@@ -109654,6 +110268,7 @@
         },
         {
           "name": "Ratpenat Gegant",
+          "englishName": "Giant Bat",
           "source": "MM",
           "page": 323,
           "srd": true,
@@ -109744,6 +110359,7 @@
         },
         {
           "name": "Rinoceront",
+          "englishName": "Rhinoceros",
           "source": "MM",
           "page": 336,
           "srd": true,
@@ -109825,6 +110441,7 @@
         },
         {
           "name": "Sargantana",
+          "englishName": "Lizard",
           "source": "MM",
           "page": 332,
           "srd": true,
@@ -109886,6 +110503,7 @@
         },
         {
           "name": "Sargantana Gegant",
+          "englishName": "Giant Lizard",
           "source": "MM",
           "page": 326,
           "srd": true,
@@ -109997,6 +110615,7 @@
         },
         {
           "name": "Senglar",
+          "englishName": "Boar",
           "source": "MM",
           "page": 319,
           "srd": true,
@@ -110095,6 +110714,7 @@
         },
         {
           "name": "Senglar Gegant",
+          "englishName": "Giant Boar",
           "source": "MM",
           "page": 323,
           "srd": true,
@@ -110187,6 +110807,7 @@
         },
         {
           "name": "Serp Constrenyidora",
+          "englishName": "Constrictor Snake",
           "source": "MM",
           "page": 320,
           "srd": true,
@@ -110270,6 +110891,7 @@
         },
         {
           "name": "Serp Constrenyidora Gegant",
+          "englishName": "Giant Constrictor Snake",
           "source": "MM",
           "page": 324,
           "srd": true,
@@ -110364,6 +110986,7 @@
         },
         {
           "name": "Serp Verinosa",
+          "englishName": "Poisonous Snake",
           "source": "MM",
           "page": 334,
           "srd": true,
@@ -110443,6 +111066,7 @@
         },
         {
           "name": "Serp Verinosa Gegant",
+          "englishName": "Giant Poisonous Snake",
           "source": "MM",
           "page": 327,
           "srd": true,
@@ -110531,6 +111155,7 @@
         },
         {
           "name": "Serp Voladora",
+          "englishName": "Flying Snake",
           "source": "MM",
           "page": 322,
           "srd": true,
@@ -110621,6 +111246,7 @@
         },
         {
           "name": "Simi",
+          "englishName": "Ape",
           "source": "MM",
           "page": 317,
           "srd": true,
@@ -110710,6 +111336,7 @@
         },
         {
           "name": "Simi Gegant",
+          "englishName": "Giant Ape",
           "source": "MM",
           "page": 323,
           "srd": true,
@@ -110788,6 +111415,7 @@
         },
         {
           "name": "Tauró Caçador",
+          "englishName": "Hunter Shark",
           "source": "MM",
           "page": 330,
           "srd": true,
@@ -110894,6 +111522,7 @@
         },
         {
           "name": "Tauró d'Escull",
+          "englishName": "Reef Shark",
           "source": "MM",
           "page": 336,
           "srd": true,
@@ -110989,6 +111618,7 @@
         },
         {
           "name": "Tauró Gegant",
+          "englishName": "Giant Shark",
           "source": "MM",
           "page": 328,
           "srd": true,
@@ -111095,6 +111725,7 @@
         },
         {
           "name": "Teixó",
+          "englishName": "Badger",
           "source": "MM",
           "page": 318,
           "srd": true,
@@ -111164,6 +111795,7 @@
         },
         {
           "name": "Teixó Gegant",
+          "englishName": "Giant Badger",
           "source": "MM",
           "page": 323,
           "srd": true,
@@ -111254,6 +111886,7 @@
         },
         {
           "name": "Tigre",
+          "englishName": "Tiger",
           "source": "MM",
           "page": 339,
           "srd": true,
@@ -111361,6 +111994,7 @@
         },
         {
           "name": "Tigre de Dents de Sabre",
+          "englishName": "Saber-Toothed Tiger",
           "source": "MM",
           "page": 336,
           "srd": true,
@@ -111459,6 +112093,7 @@
         },
         {
           "name": "Vespa Gegant",
+          "englishName": "Giant Wasp",
           "source": "MM",
           "page": 329,
           "srd": true,
@@ -111529,6 +112164,7 @@
         },
         {
           "name": "Voltor",
+          "englishName": "Vulture",
           "source": "MM",
           "page": 339,
           "srd": true,
@@ -111618,6 +112254,7 @@
         },
         {
           "name": "Voltor Gegant",
+          "englishName": "Giant Vulture",
           "source": "MM",
           "page": 329,
           "srd": true,
@@ -111734,6 +112371,7 @@
         },
         {
           "name": "Worg",
+          "englishName": "Worg",
           "source": "MM",
           "page": 341,
           "srd": true,
@@ -111846,6 +112484,7 @@
         },
         {
           "name": "Xacal",
+          "englishName": "Jackal",
           "source": "MM",
           "page": 331,
           "srd": true,
@@ -111990,6 +112629,7 @@
       "entries": [
         {
           "name": "Acòlit",
+          "englishName": "Acolyte",
           "source": "MM",
           "page": 342,
           "srd": true,
@@ -112125,6 +112765,7 @@
         },
         {
           "name": "Arximag",
+          "englishName": "Archmage",
           "source": "MM",
           "page": 342,
           "srd": true,
@@ -112372,6 +113013,7 @@
         },
         {
           "name": "Assassí",
+          "englishName": "Assassin",
           "source": "MM",
           "page": 343,
           "srd": true,
@@ -112546,6 +113188,7 @@
         },
         {
           "name": "Bandoler",
+          "englishName": "Bandit",
           "source": "MM",
           "page": 343,
           "srd": true,
@@ -112686,6 +113329,7 @@
         },
         {
           "name": "Bandoler en Cap",
+          "englishName": "Bandit Captain",
           "source": "MM",
           "page": 344,
           "srd": true,
@@ -112849,6 +113493,7 @@
         },
         {
           "name": "Bergant",
+          "englishName": "Thug",
           "source": "MM",
           "page": 350,
           "srd": true,
@@ -112999,6 +113644,7 @@
         },
         {
           "name": "Bersèrker",
+          "englishName": "Berserker",
           "source": "MM",
           "page": 344,
           "srd": true,
@@ -113130,6 +113776,7 @@
         },
         {
           "name": "Cavaller",
+          "englishName": "Knight",
           "source": "MM",
           "page": 347,
           "srd": true,
@@ -113288,6 +113935,7 @@
         },
         {
           "name": "Cultista",
+          "englishName": "Cultist",
           "source": "MM",
           "page": 345,
           "srd": true,
@@ -113441,6 +114089,7 @@
         },
         {
           "name": "Cultista Fanàtic",
+          "englishName": "Cult Fanatic",
           "source": "MM",
           "page": 345,
           "srd": true,
@@ -113642,6 +114291,7 @@
         },
         {
           "name": "Druida",
+          "englishName": "Druid",
           "source": "MM",
           "page": 346,
           "srd": true,
@@ -113799,6 +114449,7 @@
         },
         {
           "name": "Escorcollador",
+          "englishName": "Scout",
           "source": "MM",
           "page": 349,
           "srd": true,
@@ -113953,6 +114604,7 @@
         },
         {
           "name": "Espia",
+          "englishName": "Spy",
           "source": "MM",
           "page": 349,
           "srd": true,
@@ -114109,6 +114761,7 @@
         },
         {
           "name": "Gladiador",
+          "englishName": "Gladiator",
           "source": "MM",
           "page": 346,
           "srd": true,
@@ -114270,6 +114923,7 @@
         },
         {
           "name": "Guàrdia",
+          "englishName": "Guard",
           "source": "MM",
           "page": 347,
           "srd": true,
@@ -114392,6 +115046,7 @@
         },
         {
           "name": "Mag",
+          "englishName": "Mage",
           "source": "MM",
           "page": 347,
           "srd": true,
@@ -114597,6 +115252,7 @@
         },
         {
           "name": "Noble",
+          "englishName": "Noble",
           "source": "MM",
           "page": 348,
           "srd": true,
@@ -114738,6 +115394,7 @@
         },
         {
           "name": "Plebeu",
+          "englishName": "Commoner",
           "source": "MM",
           "page": 345,
           "srd": true,
@@ -114882,6 +115539,7 @@
         },
         {
           "name": "Sacerdot",
+          "englishName": "Priest",
           "source": "MM",
           "page": 348,
           "srd": true,
@@ -115066,6 +115724,7 @@
         },
         {
           "name": "Veterà",
+          "englishName": "Veteran",
           "source": "MM",
           "page": 350,
           "srd": true,

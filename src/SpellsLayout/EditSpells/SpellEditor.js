@@ -32,6 +32,8 @@ const SpellSection = styled.section`
     }
 `
 
+const getEnglishSpellName = s => typeof s.englishSrd === 'string' ? s.englishSrd : s.englishName
+
 const SpellPickerApp = ({spells: rawSpells}) => {
     const spells = rawSpells
         .map(s=>({
@@ -95,7 +97,7 @@ const SpellPickerApp = ({spells: rawSpells}) => {
     }
     
     const filteredSpells = spells
-        .filter(spell => searchRegex.test(spell.name))
+        .filter(spell => searchRegex.test(getSpellName(spell)) || searchRegex.test(getEnglishSpellName(spell)))
         .filter(spell => selectedLevels[spell.level])
         .filter(spell => spell.allowedClasses.some(c => selectedClasses[c]))
         .filter(spell => !showOnlyChosen || chosenSpells[getSpellName(spell)])
