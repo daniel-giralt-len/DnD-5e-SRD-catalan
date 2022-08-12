@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import FilterButton from './FilterButton'
 
 const SpellItemWrapper = styled.div`
     display:flex;
@@ -11,6 +12,7 @@ const SpellName = styled.li`
     margin: 0;
     list-style-type: none;
     ${({selected}) => selected ? 'font-weight: bold;' : ''}
+    ${({chosen}) => chosen ? 'list-style-type: disclosure-closed;' : ''}
 `
 
 const Wrapper = styled.section`
@@ -30,22 +32,38 @@ const SpellList = ({
     names,
     selectedSpellIndex,
     handleSelectedSpellChange,
+    handleSpellChoose,
+    chosenSpells,
 }) => {
     return (<Wrapper>
         {names
-            .map((name,i) => ([
-                    (<SpellItemWrapper
-                        onClick={()=>handleSelectedSpellChange(name)}    
-                    >
-                        <SpellName 
+            .map((name,i) => {
+                const chosen = Object
+                    .entries(chosenSpells)
+                    .filter(([k,v])=>v)
+                    .map(([k,v])=>k)
+                    .includes(name)
+                return [
+                        (<SpellItemWrapper
                             key={`${name}-title`}
-                            selected={selectedSpellIndex===i}
-                        >{name}
-                        </SpellName>
-                    </SpellItemWrapper>
-                    ),
-                    (<button key={`${name}-button`}>+</button>)
-                ])
+                            onClick={()=>handleSelectedSpellChange(name)}    
+                        >
+                            <SpellName 
+                                selected={selectedSpellIndex===i}
+                                chosen={chosen}
+                            >{name}
+                            </SpellName>
+                        </SpellItemWrapper>
+                        ),
+                        (<FilterButton
+                            selected={chosen}
+                            key={`${name}-button`}
+                            onClick={() => handleSpellChoose(name)}
+                        >
+                            {chosen ? '-' : '+'}
+                        </FilterButton>)
+                    ]
+                }
             ).reduce((acc,arr)=>([...acc,...arr]),[])
         }
     </Wrapper>)

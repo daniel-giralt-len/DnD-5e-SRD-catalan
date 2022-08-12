@@ -57,6 +57,7 @@ const SpellPickerApp = ({spells}) => {
             ,{}))
     const [selectedSpellIndex,setSelectedSpellIndex] = useState(null)
     const [showOnlyChosen, setShowOnlyChosen] = useState(false)
+    const [chosenSpells, setChosenSpells] = useState({})
 
     const handleClassChange = name => {
         const newClasses = {...classes}
@@ -70,6 +71,12 @@ const SpellPickerApp = ({spells}) => {
     }
     const handleChosenOnlyChange = () => setShowOnlyChosen(!showOnlyChosen)
     const handleSelectedSpellChange = name => name===selectedSpellIndex ? setSelectedSpellIndex(null) : setSelectedSpellIndex(name)
+    const handleSpellChoose = name => {
+        const newChosenSpells = {...chosenSpells}
+        newChosenSpells[name] = !newChosenSpells[name]
+        return setChosenSpells(newChosenSpells)
+    }
+    console.log(chosenSpells)
 
     return (<Wrapper>
         <Filters
@@ -85,6 +92,8 @@ const SpellPickerApp = ({spells}) => {
             names={names}
             selectedSpellIndex={selectedSpellIndex}
             handleSelectedSpellChange={handleSelectedSpellChange}
+            handleSpellChoose={handleSpellChoose}
+            chosenSpells={chosenSpells}
         />
         {selectedSpellIndex && (
             <SpellSection>
