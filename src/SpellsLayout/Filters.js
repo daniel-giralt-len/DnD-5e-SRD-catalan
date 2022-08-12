@@ -19,7 +19,7 @@ const Filters = ({
         <div>
             <div>
                 {Object.entries(classes)
-                .map(([name,{selected}])=>(
+                .map(([name,selected])=>(
                     <FilterButton
                         selected={selected}
                         key={name}
@@ -31,7 +31,7 @@ const Filters = ({
             </div>
             <div>
                 {Object.entries(levels)
-                    .map(([name,{selected}])=>(
+                    .map(([name,selected])=>(
                         <FilterButton
                             selected={selected}
                             key={name}

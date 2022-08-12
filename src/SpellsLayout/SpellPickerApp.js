@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 
 import SpellList from "./SpellList"
 import Filters from "./Filters"
@@ -11,8 +12,11 @@ const Wrapper = styled.main`
     @media (max-width: 600px) {
         flex-direction: column-reverse;
     }
-    justify-content: space-around;
     padding: 0.3em;
+`
+
+const LeftColumn = styled.div`
+    max-width: 400px;
 `
 
 const AlignRight = styled.div`
@@ -52,12 +56,12 @@ const SpellPickerApp = ({spells: rawSpells}) => {
         useState([...new Set(classesRaw)]
             .sort()
             .reduce((acc,className)=>
-                ({...acc, [className]:{selected:true}}),
+                ({...acc, [className]:true}),
             {}))
     const [selectedLevels, setLevels] = 
         useState(Array(10).fill(0).map((_,i)=>i)
             .reduce((acc,lvl)=>
-                ({...acc, [lvl]:{selected:true}})
+                ({...acc, [lvl]:true})
             ,{}))
     const [selectedSpellIndex,setSelectedSpellIndex] = useState(null)
     const [showOnlyChosen, setShowOnlyChosen] = useState(false)
@@ -65,12 +69,12 @@ const SpellPickerApp = ({spells: rawSpells}) => {
 
     const handleClassChange = name => {
         const newClasses = {...selectedClasses}
-        newClasses[name].selected = !newClasses[name].selected
+        newClasses[name] = !newClasses[name]
         return setClasses(newClasses)
     }
     const handleLevelChange = name => {
         const newLevels = {...selectedLevels}
-        newLevels[name].selected = !newLevels[name].selected
+        newLevels[name] = !newLevels[name]
         return setLevels(newLevels)
     }
     const handleChosenOnlyChange = () => setShowOnlyChosen(!showOnlyChosen)
@@ -78,30 +82,43 @@ const SpellPickerApp = ({spells: rawSpells}) => {
     const handleSpellChoose = name => {
         const newChosenSpells = {...chosenSpells}
         newChosenSpells[name] = !newChosenSpells[name]
-        return setChosenSpells(newChosenSpells)
+        setChosenSpells(newChosenSpells)
+        const chosenSpellNames = Object.entries(newChosenSpells).filter(([k,v])=>v).map(([k])=>k)
+        setSearchParams({
+            ...searchParams,
+            chosenSpellNames: JSON.stringify(chosenSpellNames)
+        })
     }
     
     const filteredSpells = spells
         .filter(spell => searchRegex.test(spell.name))
-        .filter(spell => selectedLevels[spell.level].selected)
-        .filter(spell => spell.allowedClasses.some(c => selectedClasses[c].selected))
+        .filter(spell => selectedLevels[spell.level])
+        .filter(spell => spell.allowedClasses.some(c => selectedClasses[c]))
         .filter(spell => !showOnlyChosen || chosenSpells[getSpellName(spell)])
 
 
     const names = filteredSpells.map(getSpellName)
+    const [searchParams, setSearchParams] = useSearchParams();
+    const handleGenerateCards = () => setSearchParams({...searchParams, display: true})
 
     return (<Wrapper>
         <div>
-
-            <Filters
-                classes={selectedClasses}
-                levels={selectedLevels}
-                showOnlyChosen={showOnlyChosen}
-                handleSearchChange={handleSearchChange}
-                handleClassChange={handleClassChange}
-                handleLevelChange={handleLevelChange}
-                handleChosenOnlyChange={handleChosenOnlyChange}
-            />
+            <LeftColumn>
+                <button
+                    onClick={handleGenerateCards}
+                >
+                    Generar Cartes!
+                </button>
+                <Filters
+                    classes={selectedClasses}
+                    levels={selectedLevels}
+                    showOnlyChosen={showOnlyChosen}
+                    handleSearchChange={handleSearchChange}
+                    handleClassChange={handleClassChange}
+                    handleLevelChange={handleLevelChange}
+                    handleChosenOnlyChange={handleChosenOnlyChange}
+                />
+            </LeftColumn>
             <SpellList
                 names={names}
                 selectedSpellIndex={selectedSpellIndex}
