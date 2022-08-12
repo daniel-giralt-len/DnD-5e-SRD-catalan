@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
+import getSpellName from '../getSpellName'
+
 import SpellList from "./SpellList"
 import Filters from "./Filters"
 import getItemRegex from './getItemRegex'
@@ -29,8 +31,6 @@ const SpellSection = styled.section`
         margin: 0;
     }
 `
-
-const getSpellName = s => typeof s.srd === 'string' ? s.srd : s.name
 
 const SpellPickerApp = ({spells: rawSpells}) => {
     const spells = rawSpells

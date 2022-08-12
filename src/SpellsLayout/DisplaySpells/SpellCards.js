@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import { useSearchParams } from 'react-router-dom'
 import Spell from '../../PrintLayout/Entries/Spell'
 
+import getSpellName from '../getSpellName'
+
 
 const Wrapper = styled.main`
     column-count: 3;
@@ -35,7 +37,7 @@ const SpellCards = ({spells}) => {
     const [searchParams, setSearchParams] = useSearchParams();
     const names = JSON.parse(searchParams.get('chosenSpellNames')) || []
     const filteredSpells = spells
-        .filter(s => names.includes(s.name))
+        .filter(s => names.includes(getSpellName(s)))
 
     const handleEditCards = () => {
         searchParams.set('display',false)
