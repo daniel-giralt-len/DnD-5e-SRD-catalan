@@ -5,10 +5,23 @@ import Spell from '../../PrintLayout/Entries/Spell'
 
 const Wrapper = styled.main`
     column-count: 3;
+    @media (max-width: 700px) {
+        column-count: 1;
+    }
     @media print{
-        font-size: 0.5em;
+        column-count: 2;
+        font-size: 0.75em;
     }
     padding: 0.3em;
+    padding-top: 0;
+`
+
+const CardWrapper = styled.div`
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 1em 0;
+    padding: 0.5em;
+    break-inside: avoid;
 `
 
 const NoPrintButton = styled.button`
@@ -35,7 +48,11 @@ const SpellCards = ({spells}) => {
             >
                 Seleccionar Cartes!
             </NoPrintButton>
-            {filteredSpells.map(s => (<Spell key={s.name} {...s} />))}
+            {filteredSpells.map(s => (
+                <CardWrapper>
+                    <Spell key={s.name} {...s} />
+                </CardWrapper>
+            ))}
     </Wrapper>)
 }
 export default SpellCards
