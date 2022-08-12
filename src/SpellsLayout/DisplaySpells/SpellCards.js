@@ -24,7 +24,7 @@ const CardWrapper = styled.div`
     break-inside: avoid;
 `
 
-const NoPrintButton = styled.button`
+const NoPrint = styled.div`
     @media print {
         display: none;
     }
@@ -43,11 +43,14 @@ const SpellCards = ({spells}) => {
     }
 
     return (<Wrapper>
-            <NoPrintButton
-                onClick={handleEditCards}
-            >
-                Seleccionar Cartes!
-            </NoPrintButton>
+            <NoPrint>
+                <div>(copia la URL per a dur els teus conjurs arreu)</div>
+                <button
+                    onClick={handleEditCards}
+                >
+                    Seleccionar Cartes!
+                </button>
+            </NoPrint>
             {filteredSpells.map(s => (
                 <CardWrapper>
                     <Spell key={s.name} {...s} />
