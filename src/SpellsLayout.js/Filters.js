@@ -6,28 +6,46 @@ const Wrapper = styled.section`
     grid-area: filters;
 `
 
-const Filters = ({classes,
+const Filters = ({
+    classes,
     levels,
-    handleSearchChange
+    handleSearchChange,
+    handleClassChange,
+    handleLevelChange,
+    handleSelectedOnlyChange
 }) => {
     return (<Wrapper>
         <div>
             <div>
-                {classes.map(c=>(
-                    <button key={c}>
-                        {c}
+                {Object.entries(classes)
+                .map(([name,{selected}])=>(
+                    <button
+                        selected={selected}
+                        key={name}
+                        onClick={handleClassChange}
+                    >
+                        {name}
                     </button>
                 ))}
             </div>
             <div>
-                {levels.map(l=>(
-                    <button key={l}>
-                        {l}
-                    </button>
-                ))}
+                {Object.entries(levels)
+                    .map(([name,{selected}])=>(
+                        <button
+                            selected={selected}
+                            key={name}
+                            onClick={handleLevelChange}
+                        >
+                            {name}
+                        </button>
+                    ))}
             </div>
             <div>
-                <button>Escollits</button>
+                <button
+                    onClick={handleSelectedOnlyChange}
+                >
+                    Escollits
+                </button>
             </div>
             <SearchBar
                 onChange={handleSearchChange}

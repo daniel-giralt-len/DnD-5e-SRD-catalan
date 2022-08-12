@@ -44,20 +44,31 @@ const SpellPickerApp = ({spells}) => {
         .filter(c=>c.source === 'PHB')
         .map(c=>c.name)
 
-    const classes = [...new Set(classesRaw)].sort()
-    const levels = Array(10).fill(0).map((_,i)=>i)
-    const selectedSpell = spells[0]
+    const [classes, setClasses] = 
+        useState([...new Set(classesRaw)]
+            .sort()
+            .reduce((acc,className)=>
+                ({...acc, [className]:{selected:false}}),
+            {}))
+    const [levels, setLevels] = 
+        useState(Array(10).fill(0).map((_,i)=>i)
+            .reduce((acc,lvl)=>
+                ({...acc, [lvl]:{selected:false}})
+            ,{}))
+    const [selectedSpellIndex,setSelectedSpell] = useState(null)
+    const [showOnlySelected, setShowOnlySelected] = useState(false)
 
     return (<Wrapper>
         <Filters
             classes={classes}
             levels={levels}
+            showOnlySelected={showOnlySelected}
             handleSearchChange={handleSearchChange}
         />
         <SpellList names={names} />
-        {selectedSpell && (
+        {selectedSpellIndex && (
             <SpellSection>
-                <Spell {...selectedSpell}/>
+                <Spell {...spells[selectedSpellIndex]}/>
             </SpellSection>
         )}
     </Wrapper>)

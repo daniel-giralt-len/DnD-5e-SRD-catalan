@@ -20,14 +20,11 @@ const Wrapper = styled.section`
 const SpellList = ({names}) => {
     return (<Wrapper>
         {names
-            .map(name => (
-                <>
-                    <SpellItemWrapper>{name}</SpellItemWrapper>
-                    <button>+</button>
-                </>
-  
-                )
-            )
+            .map(name => ([
+                    (<SpellItemWrapper key={`${name}-title`}>{name}</SpellItemWrapper>),
+                    (<button key={`${name}-button`}>+</button>)
+                ])
+            ).reduce((acc,arr)=>([...acc,...arr]),[])
         }
     </Wrapper>)
 }
