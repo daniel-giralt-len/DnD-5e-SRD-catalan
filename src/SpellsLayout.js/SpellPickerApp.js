@@ -58,12 +58,27 @@ const SpellPickerApp = ({spells}) => {
     const [selectedSpellIndex,setSelectedSpell] = useState(null)
     const [showOnlySelected, setShowOnlySelected] = useState(false)
 
+    const handleClassChange = name => {
+        const newClasses = {...classes}
+        newClasses[name].selected = !newClasses[name].selected
+        return setClasses(newClasses)
+    }
+    const handleLevelChange = name => {
+        const newLevels = {...levels}
+        newLevels[name].selected = !newLevels[name].selected
+        return setLevels(newLevels)
+    }
+    const handleSelectedOnlyChange = () => setShowOnlySelected(!showOnlySelected)
+
     return (<Wrapper>
         <Filters
             classes={classes}
             levels={levels}
             showOnlySelected={showOnlySelected}
             handleSearchChange={handleSearchChange}
+            handleClassChange={handleClassChange}
+            handleLevelChange={handleLevelChange}
+            handleSelectedOnlyChange={handleSelectedOnlyChange}
         />
         <SpellList names={names} />
         {selectedSpellIndex && (
