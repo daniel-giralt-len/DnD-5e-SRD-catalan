@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import SearchBar from './SearchBar'
-import FilterButton from './FilterButton'
+import SearchBar from '../../PickerComponents/SearchBar'
+import FilterButton from '../../PickerComponents/FilterButton'
 
 const Wrapper = styled.section`
     grid-area: filters;

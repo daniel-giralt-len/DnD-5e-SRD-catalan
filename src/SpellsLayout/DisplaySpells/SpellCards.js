@@ -54,8 +54,8 @@ const SpellCards = ({spells}) => {
                 </button>
             </NoPrint>
             {filteredSpells.map(s => (
-                <CardWrapper>
-                    <Spell key={s.name} {...s} />
+                <CardWrapper key={s.name}>
+                    <Spell {...s} />
                 </CardWrapper>
             ))}
     </Wrapper>)

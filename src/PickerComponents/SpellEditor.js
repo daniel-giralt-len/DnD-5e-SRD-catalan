@@ -4,9 +4,9 @@ import { useSearchParams } from 'react-router-dom'
 
 import getSpellName from '../getSpellName'
 
-import EntryList from '../../PickerComponents/EntryList'
+import EntryList from "./EntryList"
 import Filters from "./Filters"
-import getItemRegex from '../../PickerComponents/getItemRegex'
+import getItemRegex from './getItemRegex'
 import Spell from "../../PrintLayout/Entries/Spell"
 
 const Wrapper = styled.main`
@@ -129,11 +129,10 @@ const SpellPickerApp = ({spells: rawSpells}) => {
             </LeftColumn>
             <EntryList
                 names={names}
-                selectedIndex={selectedSpellIndex}
-                handleSelectedChange={handleSelectedSpellChange}
-                handleChoose={handleSpellChoose}
-                chosen={chosenSpells}
-                allowChoosing={true}
+                selectedSpellIndex={selectedSpellIndex}
+                handleSelectedSpellChange={handleSelectedSpellChange}
+                handleSpellChoose={handleSpellChoose}
+                chosenSpells={chosenSpells}
             />
         </div>
         {selectedSpellIndex && (

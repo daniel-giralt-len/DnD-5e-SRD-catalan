@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import FilterButton from './FilterButton'
 
-const SpellItemWrapper = styled.div`
+const EntryItemWrapper = styled.div`
     display:flex;
     align-items:center;
     :hover { box-shadow: 0 0 3px 0px #340000; }
 `
 
-const SpellName = styled.li`
+const EntryName = styled.li`
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -30,44 +30,45 @@ const Wrapper = styled.section`
     row-gap: 0.1em;
 `
 
-const SpellList = ({
+const EntryList = ({
     names,
-    selectedSpellIndex,
-    handleSelectedSpellChange,
-    handleSpellChoose,
-    chosenSpells,
+    selectedIndex,
+    handleSelectedChange,
+    allowChoosing = true,
+    handleChoose,
+    chosen,
 }) => {
     return (<Wrapper>
         {names
             .map((name,i) => {
-                const chosen = Object
-                    .entries(chosenSpells)
+                const isChosen = Object
+                    .entries(chosen)
                     .filter(([k,v])=>v)
                     .map(([k,v])=>k)
                     .includes(name)
                 return [
-                        (<SpellItemWrapper
+                        (<EntryItemWrapper
                             key={`${name}-title`}
-                            onClick={()=>handleSelectedSpellChange(name)}    
+                            onClick={()=>handleSelectedChange(name)}    
                         >
-                            <SpellName 
-                                selected={selectedSpellIndex===i}
-                                chosen={chosen}
+                            <EntryName 
+                                selected={selectedIndex===i}
+                                chosen={isChosen}
                             >{name}
-                            </SpellName>
-                        </SpellItemWrapper>
+                            </EntryName>
+                        </EntryItemWrapper>
                         ),
-                        (<FilterButton
-                            selected={chosen}
+                        allowChoosing ? (<FilterButton
+                            selected={isChosen}
                             key={`${name}-button`}
-                            onClick={() => handleSpellChoose(name)}
+                            onClick={() => handleChoose(name)}
                         >
-                            {chosen ? '-' : '+'}
-                        </FilterButton>)
+                            {isChosen ? '-' : '+'}
+                        </FilterButton>) : undefined
                     ]
                 }
-            ).reduce((acc,arr)=>([...acc,...arr]),[])
+            ).reduce((acc,arr)=>([...acc,...arr]),[]).filter(v=>v)
         }
     </Wrapper>)
 }
-export default SpellList
+export default EntryList
