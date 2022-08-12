@@ -7,24 +7,23 @@ import getItemRegex from './getItemRegex'
 import Spell from "../PrintLayout/Entries/Spell"
 
 const Wrapper = styled.main`
-    display: grid;
+    display: flex;
     @media (max-width: 600px) {
-        grid-template-columns: 100%;
-        grid-template-areas:
-            "filters"
-            "list"
-            "spell";
+        flex-direction: column-reverse;
     }
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:
-        "filters spell"
-        "list    spell";
-    column-gap: 1em;
+    justify-content: space-around;
     padding: 0.3em;
 `
 
+const AlignRight = styled.div`
+    text-align: right;
+`
+
 const SpellSection = styled.section`
-    grid-area: spell;
+    margin-left: 1em;
+    @media (max-width: 600px) {
+        margin: 0;
+    }
 `
 
 const getSpellName = s => typeof s.srd === 'string' ? s.srd : s.name
@@ -92,24 +91,30 @@ const SpellPickerApp = ({spells: rawSpells}) => {
     const names = filteredSpells.map(getSpellName)
 
     return (<Wrapper>
-        <Filters
-            classes={selectedClasses}
-            levels={selectedLevels}
-            showOnlyChosen={showOnlyChosen}
-            handleSearchChange={handleSearchChange}
-            handleClassChange={handleClassChange}
-            handleLevelChange={handleLevelChange}
-            handleChosenOnlyChange={handleChosenOnlyChange}
-        />
-        <SpellList
-            names={names}
-            selectedSpellIndex={selectedSpellIndex}
-            handleSelectedSpellChange={handleSelectedSpellChange}
-            handleSpellChoose={handleSpellChoose}
-            chosenSpells={chosenSpells}
-        />
+        <div>
+
+            <Filters
+                classes={selectedClasses}
+                levels={selectedLevels}
+                showOnlyChosen={showOnlyChosen}
+                handleSearchChange={handleSearchChange}
+                handleClassChange={handleClassChange}
+                handleLevelChange={handleLevelChange}
+                handleChosenOnlyChange={handleChosenOnlyChange}
+            />
+            <SpellList
+                names={names}
+                selectedSpellIndex={selectedSpellIndex}
+                handleSelectedSpellChange={handleSelectedSpellChange}
+                handleSpellChoose={handleSpellChoose}
+                chosenSpells={chosenSpells}
+            />
+        </div>
         {selectedSpellIndex && (
             <SpellSection>
+                <AlignRight style={{textAlign:'right'}}>
+                    <button onClick={()=>setSelectedSpellIndex(null)}>X</button>
+                </AlignRight>
                 <Spell {...spells.find(s=> getSpellName(s) === selectedSpellIndex)}/>
             </SpellSection>
         )}

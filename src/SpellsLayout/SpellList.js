@@ -16,11 +16,13 @@ const SpellName = styled.li`
 `
 
 const Wrapper = styled.section`
-    max-height: 70%;
     grid-area: list;
+    
+    overflow-y: scroll;
+    padding: 0.5em 0.5em;
+    
     display: grid;
     grid-template-columns: auto 2em;
-    padding: 0.5em 0.5em;
     @media (max-width: 600px) {
         padding: 0.25em 0.5em;
     }
