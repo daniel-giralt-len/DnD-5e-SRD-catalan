@@ -62,7 +62,7 @@ const getSpeedsText = s => {
 const getMod = score => Math.floor(score/2)
 
 const keysToIgnore = [
-    'source','page','srd','otherSources','legendaryGroup','environment','hasToken','soundClip','traitTags','senseTags','actionTags','languageTags','damageTags','miscTags','conditionInflict','conditionInflictLegendary','hasFluff','hasFluffImages', 'variant', 'spellcastingTags', 'conditionInflictSpell', 'altArt', 'dragonCastingColor', 'familiar'
+    'source','page','srd','otherSources','legendaryGroup','environment','hasToken','soundClip','traitTags','senseTags','actionTags','languageTags','damageTags','miscTags','conditionInflict','conditionInflictLegendary','hasFluff','hasFluffImages', 'variant', 'spellcastingTags', 'conditionInflictSpell', 'altArt', 'dragonCastingColor', 'familiar', 'englishName'
 ]
 
 const getSkillText = (skill, passive) => {
